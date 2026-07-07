@@ -1,0 +1,503 @@
+[2026-07-07 15:50:32] [START] RAIN5.0 match suggestion run started
+[2026-07-07 15:50:32] [CONFIG] input_dir=D:\Harshil\RAIN5\INPUTS
+[2026-07-07 15:50:32] [CONFIG] output_dir=D:\Harshil\RAIN5\OUTPUT
+[2026-07-07 15:50:32] [CONFIG] knowledge_dir=D:\Harshil\RAIN5\Knowledge
+[2026-07-07 15:50:32] [CONFIG] max_suggestions=250
+[2026-07-07 15:50:32] [CONFIG] min_hvti_score=50.0
+[2026-07-07 15:50:32] [CONFIG] min_usd_value=0.0
+[2026-07-07 15:50:32] [CONFIG] max_pairs=None
+[2026-07-07 15:50:32] [CONFIG] profile_sample_pct=100.0
+[2026-07-07 15:50:32] [CONFIG] progress_every=5000
+[2026-07-07 15:50:32] [CONFIG] progress_seconds=10.0
+[2026-07-07 15:50:32] [CONFIG] write_detail_json=True
+[2026-07-07 15:50:32] [CONFIG] max_bvh_per_pair=1
+[2026-07-07 15:50:32] [CONFIG] supervised_weight_tuning=True
+[2026-07-07 15:50:32] [CONFIG] negative_samples_per_positive=5
+[2026-07-07 15:50:32] [CONFIG] supervised_ranker_v2=True
+[2026-07-07 15:50:32] [CONFIG] ranker_negative_samples_per_positive=10
+[2026-07-07 15:50:32] [CONFIG] ranker_epochs=80
+[2026-07-07 15:50:32] [CONFIG] ranker_learning_rate=0.08
+[2026-07-07 15:50:32] [CONFIG] ranker_l2=0.001
+[2026-07-07 15:50:32] [CONFIG] ranker_max_training_rows=5000
+[2026-07-07 15:50:32] [CONFIG] ranker_random_seed=17
+[2026-07-07 15:50:32] [CONFIG] ranker_high_value_positive_weight=2.5
+[2026-07-07 15:50:32] [CONFIG] auto_top_k=True
+[2026-07-07 15:50:32] [CONFIG] target_pair_precision=50.0
+[2026-07-07 15:50:32] [CONFIG] auto_top_k_min_suggestions=5
+[2026-07-07 15:50:32] [CONFIG] prototype_antigeneric=True
+[2026-07-07 15:50:32] [CONFIG] prototype_max_prototypes=1000
+[2026-07-07 15:50:32] [CONFIG] person_saturation_penalty=True
+[2026-07-07 15:50:32] [CONFIG] bvh_precision1=True
+[2026-07-07 15:50:32] [CONFIG] bvh_selection_mode=canonical_top1
+[2026-07-07 15:50:32] [CONFIG] bvh_top2_margin_threshold=8.0
+[2026-07-07 15:50:32] [CONFIG] bvh_top2_min_canonical_score=65.0
+[2026-07-07 15:50:32] [CONFIG] bvh_recall_balancer=True
+[2026-07-07 15:50:32] [CONFIG] bvh_recall_floor_spec=PARTNERSHIP:3,TRUSTPATH:3,RECRUITMENT:0,SUPPLIERMATCH:2
+[2026-07-07 15:50:32] [CONFIG] bvh_recall_boost_spec=PARTNERSHIP:0,TRUSTPATH:4,RECRUITMENT:0,SUPPLIERMATCH:2
+[2026-07-07 15:50:32] [CONFIG] bvh_recall_boost_min_canonical=50.0
+[2026-07-07 15:50:32] [CONFIG] bvh_recall_floor_min_score=0.0
+[2026-07-07 15:50:32] [CONFIG] bvh_recall_floor_min_canonical=0.0
+[2026-07-07 15:50:32] [CONFIG] bvh_recall_allow_precision_drop_pct=0.0
+[2026-07-07 15:50:32] [CONFIG] bvh_recall_use_backtest_precision_guard=True
+[2026-07-07 15:50:32] [CONFIG] write_bvh_recall_pool=False
+[2026-07-07 15:50:33] [SAMPLE] Using 100% of profiles: 200
+[2026-07-07 15:50:33] [BVH-RECALL] Floors: {'PARTNERSHIP': 3, 'TRUSTPATH': 3, 'RECRUITMENT': 0, 'SUPPLIERMATCH': 2}
+[2026-07-07 15:50:33] [BVH-RECALL] Boosts: {'PARTNERSHIP': 0.0, 'TRUSTPATH': 4.0, 'RECRUITMENT': 0.0, 'SUPPLIERMATCH': 2.0}
+[2026-07-07 15:50:33] [PROTOTYPE] Pair prototype model enabled: True
+[2026-07-07 15:50:33] [PROTOTYPE] Prototype count: 80
+[2026-07-07 15:50:33] [TUNING] Supervised HVTI weight tuning enabled.
+[2026-07-07 15:50:33] [TUNING] Positive examples used: 80
+[2026-07-07 15:50:33] [TUNING] Negative examples used: 400
+[2026-07-07 15:50:33] [TUNING] New weights: {'problem_solution_fit': 0.263552, 'commercial_opportunity_size': 0.063012, 'urgency': 0.045012, 'decision_authority': 0.078894, 'capability_complementarity': 0.054823, 'trust_potential': 0.154886, 'strategic_alignment': 0.258786, 'network_amplification': 0.027012, 'timing_context': 0.027012, 'execution_probability': 0.027012}
+[2026-07-07 15:50:33] [INPUT] CILProfiles=D:\Harshil\RAIN5\INPUTS\CILProfiles_0207261343.csv
+[2026-07-07 15:50:33] [INPUT] matchesCreated=D:\Harshil\RAIN5\INPUTS\matchesCreated_0207261343.csv
+[2026-07-07 15:50:33] [INPUT] original_profile_count=200
+[2026-07-07 15:50:33] [INPUT] active_profile_count=200
+[2026-07-07 15:50:33] [INPUT] bvh_type_count=10
+[2026-07-07 15:50:33] [PLAN] total_pairs_all=19,900
+[2026-07-07 15:50:33] [PLAN] total_pairs_to_process=19,900
+[2026-07-07 15:50:33] [PLAN] total_bvh_evaluations=199,000
+[2026-07-07 15:50:33] [RANKER-V2] Building supervised training rows from every candidate pair+BVHType.
+[2026-07-07 15:50:33] [PROGRESS] 1/199,000 BVH evaluations (0.00%) | elapsed 0s | rate 312.1/sec | ETA 16:01:11 (10m 37s remaining) | candidates 1 | suggestions-kept 0
+[2026-07-07 15:50:40] [PROGRESS] 5,000/199,000 BVH evaluations (2.51%) | elapsed 6s | rate 731.5/sec | ETA 15:55:05 (4m 25s remaining) | candidates 5,000 | suggestions-kept 0
+[2026-07-07 15:50:47] [PROGRESS] 10,000/199,000 BVH evaluations (5.03%) | elapsed 13s | rate 751.0/sec | ETA 15:54:58 (4m 11s remaining) | candidates 10,000 | suggestions-kept 0
+[2026-07-07 15:50:53] [PROGRESS] 15,000/199,000 BVH evaluations (7.54%) | elapsed 19s | rate 755.1/sec | ETA 15:54:57 (4m 3s remaining) | candidates 15,000 | suggestions-kept 0
+[2026-07-07 15:51:00] [PROGRESS] 20,000/199,000 BVH evaluations (10.05%) | elapsed 26s | rate 757.8/sec | ETA 15:54:56 (3m 56s remaining) | candidates 20,000 | suggestions-kept 0
+[2026-07-07 15:51:06] [PROGRESS] 25,000/199,000 BVH evaluations (12.56%) | elapsed 32s | rate 761.4/sec | ETA 15:54:55 (3m 48s remaining) | candidates 25,000 | suggestions-kept 0
+[2026-07-07 15:51:13] [PROGRESS] 30,000/199,000 BVH evaluations (15.08%) | elapsed 39s | rate 760.3/sec | ETA 15:54:55 (3m 42s remaining) | candidates 30,000 | suggestions-kept 0
+[2026-07-07 15:51:20] [PROGRESS] 35,000/199,000 BVH evaluations (17.59%) | elapsed 46s | rate 746.6/sec | ETA 15:55:00 (3m 39s remaining) | candidates 35,000 | suggestions-kept 0
+[2026-07-07 15:51:29] [PROGRESS] 40,000/199,000 BVH evaluations (20.10%) | elapsed 55s | rate 719.0/sec | ETA 15:55:10 (3m 41s remaining) | candidates 40,000 | suggestions-kept 0
+[2026-07-07 15:51:38] [PROGRESS] 45,000/199,000 BVH evaluations (22.61%) | elapsed 1m 4s | rate 696.9/sec | ETA 15:55:19 (3m 40s remaining) | candidates 45,000 | suggestions-kept 0
+[2026-07-07 15:51:46] [PROGRESS] 50,000/199,000 BVH evaluations (25.13%) | elapsed 1m 12s | rate 686.4/sec | ETA 15:55:23 (3m 37s remaining) | candidates 50,000 | suggestions-kept 0
+[2026-07-07 15:51:55] [PROGRESS] 55,000/199,000 BVH evaluations (27.64%) | elapsed 1m 21s | rate 672.6/sec | ETA 15:55:29 (3m 34s remaining) | candidates 55,000 | suggestions-kept 0
+[2026-07-07 15:52:03] [PROGRESS] 60,000/199,000 BVH evaluations (30.15%) | elapsed 1m 29s | rate 667.3/sec | ETA 15:55:32 (3m 28s remaining) | candidates 60,000 | suggestions-kept 0
+[2026-07-07 15:52:12] [PROGRESS] 65,000/199,000 BVH evaluations (32.66%) | elapsed 1m 38s | rate 659.5/sec | ETA 15:55:35 (3m 23s remaining) | candidates 65,000 | suggestions-kept 0
+[2026-07-07 15:52:20] [PROGRESS] 70,000/199,000 BVH evaluations (35.18%) | elapsed 1m 46s | rate 655.3/sec | ETA 15:55:37 (3m 16s remaining) | candidates 70,000 | suggestions-kept 0
+[2026-07-07 15:52:29] [PROGRESS] 75,000/199,000 BVH evaluations (37.69%) | elapsed 1m 55s | rate 650.6/sec | ETA 15:55:39 (3m 10s remaining) | candidates 75,000 | suggestions-kept 0
+[2026-07-07 15:52:38] [PROGRESS] 80,000/199,000 BVH evaluations (40.20%) | elapsed 2m 4s | rate 643.7/sec | ETA 15:55:43 (3m 4s remaining) | candidates 80,000 | suggestions-kept 0
+[2026-07-07 15:52:47] [PROGRESS] 85,000/199,000 BVH evaluations (42.71%) | elapsed 2m 13s | rate 638.2/sec | ETA 15:55:45 (2m 58s remaining) | candidates 85,000 | suggestions-kept 0
+[2026-07-07 15:52:55] [PROGRESS] 90,000/199,000 BVH evaluations (45.23%) | elapsed 2m 21s | rate 635.9/sec | ETA 15:55:46 (2m 51s remaining) | candidates 90,000 | suggestions-kept 0
+[2026-07-07 15:53:03] [PROGRESS] 95,000/199,000 BVH evaluations (47.74%) | elapsed 2m 29s | rate 635.2/sec | ETA 15:55:47 (2m 43s remaining) | candidates 95,000 | suggestions-kept 0
+[2026-07-07 15:53:12] [PROGRESS] 100,000/199,000 BVH evaluations (50.25%) | elapsed 2m 38s | rate 631.5/sec | ETA 15:55:48 (2m 36s remaining) | candidates 100,000 | suggestions-kept 0
+[2026-07-07 15:53:21] [PROGRESS] 105,000/199,000 BVH evaluations (52.76%) | elapsed 2m 47s | rate 627.0/sec | ETA 15:55:51 (2m 29s remaining) | candidates 105,000 | suggestions-kept 0
+[2026-07-07 15:53:29] [PROGRESS] 110,000/199,000 BVH evaluations (55.28%) | elapsed 2m 56s | rate 624.6/sec | ETA 15:55:52 (2m 22s remaining) | candidates 110,000 | suggestions-kept 0
+[2026-07-07 15:53:38] [PROGRESS] 115,000/199,000 BVH evaluations (57.79%) | elapsed 3m 4s | rate 622.7/sec | ETA 15:55:53 (2m 14s remaining) | candidates 115,000 | suggestions-kept 0
+[2026-07-07 15:53:46] [PROGRESS] 120,000/199,000 BVH evaluations (60.30%) | elapsed 3m 12s | rate 622.1/sec | ETA 15:55:53 (2m 6s remaining) | candidates 120,000 | suggestions-kept 0
+[2026-07-07 15:53:54] [PROGRESS] 125,000/199,000 BVH evaluations (62.81%) | elapsed 3m 20s | rate 622.9/sec | ETA 15:55:53 (1m 58s remaining) | candidates 125,000 | suggestions-kept 0
+[2026-07-07 15:54:02] [PROGRESS] 130,000/199,000 BVH evaluations (65.33%) | elapsed 3m 29s | rate 621.7/sec | ETA 15:55:53 (1m 50s remaining) | candidates 130,000 | suggestions-kept 0
+[2026-07-07 15:54:12] [PROGRESS] 135,000/199,000 BVH evaluations (67.84%) | elapsed 3m 38s | rate 617.4/sec | ETA 15:55:56 (1m 43s remaining) | candidates 135,000 | suggestions-kept 0
+[2026-07-07 15:54:21] [PROGRESS] 140,000/199,000 BVH evaluations (70.35%) | elapsed 3m 47s | rate 615.4/sec | ETA 15:55:57 (1m 35s remaining) | candidates 140,000 | suggestions-kept 0
+[2026-07-07 15:54:30] [PROGRESS] 145,000/199,000 BVH evaluations (72.86%) | elapsed 3m 56s | rate 612.8/sec | ETA 15:55:58 (1m 28s remaining) | candidates 145,000 | suggestions-kept 0
+[2026-07-07 15:54:39] [PROGRESS] 150,000/199,000 BVH evaluations (75.38%) | elapsed 4m 5s | rate 610.7/sec | ETA 15:55:59 (1m 20s remaining) | candidates 150,000 | suggestions-kept 0
+[2026-07-07 15:54:48] [PROGRESS] 155,000/199,000 BVH evaluations (77.89%) | elapsed 4m 14s | rate 608.5/sec | ETA 15:56:00 (1m 12s remaining) | candidates 155,000 | suggestions-kept 0
+[2026-07-07 15:54:56] [PROGRESS] 160,000/199,000 BVH evaluations (80.40%) | elapsed 4m 22s | rate 609.2/sec | ETA 15:56:00 (1m 4s remaining) | candidates 160,000 | suggestions-kept 0
+[2026-07-07 15:55:04] [PROGRESS] 165,000/199,000 BVH evaluations (82.91%) | elapsed 4m 31s | rate 608.7/sec | ETA 15:56:00 (55s remaining) | candidates 165,000 | suggestions-kept 0
+[2026-07-07 15:55:13] [PROGRESS] 170,000/199,000 BVH evaluations (85.43%) | elapsed 4m 39s | rate 608.4/sec | ETA 15:56:00 (47s remaining) | candidates 170,000 | suggestions-kept 0
+[2026-07-07 15:55:22] [PROGRESS] 175,000/199,000 BVH evaluations (87.94%) | elapsed 4m 48s | rate 607.1/sec | ETA 15:56:01 (39s remaining) | candidates 175,000 | suggestions-kept 0
+[2026-07-07 15:55:30] [PROGRESS] 180,000/199,000 BVH evaluations (90.45%) | elapsed 4m 56s | rate 607.5/sec | ETA 15:56:01 (31s remaining) | candidates 180,000 | suggestions-kept 0
+[2026-07-07 15:55:38] [PROGRESS] 185,000/199,000 BVH evaluations (92.96%) | elapsed 5m 4s | rate 606.6/sec | ETA 15:56:01 (23s remaining) | candidates 185,000 | suggestions-kept 0
+[2026-07-07 15:55:47] [PROGRESS] 190,000/199,000 BVH evaluations (95.48%) | elapsed 5m 14s | rate 605.0/sec | ETA 15:56:02 (14s remaining) | candidates 190,000 | suggestions-kept 0
+[2026-07-07 15:55:56] [PROGRESS] 195,000/199,000 BVH evaluations (97.99%) | elapsed 5m 22s | rate 604.0/sec | ETA 15:56:03 (6s remaining) | candidates 195,000 | suggestions-kept 0
+[2026-07-07 15:56:03] [PROGRESS] 199,000/199,000 BVH evaluations (100.00%) | elapsed 5m 29s | rate 603.6/sec | ETA 15:56:03 (0s remaining) | candidates 199,000 | suggestions-kept 0
+[2026-07-07 15:56:03] [RANKER-V2] Training rows built: 199,000
+[2026-07-07 15:56:03] [RANKER-V2] Positive labels: 80
+[2026-07-07 15:56:03] [RANKER-V2] Negative labels: 198,920
+[2026-07-07 15:56:14] [PRECISION50] Model enabled: True
+[2026-07-07 15:56:14] [PRECISION50] Pair model diagnostics: {'avg_positive_score_train': 0.888492, 'avg_negative_score_train': 0.150668, 'min_positive_score_train': 0.772496, 'max_negative_score_train': 0.959435}
+[2026-07-07 15:56:14] [PRECISION50] BVH model diagnostics: {'avg_positive_score_train': 0.811481, 'avg_negative_score_train': 0.146348, 'min_positive_score_train': 0.61149, 'max_negative_score_train': 0.932356}
+[2026-07-07 15:56:17] [BVH-PRECISION1] Model enabled: True
+[2026-07-07 15:56:17] [BVH-PRECISION1] Enabled classifiers: 10 / 10
+[2026-07-07 15:56:17] [PROGRESS] 1/199,000 BVH evaluations (0.00%) | elapsed 5m 44s | rate 0.0/sec | ETA 20:21:14 (19060h 24m 56s remaining) | candidates 1 | suggestions-kept 0
+[2026-07-07 15:56:27] [PROGRESS] 581/199,000 BVH evaluations (0.29%) | elapsed 5m 54s | rate 1.6/sec | ETA 01:36:05 (33h 39m 37s remaining) | candidates 581 | suggestions-kept 58
+[2026-07-07 15:56:37] [PROGRESS] 1,182/199,000 BVH evaluations (0.59%) | elapsed 6m 4s | rate 3.2/sec | ETA 08:54:15 (16h 57m 37s remaining) | candidates 1,182 | suggestions-kept 118
+[2026-07-07 15:56:47] [PROGRESS] 1,809/199,000 BVH evaluations (0.91%) | elapsed 6m 14s | rate 4.8/sec | ETA 03:17:46 (11h 20m 58s remaining) | candidates 1,809 | suggestions-kept 180
+[2026-07-07 15:56:57] [PROGRESS] 2,398/199,000 BVH evaluations (1.21%) | elapsed 6m 24s | rate 6.2/sec | ETA 00:42:49 (8h 45m 52s remaining) | candidates 2,398 | suggestions-kept 239
+[2026-07-07 15:57:07] [PROGRESS] 2,986/199,000 BVH evaluations (1.50%) | elapsed 6m 34s | rate 7.6/sec | ETA 23:09:07 (7h 12m 0s remaining) | candidates 2,986 | suggestions-kept 298
+[2026-07-07 15:57:17] [PROGRESS] 3,590/199,000 BVH evaluations (1.80%) | elapsed 6m 44s | rate 8.9/sec | ETA 22:04:35 (6h 7m 18s remaining) | candidates 3,590 | suggestions-kept 358
+[2026-07-07 15:57:27] [PROGRESS] 4,215/199,000 BVH evaluations (2.12%) | elapsed 6m 54s | rate 10.2/sec | ETA 21:17:00 (5h 19m 32s remaining) | candidates 4,215 | suggestions-kept 421
+[2026-07-07 15:57:37] [PROGRESS] 4,807/199,000 BVH evaluations (2.42%) | elapsed 7m 4s | rate 11.3/sec | ETA 20:43:42 (4h 46m 4s remaining) | candidates 4,807 | suggestions-kept 480
+[2026-07-07 15:57:40] [PROGRESS] 5,000/199,000 BVH evaluations (2.51%) | elapsed 7m 8s | rate 11.7/sec | ETA 20:34:29 (4h 36m 48s remaining) | candidates 5,000 | suggestions-kept 499
+[2026-07-07 15:57:51] [PROGRESS] 5,590/199,000 BVH evaluations (2.81%) | elapsed 7m 18s | rate 12.8/sec | ETA 20:10:28 (4h 12m 37s remaining) | candidates 5,590 | suggestions-kept 558
+[2026-07-07 15:58:01] [PROGRESS] 6,200/199,000 BVH evaluations (3.12%) | elapsed 7m 28s | rate 13.8/sec | ETA 19:50:15 (3h 52m 14s remaining) | candidates 6,200 | suggestions-kept 619
+[2026-07-07 15:58:11] [PROGRESS] 6,842/199,000 BVH evaluations (3.44%) | elapsed 7m 38s | rate 14.9/sec | ETA 19:32:36 (3h 34m 25s remaining) | candidates 6,842 | suggestions-kept 684
+[2026-07-07 15:58:21] [PROGRESS] 7,448/199,000 BVH evaluations (3.74%) | elapsed 7m 48s | rate 15.9/sec | ETA 19:19:00 (3h 20m 39s remaining) | candidates 7,448 | suggestions-kept 744
+[2026-07-07 15:58:31] [PROGRESS] 8,037/199,000 BVH evaluations (4.04%) | elapsed 7m 58s | rate 16.8/sec | ETA 19:07:51 (3h 9m 20s remaining) | candidates 8,037 | suggestions-kept 803
+[2026-07-07 15:58:41] [PROGRESS] 8,637/199,000 BVH evaluations (4.34%) | elapsed 8m 8s | rate 17.7/sec | ETA 18:57:59 (2h 59m 18s remaining) | candidates 8,637 | suggestions-kept 863
+[2026-07-07 15:58:51] [PROGRESS] 9,239/199,000 BVH evaluations (4.64%) | elapsed 8m 18s | rate 18.5/sec | ETA 18:49:22 (2h 50m 31s remaining) | candidates 9,239 | suggestions-kept 923
+[2026-07-07 15:59:01] [PROGRESS] 9,830/199,000 BVH evaluations (4.94%) | elapsed 8m 28s | rate 19.3/sec | ETA 18:41:59 (2h 42m 58s remaining) | candidates 9,830 | suggestions-kept 982
+[2026-07-07 15:59:03] [PROGRESS] 10,000/199,000 BVH evaluations (5.03%) | elapsed 8m 30s | rate 19.6/sec | ETA 18:40:00 (2h 40m 56s remaining) | candidates 10,000 | suggestions-kept 999
+[2026-07-07 15:59:13] [PROGRESS] 10,633/199,000 BVH evaluations (5.34%) | elapsed 8m 40s | rate 20.4/sec | ETA 18:33:02 (2h 33m 48s remaining) | candidates 10,633 | suggestions-kept 562
+[2026-07-07 15:59:23] [PROGRESS] 11,249/199,000 BVH evaluations (5.65%) | elapsed 8m 50s | rate 21.2/sec | ETA 18:27:05 (2h 27m 41s remaining) | candidates 11,249 | suggestions-kept 623
+[2026-07-07 15:59:33] [PROGRESS] 11,839/199,000 BVH evaluations (5.95%) | elapsed 9m 0s | rate 21.9/sec | ETA 18:22:05 (2h 22m 31s remaining) | candidates 11,839 | suggestions-kept 682
+[2026-07-07 15:59:43] [PROGRESS] 12,466/199,000 BVH evaluations (6.26%) | elapsed 9m 10s | rate 22.6/sec | ETA 18:17:07 (2h 17m 24s remaining) | candidates 12,466 | suggestions-kept 745
+[2026-07-07 15:59:53] [PROGRESS] 13,086/199,000 BVH evaluations (6.58%) | elapsed 9m 20s | rate 23.3/sec | ETA 18:12:43 (2h 12m 49s remaining) | candidates 13,086 | suggestions-kept 807
+[2026-07-07 16:00:03] [PROGRESS] 13,720/199,000 BVH evaluations (6.89%) | elapsed 9m 30s | rate 24.0/sec | ETA 18:08:34 (2h 8m 30s remaining) | candidates 13,720 | suggestions-kept 870
+[2026-07-07 16:00:13] [PROGRESS] 14,340/199,000 BVH evaluations (7.21%) | elapsed 9m 40s | rate 24.7/sec | ETA 18:04:55 (2h 4m 41s remaining) | candidates 14,340 | suggestions-kept 932
+[2026-07-07 16:00:23] [PROGRESS] 14,977/199,000 BVH evaluations (7.53%) | elapsed 9m 50s | rate 25.3/sec | ETA 18:01:25 (2h 1m 1s remaining) | candidates 14,977 | suggestions-kept 996
+[2026-07-07 16:00:24] [PROGRESS] 15,000/199,000 BVH evaluations (7.54%) | elapsed 9m 51s | rate 25.4/sec | ETA 18:01:18 (2h 0m 53s remaining) | candidates 15,000 | suggestions-kept 998
+[2026-07-07 16:00:34] [PROGRESS] 15,610/199,000 BVH evaluations (7.84%) | elapsed 10m 1s | rate 26.0/sec | ETA 17:58:19 (1h 57m 44s remaining) | candidates 15,610 | suggestions-kept 558
+[2026-07-07 16:00:44] [PROGRESS] 16,211/199,000 BVH evaluations (8.15%) | elapsed 10m 11s | rate 26.5/sec | ETA 17:55:38 (1h 54m 53s remaining) | candidates 16,211 | suggestions-kept 619
+[2026-07-07 16:00:54] [PROGRESS] 16,819/199,000 BVH evaluations (8.45%) | elapsed 10m 21s | rate 27.1/sec | ETA 17:53:05 (1h 52m 10s remaining) | candidates 16,819 | suggestions-kept 679
+[2026-07-07 16:01:04] [PROGRESS] 17,417/199,000 BVH evaluations (8.75%) | elapsed 10m 31s | rate 27.6/sec | ETA 17:50:47 (1h 49m 42s remaining) | candidates 17,417 | suggestions-kept 739
+[2026-07-07 16:01:14] [PROGRESS] 18,040/199,000 BVH evaluations (9.07%) | elapsed 10m 41s | rate 28.1/sec | ETA 17:48:28 (1h 47m 14s remaining) | candidates 18,040 | suggestions-kept 801
+[2026-07-07 16:01:24] [PROGRESS] 18,630/199,000 BVH evaluations (9.36%) | elapsed 10m 51s | rate 28.6/sec | ETA 17:46:31 (1h 45m 6s remaining) | candidates 18,630 | suggestions-kept 860
+[2026-07-07 16:01:34] [PROGRESS] 19,225/199,000 BVH evaluations (9.66%) | elapsed 11m 1s | rate 29.1/sec | ETA 17:44:39 (1h 43m 5s remaining) | candidates 19,225 | suggestions-kept 920
+[2026-07-07 16:01:44] [PROGRESS] 19,836/199,000 BVH evaluations (9.97%) | elapsed 11m 11s | rate 29.5/sec | ETA 17:42:48 (1h 41m 4s remaining) | candidates 19,836 | suggestions-kept 981
+[2026-07-07 16:01:47] [PROGRESS] 20,000/199,000 BVH evaluations (10.05%) | elapsed 11m 14s | rate 29.7/sec | ETA 17:42:21 (1h 40m 34s remaining) | candidates 20,000 | suggestions-kept 997
+[2026-07-07 16:01:57] [PROGRESS] 20,612/199,000 BVH evaluations (10.36%) | elapsed 11m 24s | rate 30.1/sec | ETA 17:40:38 (1h 38m 41s remaining) | candidates 20,612 | suggestions-kept 558
+[2026-07-07 16:02:07] [PROGRESS] 21,194/199,000 BVH evaluations (10.65%) | elapsed 11m 34s | rate 30.5/sec | ETA 17:39:11 (1h 37m 4s remaining) | candidates 21,194 | suggestions-kept 616
+[2026-07-07 16:02:17] [PROGRESS] 21,784/199,000 BVH evaluations (10.95%) | elapsed 11m 44s | rate 30.9/sec | ETA 17:37:46 (1h 35m 29s remaining) | candidates 21,784 | suggestions-kept 675
+[2026-07-07 16:02:27] [PROGRESS] 22,362/199,000 BVH evaluations (11.24%) | elapsed 11m 54s | rate 31.3/sec | ETA 17:36:29 (1h 34m 1s remaining) | candidates 22,362 | suggestions-kept 733
+[2026-07-07 16:02:37] [PROGRESS] 23,002/199,000 BVH evaluations (11.56%) | elapsed 12m 4s | rate 31.8/sec | ETA 17:34:58 (1h 32m 21s remaining) | candidates 23,002 | suggestions-kept 797
+[2026-07-07 16:02:47] [PROGRESS] 23,611/199,000 BVH evaluations (11.86%) | elapsed 12m 14s | rate 32.2/sec | ETA 17:33:41 (1h 30m 54s remaining) | candidates 23,611 | suggestions-kept 858
+[2026-07-07 16:02:57] [PROGRESS] 24,255/199,000 BVH evaluations (12.19%) | elapsed 12m 24s | rate 32.6/sec | ETA 17:32:19 (1h 29m 22s remaining) | candidates 24,255 | suggestions-kept 922
+[2026-07-07 16:03:07] [PROGRESS] 24,880/199,000 BVH evaluations (12.50%) | elapsed 12m 34s | rate 33.0/sec | ETA 17:31:05 (1h 27m 58s remaining) | candidates 24,880 | suggestions-kept 984
+[2026-07-07 16:03:09] [PROGRESS] 25,000/199,000 BVH evaluations (12.56%) | elapsed 12m 36s | rate 33.1/sec | ETA 17:30:52 (1h 27m 43s remaining) | candidates 25,000 | suggestions-kept 996
+[2026-07-07 16:03:19] [PROGRESS] 25,616/199,000 BVH evaluations (12.87%) | elapsed 12m 46s | rate 33.4/sec | ETA 17:29:45 (1h 26m 26s remaining) | candidates 25,616 | suggestions-kept 557
+[2026-07-07 16:03:29] [PROGRESS] 26,201/199,000 BVH evaluations (13.17%) | elapsed 12m 56s | rate 33.8/sec | ETA 17:28:49 (1h 25m 19s remaining) | candidates 26,201 | suggestions-kept 616
+[2026-07-07 16:03:39] [PROGRESS] 26,791/199,000 BVH evaluations (13.46%) | elapsed 13m 6s | rate 34.1/sec | ETA 17:27:53 (1h 24m 14s remaining) | candidates 26,791 | suggestions-kept 675
+[2026-07-07 16:03:49] [PROGRESS] 27,380/199,000 BVH evaluations (13.76%) | elapsed 13m 16s | rate 34.4/sec | ETA 17:27:00 (1h 23m 11s remaining) | candidates 27,380 | suggestions-kept 733
+[2026-07-07 16:03:59] [PROGRESS] 27,963/199,000 BVH evaluations (14.05%) | elapsed 13m 26s | rate 34.7/sec | ETA 17:26:11 (1h 22m 11s remaining) | candidates 27,963 | suggestions-kept 792
+[2026-07-07 16:04:09] [PROGRESS] 28,571/199,000 BVH evaluations (14.36%) | elapsed 13m 36s | rate 35.0/sec | ETA 17:25:18 (1h 21m 9s remaining) | candidates 28,571 | suggestions-kept 853
+[2026-07-07 16:04:19] [PROGRESS] 29,192/199,000 BVH evaluations (14.67%) | elapsed 13m 46s | rate 35.3/sec | ETA 17:24:26 (1h 20m 6s remaining) | candidates 29,192 | suggestions-kept 915
+[2026-07-07 16:04:29] [PROGRESS] 29,771/199,000 BVH evaluations (14.96%) | elapsed 13m 56s | rate 35.6/sec | ETA 17:23:43 (1h 19m 14s remaining) | candidates 29,771 | suggestions-kept 973
+[2026-07-07 16:04:33] [PROGRESS] 30,000/199,000 BVH evaluations (15.08%) | elapsed 14m 0s | rate 35.7/sec | ETA 17:23:27 (1h 18m 53s remaining) | candidates 30,000 | suggestions-kept 995
+[2026-07-07 16:04:43] [PROGRESS] 30,534/199,000 BVH evaluations (15.34%) | elapsed 14m 10s | rate 35.9/sec | ETA 17:22:54 (1h 18m 11s remaining) | candidates 30,534 | suggestions-kept 548
+[2026-07-07 16:04:53] [PROGRESS] 31,110/199,000 BVH evaluations (15.63%) | elapsed 14m 20s | rate 36.2/sec | ETA 17:22:16 (1h 17m 22s remaining) | candidates 31,110 | suggestions-kept 605
+[2026-07-07 16:05:03] [PROGRESS] 31,682/199,000 BVH evaluations (15.92%) | elapsed 14m 30s | rate 36.4/sec | ETA 17:21:39 (1h 16m 36s remaining) | candidates 31,682 | suggestions-kept 663
+[2026-07-07 16:05:13] [PROGRESS] 32,253/199,000 BVH evaluations (16.21%) | elapsed 14m 40s | rate 36.6/sec | ETA 17:21:04 (1h 15m 51s remaining) | candidates 32,253 | suggestions-kept 720
+[2026-07-07 16:05:23] [PROGRESS] 32,832/199,000 BVH evaluations (16.50%) | elapsed 14m 50s | rate 36.9/sec | ETA 17:20:29 (1h 15m 6s remaining) | candidates 32,832 | suggestions-kept 778
+[2026-07-07 16:05:33] [PROGRESS] 33,425/199,000 BVH evaluations (16.80%) | elapsed 15m 0s | rate 37.1/sec | ETA 17:19:53 (1h 14m 20s remaining) | candidates 33,425 | suggestions-kept 837
+[2026-07-07 16:05:43] [PROGRESS] 34,035/199,000 BVH evaluations (17.10%) | elapsed 15m 10s | rate 37.4/sec | ETA 17:19:15 (1h 13m 32s remaining) | candidates 34,035 | suggestions-kept 898
+[2026-07-07 16:05:53] [PROGRESS] 34,622/199,000 BVH evaluations (17.40%) | elapsed 15m 20s | rate 37.6/sec | ETA 17:18:43 (1h 12m 49s remaining) | candidates 34,622 | suggestions-kept 957
+[2026-07-07 16:05:59] [PROGRESS] 35,000/199,000 BVH evaluations (17.59%) | elapsed 15m 26s | rate 37.8/sec | ETA 17:18:22 (1h 12m 22s remaining) | candidates 35,000 | suggestions-kept 994
+[2026-07-07 16:06:09] [PROGRESS] 35,591/199,000 BVH evaluations (17.88%) | elapsed 15m 36s | rate 38.0/sec | ETA 17:17:50 (1h 11m 40s remaining) | candidates 35,591 | suggestions-kept 553
+[2026-07-07 16:06:19] [PROGRESS] 36,158/199,000 BVH evaluations (18.17%) | elapsed 15m 46s | rate 38.2/sec | ETA 17:17:23 (1h 11m 3s remaining) | candidates 36,158 | suggestions-kept 609
+[2026-07-07 16:06:29] [PROGRESS] 36,734/199,000 BVH evaluations (18.46%) | elapsed 15m 56s | rate 38.4/sec | ETA 17:16:56 (1h 10m 26s remaining) | candidates 36,734 | suggestions-kept 667
+[2026-07-07 16:06:39] [PROGRESS] 37,296/199,000 BVH evaluations (18.74%) | elapsed 16m 6s | rate 38.6/sec | ETA 17:16:31 (1h 9m 51s remaining) | candidates 37,296 | suggestions-kept 723
+[2026-07-07 16:06:49] [PROGRESS] 37,883/199,000 BVH evaluations (19.04%) | elapsed 16m 16s | rate 38.8/sec | ETA 17:16:03 (1h 9m 14s remaining) | candidates 37,883 | suggestions-kept 782
+[2026-07-07 16:06:59] [PROGRESS] 38,469/199,000 BVH evaluations (19.33%) | elapsed 16m 26s | rate 39.0/sec | ETA 17:15:37 (1h 8m 37s remaining) | candidates 38,469 | suggestions-kept 840
+[2026-07-07 16:07:09] [PROGRESS] 39,051/199,000 BVH evaluations (19.62%) | elapsed 16m 36s | rate 39.2/sec | ETA 17:15:12 (1h 8m 2s remaining) | candidates 39,051 | suggestions-kept 899
+[2026-07-07 16:07:19] [PROGRESS] 39,602/199,000 BVH evaluations (19.90%) | elapsed 16m 46s | rate 39.3/sec | ETA 17:14:52 (1h 7m 32s remaining) | candidates 39,602 | suggestions-kept 954
+[2026-07-07 16:07:26] [PROGRESS] 40,000/199,000 BVH evaluations (20.10%) | elapsed 16m 53s | rate 39.5/sec | ETA 17:14:36 (1h 7m 9s remaining) | candidates 40,000 | suggestions-kept 993
+[2026-07-07 16:07:36] [PROGRESS] 40,589/199,000 BVH evaluations (20.40%) | elapsed 17m 3s | rate 39.6/sec | ETA 17:14:12 (1h 6m 35s remaining) | candidates 40,589 | suggestions-kept 551
+[2026-07-07 16:07:46] [PROGRESS] 41,193/199,000 BVH evaluations (20.70%) | elapsed 17m 13s | rate 39.8/sec | ETA 17:13:47 (1h 6m 0s remaining) | candidates 41,193 | suggestions-kept 612
+[2026-07-07 16:07:56] [PROGRESS] 41,777/199,000 BVH evaluations (20.99%) | elapsed 17m 23s | rate 40.0/sec | ETA 17:13:25 (1h 5m 28s remaining) | candidates 41,777 | suggestions-kept 670
+[2026-07-07 16:08:06] [PROGRESS] 42,351/199,000 BVH evaluations (21.28%) | elapsed 17m 33s | rate 40.2/sec | ETA 17:13:04 (1h 4m 57s remaining) | candidates 42,351 | suggestions-kept 728
+[2026-07-07 16:08:16] [PROGRESS] 42,938/199,000 BVH evaluations (21.58%) | elapsed 17m 43s | rate 40.4/sec | ETA 17:12:43 (1h 4m 26s remaining) | candidates 42,938 | suggestions-kept 786
+[2026-07-07 16:08:26] [PROGRESS] 43,518/199,000 BVH evaluations (21.87%) | elapsed 17m 53s | rate 40.5/sec | ETA 17:12:23 (1h 3m 56s remaining) | candidates 43,518 | suggestions-kept 844
+[2026-07-07 16:08:36] [PROGRESS] 44,092/199,000 BVH evaluations (22.16%) | elapsed 18m 3s | rate 40.7/sec | ETA 17:12:04 (1h 3m 28s remaining) | candidates 44,092 | suggestions-kept 902
+[2026-07-07 16:08:46] [PROGRESS] 44,689/199,000 BVH evaluations (22.46%) | elapsed 18m 13s | rate 40.9/sec | ETA 17:11:44 (1h 2m 57s remaining) | candidates 44,689 | suggestions-kept 961
+[2026-07-07 16:08:52] [PROGRESS] 45,000/199,000 BVH evaluations (22.61%) | elapsed 18m 19s | rate 40.9/sec | ETA 17:11:33 (1h 2m 41s remaining) | candidates 45,000 | suggestions-kept 992
+[2026-07-07 16:09:02] [PROGRESS] 45,604/199,000 BVH evaluations (22.92%) | elapsed 18m 29s | rate 41.1/sec | ETA 17:11:12 (1h 2m 10s remaining) | candidates 45,604 | suggestions-kept 552
+[2026-07-07 16:09:12] [PROGRESS] 46,190/199,000 BVH evaluations (23.21%) | elapsed 18m 39s | rate 41.3/sec | ETA 17:10:54 (1h 1m 42s remaining) | candidates 46,190 | suggestions-kept 610
+[2026-07-07 16:09:22] [PROGRESS] 46,788/199,000 BVH evaluations (23.51%) | elapsed 18m 49s | rate 41.4/sec | ETA 17:10:35 (1h 1m 13s remaining) | candidates 46,788 | suggestions-kept 670
+[2026-07-07 16:09:32] [PROGRESS] 47,373/199,000 BVH evaluations (23.81%) | elapsed 18m 59s | rate 41.6/sec | ETA 17:10:18 (1h 0m 46s remaining) | candidates 47,373 | suggestions-kept 729
+[2026-07-07 16:09:42] [PROGRESS] 47,960/199,000 BVH evaluations (24.10%) | elapsed 19m 9s | rate 41.7/sec | ETA 17:10:01 (1h 0m 19s remaining) | candidates 47,960 | suggestions-kept 787
+[2026-07-07 16:09:52] [PROGRESS] 48,563/199,000 BVH evaluations (24.40%) | elapsed 19m 19s | rate 41.9/sec | ETA 17:09:42 (59m 50s remaining) | candidates 48,563 | suggestions-kept 848
+[2026-07-07 16:10:02] [PROGRESS] 49,185/199,000 BVH evaluations (24.72%) | elapsed 19m 29s | rate 42.1/sec | ETA 17:09:23 (59m 21s remaining) | candidates 49,185 | suggestions-kept 910
+[2026-07-07 16:10:12] [PROGRESS] 49,810/199,000 BVH evaluations (25.03%) | elapsed 19m 39s | rate 42.2/sec | ETA 17:09:03 (58m 51s remaining) | candidates 49,810 | suggestions-kept 972
+[2026-07-07 16:10:15] [PROGRESS] 50,000/199,000 BVH evaluations (25.13%) | elapsed 19m 42s | rate 42.3/sec | ETA 17:08:58 (58m 43s remaining) | candidates 50,000 | suggestions-kept 991
+[2026-07-07 16:10:25] [PROGRESS] 50,583/199,000 BVH evaluations (25.42%) | elapsed 19m 52s | rate 42.4/sec | ETA 17:08:43 (58m 18s remaining) | candidates 50,583 | suggestions-kept 549
+[2026-07-07 16:10:35] [PROGRESS] 51,184/199,000 BVH evaluations (25.72%) | elapsed 20m 2s | rate 42.6/sec | ETA 17:08:27 (57m 52s remaining) | candidates 51,184 | suggestions-kept 609
+[2026-07-07 16:10:45] [PROGRESS] 51,771/199,000 BVH evaluations (26.02%) | elapsed 20m 12s | rate 42.7/sec | ETA 17:08:12 (57m 27s remaining) | candidates 51,771 | suggestions-kept 668
+[2026-07-07 16:10:55] [PROGRESS] 52,379/199,000 BVH evaluations (26.32%) | elapsed 20m 22s | rate 42.9/sec | ETA 17:07:56 (57m 1s remaining) | candidates 52,379 | suggestions-kept 728
+[2026-07-07 16:11:05] [PROGRESS] 52,971/199,000 BVH evaluations (26.62%) | elapsed 20m 32s | rate 43.0/sec | ETA 17:07:42 (56m 37s remaining) | candidates 52,971 | suggestions-kept 788
+[2026-07-07 16:11:15] [PROGRESS] 53,579/199,000 BVH evaluations (26.92%) | elapsed 20m 42s | rate 43.1/sec | ETA 17:07:27 (56m 11s remaining) | candidates 53,579 | suggestions-kept 848
+[2026-07-07 16:11:25] [PROGRESS] 54,158/199,000 BVH evaluations (27.22%) | elapsed 20m 52s | rate 43.2/sec | ETA 17:07:14 (55m 49s remaining) | candidates 54,158 | suggestions-kept 906
+[2026-07-07 16:11:35] [PROGRESS] 54,744/199,000 BVH evaluations (27.51%) | elapsed 21m 2s | rate 43.4/sec | ETA 17:07:01 (55m 26s remaining) | candidates 54,744 | suggestions-kept 965
+[2026-07-07 16:11:39] [PROGRESS] 55,000/199,000 BVH evaluations (27.64%) | elapsed 21m 6s | rate 43.4/sec | ETA 17:06:56 (55m 16s remaining) | candidates 55,000 | suggestions-kept 990
+[2026-07-07 16:11:49] [PROGRESS] 55,587/199,000 BVH evaluations (27.93%) | elapsed 21m 16s | rate 43.5/sec | ETA 17:06:43 (54m 53s remaining) | candidates 55,587 | suggestions-kept 548
+[2026-07-07 16:11:59] [PROGRESS] 56,183/199,000 BVH evaluations (28.23%) | elapsed 21m 26s | rate 43.7/sec | ETA 17:06:30 (54m 30s remaining) | candidates 56,183 | suggestions-kept 608
+[2026-07-07 16:12:09] [PROGRESS] 56,780/199,000 BVH evaluations (28.53%) | elapsed 21m 36s | rate 43.8/sec | ETA 17:06:17 (54m 7s remaining) | candidates 56,780 | suggestions-kept 667
+[2026-07-07 16:12:19] [PROGRESS] 57,360/199,000 BVH evaluations (28.82%) | elapsed 21m 46s | rate 43.9/sec | ETA 17:06:06 (53m 46s remaining) | candidates 57,360 | suggestions-kept 725
+[2026-07-07 16:12:29] [PROGRESS] 57,949/199,000 BVH evaluations (29.12%) | elapsed 21m 56s | rate 44.0/sec | ETA 17:05:54 (53m 25s remaining) | candidates 57,949 | suggestions-kept 784
+[2026-07-07 16:12:39] [PROGRESS] 58,529/199,000 BVH evaluations (29.41%) | elapsed 22m 6s | rate 44.1/sec | ETA 17:05:43 (53m 4s remaining) | candidates 58,529 | suggestions-kept 842
+[2026-07-07 16:12:49] [PROGRESS] 59,129/199,000 BVH evaluations (29.71%) | elapsed 22m 16s | rate 44.2/sec | ETA 17:05:31 (52m 42s remaining) | candidates 59,129 | suggestions-kept 902
+[2026-07-07 16:12:59] [PROGRESS] 59,732/199,000 BVH evaluations (30.02%) | elapsed 22m 26s | rate 44.4/sec | ETA 17:05:19 (52m 20s remaining) | candidates 59,732 | suggestions-kept 963
+[2026-07-07 16:13:04] [PROGRESS] 60,000/199,000 BVH evaluations (30.15%) | elapsed 22m 31s | rate 44.4/sec | ETA 17:05:14 (52m 10s remaining) | candidates 60,000 | suggestions-kept 989
+[2026-07-07 16:13:14] [PROGRESS] 60,572/199,000 BVH evaluations (30.44%) | elapsed 22m 41s | rate 44.5/sec | ETA 17:05:04 (51m 50s remaining) | candidates 60,572 | suggestions-kept 546
+[2026-07-07 16:13:24] [PROGRESS] 61,158/199,000 BVH evaluations (30.73%) | elapsed 22m 51s | rate 44.6/sec | ETA 17:04:54 (51m 30s remaining) | candidates 61,158 | suggestions-kept 604
+[2026-07-07 16:13:34] [PROGRESS] 61,767/199,000 BVH evaluations (31.04%) | elapsed 23m 1s | rate 44.7/sec | ETA 17:04:42 (51m 8s remaining) | candidates 61,767 | suggestions-kept 665
+[2026-07-07 16:13:44] [PROGRESS] 62,369/199,000 BVH evaluations (31.34%) | elapsed 23m 11s | rate 44.8/sec | ETA 17:04:31 (50m 47s remaining) | candidates 62,369 | suggestions-kept 725
+[2026-07-07 16:13:54] [PROGRESS] 62,955/199,000 BVH evaluations (31.64%) | elapsed 23m 21s | rate 44.9/sec | ETA 17:04:22 (50m 28s remaining) | candidates 62,955 | suggestions-kept 784
+[2026-07-07 16:14:04] [PROGRESS] 63,549/199,000 BVH evaluations (31.93%) | elapsed 23m 31s | rate 45.0/sec | ETA 17:04:12 (50m 7s remaining) | candidates 63,549 | suggestions-kept 843
+[2026-07-07 16:14:14] [PROGRESS] 64,162/199,000 BVH evaluations (32.24%) | elapsed 23m 41s | rate 45.1/sec | ETA 17:04:00 (49m 46s remaining) | candidates 64,162 | suggestions-kept 905
+[2026-07-07 16:14:24] [PROGRESS] 64,762/199,000 BVH evaluations (32.54%) | elapsed 23m 51s | rate 45.2/sec | ETA 17:03:50 (49m 26s remaining) | candidates 64,762 | suggestions-kept 965
+[2026-07-07 16:14:28] [PROGRESS] 65,000/199,000 BVH evaluations (32.66%) | elapsed 23m 55s | rate 45.3/sec | ETA 17:03:46 (49m 18s remaining) | candidates 65,000 | suggestions-kept 988
+[2026-07-07 16:14:38] [PROGRESS] 65,623/199,000 BVH evaluations (32.98%) | elapsed 24m 5s | rate 45.4/sec | ETA 17:03:35 (48m 57s remaining) | candidates 65,623 | suggestions-kept 550
+[2026-07-07 16:14:48] [PROGRESS] 66,226/199,000 BVH evaluations (33.28%) | elapsed 24m 15s | rate 45.5/sec | ETA 17:03:25 (48m 37s remaining) | candidates 66,226 | suggestions-kept 610
+[2026-07-07 16:14:58] [PROGRESS] 66,808/199,000 BVH evaluations (33.57%) | elapsed 24m 25s | rate 45.6/sec | ETA 17:03:17 (48m 18s remaining) | candidates 66,808 | suggestions-kept 668
+[2026-07-07 16:15:08] [PROGRESS] 67,429/199,000 BVH evaluations (33.88%) | elapsed 24m 35s | rate 45.7/sec | ETA 17:03:06 (47m 58s remaining) | candidates 67,429 | suggestions-kept 730
+[2026-07-07 16:15:18] [PROGRESS] 68,007/199,000 BVH evaluations (34.17%) | elapsed 24m 45s | rate 45.8/sec | ETA 17:02:58 (47m 40s remaining) | candidates 68,007 | suggestions-kept 788
+[2026-07-07 16:15:28] [PROGRESS] 68,593/199,000 BVH evaluations (34.47%) | elapsed 24m 55s | rate 45.9/sec | ETA 17:02:50 (47m 22s remaining) | candidates 68,593 | suggestions-kept 847
+[2026-07-07 16:15:38] [PROGRESS] 69,194/199,000 BVH evaluations (34.77%) | elapsed 25m 5s | rate 46.0/sec | ETA 17:02:41 (47m 3s remaining) | candidates 69,194 | suggestions-kept 907
+[2026-07-07 16:15:48] [PROGRESS] 69,816/199,000 BVH evaluations (35.08%) | elapsed 25m 15s | rate 46.1/sec | ETA 17:02:31 (46m 43s remaining) | candidates 69,816 | suggestions-kept 969
+[2026-07-07 16:15:51] [PROGRESS] 70,000/199,000 BVH evaluations (35.18%) | elapsed 25m 18s | rate 46.1/sec | ETA 17:02:29 (46m 37s remaining) | candidates 70,000 | suggestions-kept 987
+[2026-07-07 16:16:01] [PROGRESS] 70,549/199,000 BVH evaluations (35.45%) | elapsed 25m 28s | rate 46.2/sec | ETA 17:02:23 (46m 22s remaining) | candidates 70,549 | suggestions-kept 541
+[2026-07-07 16:16:11] [PROGRESS] 71,078/199,000 BVH evaluations (35.72%) | elapsed 25m 38s | rate 46.2/sec | ETA 17:02:19 (46m 8s remaining) | candidates 71,078 | suggestions-kept 594
+[2026-07-07 16:16:21] [PROGRESS] 71,637/199,000 BVH evaluations (36.00%) | elapsed 25m 48s | rate 46.3/sec | ETA 17:02:13 (45m 52s remaining) | candidates 71,637 | suggestions-kept 650
+[2026-07-07 16:16:31] [PROGRESS] 72,218/199,000 BVH evaluations (36.29%) | elapsed 25m 58s | rate 46.3/sec | ETA 17:02:06 (45m 35s remaining) | candidates 72,218 | suggestions-kept 708
+[2026-07-07 16:16:41] [PROGRESS] 72,812/199,000 BVH evaluations (36.59%) | elapsed 26m 8s | rate 46.4/sec | ETA 17:01:59 (45m 17s remaining) | candidates 72,812 | suggestions-kept 768
+[2026-07-07 16:16:51] [PROGRESS] 73,389/199,000 BVH evaluations (36.88%) | elapsed 26m 18s | rate 46.5/sec | ETA 17:01:52 (45m 1s remaining) | candidates 73,389 | suggestions-kept 825
+[2026-07-07 16:17:01] [PROGRESS] 73,976/199,000 BVH evaluations (37.17%) | elapsed 26m 28s | rate 46.6/sec | ETA 17:01:45 (44m 44s remaining) | candidates 73,976 | suggestions-kept 884
+[2026-07-07 16:17:11] [PROGRESS] 74,574/199,000 BVH evaluations (37.47%) | elapsed 26m 38s | rate 46.7/sec | ETA 17:01:38 (44m 26s remaining) | candidates 74,574 | suggestions-kept 944
+[2026-07-07 16:17:18] [PROGRESS] 75,000/199,000 BVH evaluations (37.69%) | elapsed 26m 45s | rate 46.7/sec | ETA 17:01:33 (44m 14s remaining) | candidates 75,000 | suggestions-kept 986
+[2026-07-07 16:17:28] [PROGRESS] 75,568/199,000 BVH evaluations (37.97%) | elapsed 26m 55s | rate 46.8/sec | ETA 17:01:27 (43m 58s remaining) | candidates 75,568 | suggestions-kept 542
+[2026-07-07 16:17:38] [PROGRESS] 76,157/199,000 BVH evaluations (38.27%) | elapsed 27m 5s | rate 46.8/sec | ETA 17:01:20 (43m 42s remaining) | candidates 76,157 | suggestions-kept 601
+[2026-07-07 16:17:48] [PROGRESS] 76,733/199,000 BVH evaluations (38.56%) | elapsed 27m 15s | rate 46.9/sec | ETA 17:01:14 (43m 26s remaining) | candidates 76,733 | suggestions-kept 659
+[2026-07-07 16:17:58] [PROGRESS] 77,315/199,000 BVH evaluations (38.85%) | elapsed 27m 25s | rate 47.0/sec | ETA 17:01:08 (43m 10s remaining) | candidates 77,315 | suggestions-kept 717
+[2026-07-07 16:18:08] [PROGRESS] 77,899/199,000 BVH evaluations (39.15%) | elapsed 27m 35s | rate 47.1/sec | ETA 17:01:02 (42m 53s remaining) | candidates 77,899 | suggestions-kept 775
+[2026-07-07 16:18:18] [PROGRESS] 78,492/199,000 BVH evaluations (39.44%) | elapsed 27m 45s | rate 47.1/sec | ETA 17:00:55 (42m 37s remaining) | candidates 78,492 | suggestions-kept 835
+[2026-07-07 16:18:28] [PROGRESS] 79,082/199,000 BVH evaluations (39.74%) | elapsed 27m 55s | rate 47.2/sec | ETA 17:00:49 (42m 20s remaining) | candidates 79,082 | suggestions-kept 894
+[2026-07-07 16:18:38] [PROGRESS] 79,672/199,000 BVH evaluations (40.04%) | elapsed 28m 5s | rate 47.3/sec | ETA 17:00:43 (42m 4s remaining) | candidates 79,672 | suggestions-kept 953
+[2026-07-07 16:18:44] [PROGRESS] 80,000/199,000 BVH evaluations (40.20%) | elapsed 28m 11s | rate 47.3/sec | ETA 17:00:40 (41m 55s remaining) | candidates 80,000 | suggestions-kept 985
+[2026-07-07 16:18:54] [PROGRESS] 80,566/199,000 BVH evaluations (40.49%) | elapsed 28m 21s | rate 47.4/sec | ETA 17:00:35 (41m 41s remaining) | candidates 80,566 | suggestions-kept 541
+[2026-07-07 16:19:04] [PROGRESS] 81,143/199,000 BVH evaluations (40.78%) | elapsed 28m 31s | rate 47.4/sec | ETA 17:00:30 (41m 25s remaining) | candidates 81,143 | suggestions-kept 599
+[2026-07-07 16:19:14] [PROGRESS] 81,740/199,000 BVH evaluations (41.08%) | elapsed 28m 41s | rate 47.5/sec | ETA 17:00:23 (41m 9s remaining) | candidates 81,740 | suggestions-kept 658
+[2026-07-07 16:19:24] [PROGRESS] 82,331/199,000 BVH evaluations (41.37%) | elapsed 28m 51s | rate 47.6/sec | ETA 17:00:17 (40m 53s remaining) | candidates 82,331 | suggestions-kept 718
+[2026-07-07 16:19:34] [PROGRESS] 82,896/199,000 BVH evaluations (41.66%) | elapsed 29m 1s | rate 47.6/sec | ETA 17:00:13 (40m 39s remaining) | candidates 82,896 | suggestions-kept 774
+[2026-07-07 16:19:44] [PROGRESS] 83,489/199,000 BVH evaluations (41.95%) | elapsed 29m 11s | rate 47.7/sec | ETA 17:00:07 (40m 23s remaining) | candidates 83,489 | suggestions-kept 833
+[2026-07-07 16:19:54] [PROGRESS] 84,079/199,000 BVH evaluations (42.25%) | elapsed 29m 21s | rate 47.7/sec | ETA 17:00:02 (40m 7s remaining) | candidates 84,079 | suggestions-kept 892
+[2026-07-07 16:20:04] [PROGRESS] 84,655/199,000 BVH evaluations (42.54%) | elapsed 29m 31s | rate 47.8/sec | ETA 16:59:57 (39m 52s remaining) | candidates 84,655 | suggestions-kept 950
+[2026-07-07 16:20:10] [PROGRESS] 85,000/199,000 BVH evaluations (42.71%) | elapsed 29m 37s | rate 47.8/sec | ETA 16:59:53 (39m 43s remaining) | candidates 85,000 | suggestions-kept 984
+[2026-07-07 16:20:20] [PROGRESS] 85,601/199,000 BVH evaluations (43.02%) | elapsed 29m 47s | rate 47.9/sec | ETA 16:59:47 (39m 27s remaining) | candidates 85,601 | suggestions-kept 544
+[2026-07-07 16:20:30] [PROGRESS] 86,184/199,000 BVH evaluations (43.31%) | elapsed 29m 57s | rate 48.0/sec | ETA 16:59:42 (39m 12s remaining) | candidates 86,184 | suggestions-kept 602
+[2026-07-07 16:20:40] [PROGRESS] 86,737/199,000 BVH evaluations (43.59%) | elapsed 30m 7s | rate 48.0/sec | ETA 16:59:39 (38m 58s remaining) | candidates 86,737 | suggestions-kept 657
+[2026-07-07 16:20:50] [PROGRESS] 87,289/199,000 BVH evaluations (43.86%) | elapsed 30m 17s | rate 48.0/sec | ETA 16:59:35 (38m 45s remaining) | candidates 87,289 | suggestions-kept 712
+[2026-07-07 16:21:00] [PROGRESS] 87,880/199,000 BVH evaluations (44.16%) | elapsed 30m 27s | rate 48.1/sec | ETA 16:59:30 (38m 30s remaining) | candidates 87,880 | suggestions-kept 771
+[2026-07-07 16:21:10] [PROGRESS] 88,429/199,000 BVH evaluations (44.44%) | elapsed 30m 37s | rate 48.1/sec | ETA 16:59:27 (38m 17s remaining) | candidates 88,429 | suggestions-kept 826
+[2026-07-07 16:21:20] [PROGRESS] 88,983/199,000 BVH evaluations (44.72%) | elapsed 30m 47s | rate 48.2/sec | ETA 16:59:23 (38m 3s remaining) | candidates 88,983 | suggestions-kept 882
+[2026-07-07 16:21:30] [PROGRESS] 89,522/199,000 BVH evaluations (44.99%) | elapsed 30m 57s | rate 48.2/sec | ETA 16:59:21 (37m 51s remaining) | candidates 89,522 | suggestions-kept 936
+[2026-07-07 16:21:38] [PROGRESS] 90,000/199,000 BVH evaluations (45.23%) | elapsed 31m 5s | rate 48.2/sec | ETA 16:59:17 (37m 39s remaining) | candidates 90,000 | suggestions-kept 983
+[2026-07-07 16:21:48] [PROGRESS] 90,558/199,000 BVH evaluations (45.51%) | elapsed 31m 15s | rate 48.3/sec | ETA 16:59:14 (37m 25s remaining) | candidates 90,558 | suggestions-kept 538
+[2026-07-07 16:21:58] [PROGRESS] 91,106/199,000 BVH evaluations (45.78%) | elapsed 31m 25s | rate 48.3/sec | ETA 16:59:11 (37m 12s remaining) | candidates 91,106 | suggestions-kept 593
+[2026-07-07 16:22:08] [PROGRESS] 91,661/199,000 BVH evaluations (46.06%) | elapsed 31m 35s | rate 48.4/sec | ETA 16:59:08 (36m 59s remaining) | candidates 91,661 | suggestions-kept 649
+[2026-07-07 16:22:18] [PROGRESS] 92,219/199,000 BVH evaluations (46.34%) | elapsed 31m 45s | rate 48.4/sec | ETA 16:59:04 (36m 46s remaining) | candidates 92,219 | suggestions-kept 704
+[2026-07-07 16:22:28] [PROGRESS] 92,778/199,000 BVH evaluations (46.62%) | elapsed 31m 55s | rate 48.4/sec | ETA 16:59:01 (36m 33s remaining) | candidates 92,778 | suggestions-kept 760
+[2026-07-07 16:22:38] [PROGRESS] 93,319/199,000 BVH evaluations (46.89%) | elapsed 32m 5s | rate 48.5/sec | ETA 16:58:59 (36m 20s remaining) | candidates 93,319 | suggestions-kept 814
+[2026-07-07 16:22:48] [PROGRESS] 93,866/199,000 BVH evaluations (47.17%) | elapsed 32m 15s | rate 48.5/sec | ETA 16:58:56 (36m 7s remaining) | candidates 93,866 | suggestions-kept 869
+[2026-07-07 16:22:58] [PROGRESS] 94,451/199,000 BVH evaluations (47.46%) | elapsed 32m 25s | rate 48.5/sec | ETA 16:58:51 (35m 53s remaining) | candidates 94,451 | suggestions-kept 928
+[2026-07-07 16:23:08] [PROGRESS] 94,994/199,000 BVH evaluations (47.74%) | elapsed 32m 35s | rate 48.6/sec | ETA 16:58:49 (35m 41s remaining) | candidates 94,994 | suggestions-kept 982
+[2026-07-07 16:23:08] [PROGRESS] 95,000/199,000 BVH evaluations (47.74%) | elapsed 32m 35s | rate 48.6/sec | ETA 16:58:49 (35m 40s remaining) | candidates 95,000 | suggestions-kept 982
+[2026-07-07 16:23:18] [PROGRESS] 95,532/199,000 BVH evaluations (48.01%) | elapsed 32m 45s | rate 48.6/sec | ETA 16:58:47 (35m 28s remaining) | candidates 95,532 | suggestions-kept 535
+[2026-07-07 16:23:28] [PROGRESS] 96,062/199,000 BVH evaluations (48.27%) | elapsed 32m 55s | rate 48.6/sec | ETA 16:58:45 (35m 17s remaining) | candidates 96,062 | suggestions-kept 588
+[2026-07-07 16:23:38] [PROGRESS] 96,581/199,000 BVH evaluations (48.53%) | elapsed 33m 5s | rate 48.6/sec | ETA 16:58:44 (35m 5s remaining) | candidates 96,581 | suggestions-kept 640
+[2026-07-07 16:23:48] [PROGRESS] 97,155/199,000 BVH evaluations (48.82%) | elapsed 33m 15s | rate 48.7/sec | ETA 16:58:40 (34m 52s remaining) | candidates 97,155 | suggestions-kept 697
+[2026-07-07 16:23:58] [PROGRESS] 97,742/199,000 BVH evaluations (49.12%) | elapsed 33m 25s | rate 48.7/sec | ETA 16:58:36 (34m 37s remaining) | candidates 97,742 | suggestions-kept 756
+[2026-07-07 16:24:08] [PROGRESS] 98,334/199,000 BVH evaluations (49.41%) | elapsed 33m 35s | rate 48.8/sec | ETA 16:58:32 (34m 23s remaining) | candidates 98,334 | suggestions-kept 815
+[2026-07-07 16:24:18] [PROGRESS] 98,909/199,000 BVH evaluations (49.70%) | elapsed 33m 45s | rate 48.8/sec | ETA 16:58:28 (34m 9s remaining) | candidates 98,909 | suggestions-kept 872
+[2026-07-07 16:24:28] [PROGRESS] 99,501/199,000 BVH evaluations (50.00%) | elapsed 33m 55s | rate 48.9/sec | ETA 16:58:24 (33m 55s remaining) | candidates 99,501 | suggestions-kept 932
+[2026-07-07 16:24:36] [PROGRESS] 100,000/199,000 BVH evaluations (50.25%) | elapsed 34m 3s | rate 48.9/sec | ETA 16:58:20 (33m 43s remaining) | candidates 100,000 | suggestions-kept 981
+[2026-07-07 16:24:46] [PROGRESS] 100,585/199,000 BVH evaluations (50.55%) | elapsed 34m 13s | rate 49.0/sec | ETA 16:58:16 (33m 29s remaining) | candidates 100,585 | suggestions-kept 539
+[2026-07-07 16:24:56] [PROGRESS] 101,149/199,000 BVH evaluations (50.83%) | elapsed 34m 23s | rate 49.0/sec | ETA 16:58:13 (33m 16s remaining) | candidates 101,149 | suggestions-kept 595
+[2026-07-07 16:25:06] [PROGRESS] 101,700/199,000 BVH evaluations (51.11%) | elapsed 34m 33s | rate 49.0/sec | ETA 16:58:11 (33m 4s remaining) | candidates 101,700 | suggestions-kept 650
+[2026-07-07 16:25:16] [PROGRESS] 102,256/199,000 BVH evaluations (51.38%) | elapsed 34m 43s | rate 49.1/sec | ETA 16:58:08 (32m 51s remaining) | candidates 102,256 | suggestions-kept 706
+[2026-07-07 16:25:26] [PROGRESS] 102,800/199,000 BVH evaluations (51.66%) | elapsed 34m 53s | rate 49.1/sec | ETA 16:58:06 (32m 39s remaining) | candidates 102,800 | suggestions-kept 760
+[2026-07-07 16:25:36] [PROGRESS] 103,362/199,000 BVH evaluations (51.94%) | elapsed 35m 3s | rate 49.1/sec | ETA 16:58:03 (32m 26s remaining) | candidates 103,362 | suggestions-kept 817
+[2026-07-07 16:25:46] [PROGRESS] 103,919/199,000 BVH evaluations (52.22%) | elapsed 35m 13s | rate 49.2/sec | ETA 16:58:01 (32m 14s remaining) | candidates 103,919 | suggestions-kept 872
+[2026-07-07 16:25:56] [PROGRESS] 104,470/199,000 BVH evaluations (52.50%) | elapsed 35m 23s | rate 49.2/sec | ETA 16:57:58 (32m 1s remaining) | candidates 104,470 | suggestions-kept 927
+[2026-07-07 16:26:06] [PROGRESS] 105,000/199,000 BVH evaluations (52.76%) | elapsed 35m 33s | rate 49.2/sec | ETA 16:57:55 (31m 49s remaining) | candidates 105,000 | suggestions-kept 980
+[2026-07-07 16:26:16] [PROGRESS] 105,540/199,000 BVH evaluations (53.04%) | elapsed 35m 43s | rate 49.2/sec | ETA 16:57:54 (31m 37s remaining) | candidates 105,540 | suggestions-kept 533
+[2026-07-07 16:26:26] [PROGRESS] 106,092/199,000 BVH evaluations (53.31%) | elapsed 35m 53s | rate 49.3/sec | ETA 16:57:51 (31m 25s remaining) | candidates 106,092 | suggestions-kept 589
+[2026-07-07 16:26:36] [PROGRESS] 106,653/199,000 BVH evaluations (53.59%) | elapsed 36m 3s | rate 49.3/sec | ETA 16:57:49 (31m 13s remaining) | candidates 106,653 | suggestions-kept 645
+[2026-07-07 16:26:46] [PROGRESS] 107,215/199,000 BVH evaluations (53.88%) | elapsed 36m 13s | rate 49.3/sec | ETA 16:57:46 (31m 0s remaining) | candidates 107,215 | suggestions-kept 701
+[2026-07-07 16:26:56] [PROGRESS] 107,782/199,000 BVH evaluations (54.16%) | elapsed 36m 23s | rate 49.4/sec | ETA 16:57:44 (30m 47s remaining) | candidates 107,782 | suggestions-kept 758
+[2026-07-07 16:27:06] [PROGRESS] 108,327/199,000 BVH evaluations (54.44%) | elapsed 36m 33s | rate 49.4/sec | ETA 16:57:42 (30m 35s remaining) | candidates 108,327 | suggestions-kept 812
+[2026-07-07 16:27:16] [PROGRESS] 108,896/199,000 BVH evaluations (54.72%) | elapsed 36m 43s | rate 49.4/sec | ETA 16:57:39 (30m 23s remaining) | candidates 108,896 | suggestions-kept 869
+[2026-07-07 16:27:26] [PROGRESS] 109,468/199,000 BVH evaluations (55.01%) | elapsed 36m 53s | rate 49.5/sec | ETA 16:57:36 (30m 10s remaining) | candidates 109,468 | suggestions-kept 926
+[2026-07-07 16:27:35] [PROGRESS] 110,000/199,000 BVH evaluations (55.28%) | elapsed 37m 2s | rate 49.5/sec | ETA 16:57:34 (29m 58s remaining) | candidates 110,000 | suggestions-kept 979
+[2026-07-07 16:27:45] [PROGRESS] 110,556/199,000 BVH evaluations (55.56%) | elapsed 37m 12s | rate 49.5/sec | ETA 16:57:32 (29m 46s remaining) | candidates 110,556 | suggestions-kept 534
+[2026-07-07 16:27:55] [PROGRESS] 111,111/199,000 BVH evaluations (55.83%) | elapsed 37m 22s | rate 49.5/sec | ETA 16:57:29 (29m 34s remaining) | candidates 111,111 | suggestions-kept 590
+[2026-07-07 16:28:05] [PROGRESS] 111,681/199,000 BVH evaluations (56.12%) | elapsed 37m 32s | rate 49.6/sec | ETA 16:57:27 (29m 21s remaining) | candidates 111,681 | suggestions-kept 647
+[2026-07-07 16:28:15] [PROGRESS] 112,233/199,000 BVH evaluations (56.40%) | elapsed 37m 42s | rate 49.6/sec | ETA 16:57:25 (29m 9s remaining) | candidates 112,233 | suggestions-kept 702
+[2026-07-07 16:28:25] [PROGRESS] 112,831/199,000 BVH evaluations (56.70%) | elapsed 37m 52s | rate 49.6/sec | ETA 16:57:21 (28m 55s remaining) | candidates 112,831 | suggestions-kept 762
+[2026-07-07 16:28:35] [PROGRESS] 113,440/199,000 BVH evaluations (57.01%) | elapsed 38m 2s | rate 49.7/sec | ETA 16:57:17 (28m 41s remaining) | candidates 113,440 | suggestions-kept 822
+[2026-07-07 16:28:45] [PROGRESS] 114,029/199,000 BVH evaluations (57.30%) | elapsed 38m 12s | rate 49.7/sec | ETA 16:57:14 (28m 28s remaining) | candidates 114,029 | suggestions-kept 881
+[2026-07-07 16:28:55] [PROGRESS] 114,621/199,000 BVH evaluations (57.60%) | elapsed 38m 22s | rate 49.8/sec | ETA 16:57:11 (28m 15s remaining) | candidates 114,621 | suggestions-kept 941
+[2026-07-07 16:29:02] [PROGRESS] 115,000/199,000 BVH evaluations (57.79%) | elapsed 38m 29s | rate 49.8/sec | ETA 16:57:08 (28m 6s remaining) | candidates 115,000 | suggestions-kept 978
+[2026-07-07 16:29:12] [PROGRESS] 115,589/199,000 BVH evaluations (58.08%) | elapsed 38m 39s | rate 49.8/sec | ETA 16:57:05 (27m 53s remaining) | candidates 115,589 | suggestions-kept 536
+[2026-07-07 16:29:22] [PROGRESS] 116,161/199,000 BVH evaluations (58.37%) | elapsed 38m 49s | rate 49.9/sec | ETA 16:57:03 (27m 40s remaining) | candidates 116,161 | suggestions-kept 594
+[2026-07-07 16:29:32] [PROGRESS] 116,724/199,000 BVH evaluations (58.66%) | elapsed 38m 59s | rate 49.9/sec | ETA 16:57:00 (27m 28s remaining) | candidates 116,724 | suggestions-kept 650
+[2026-07-07 16:29:42] [PROGRESS] 117,330/199,000 BVH evaluations (58.96%) | elapsed 39m 9s | rate 49.9/sec | ETA 16:56:57 (27m 15s remaining) | candidates 117,330 | suggestions-kept 710
+[2026-07-07 16:29:52] [PROGRESS] 117,932/199,000 BVH evaluations (59.26%) | elapsed 39m 19s | rate 50.0/sec | ETA 16:56:53 (27m 1s remaining) | candidates 117,932 | suggestions-kept 771
+[2026-07-07 16:30:02] [PROGRESS] 118,543/199,000 BVH evaluations (59.57%) | elapsed 39m 29s | rate 50.0/sec | ETA 16:56:50 (26m 47s remaining) | candidates 118,543 | suggestions-kept 832
+[2026-07-07 16:30:12] [PROGRESS] 119,152/199,000 BVH evaluations (59.88%) | elapsed 39m 39s | rate 50.1/sec | ETA 16:56:46 (26m 34s remaining) | candidates 119,152 | suggestions-kept 893
+[2026-07-07 16:30:22] [PROGRESS] 119,722/199,000 BVH evaluations (60.16%) | elapsed 39m 49s | rate 50.1/sec | ETA 16:56:44 (26m 22s remaining) | candidates 119,722 | suggestions-kept 950
+[2026-07-07 16:30:27] [PROGRESS] 120,000/199,000 BVH evaluations (60.30%) | elapsed 39m 54s | rate 50.1/sec | ETA 16:56:43 (26m 16s remaining) | candidates 120,000 | suggestions-kept 977
+[2026-07-07 16:30:37] [PROGRESS] 120,567/199,000 BVH evaluations (60.59%) | elapsed 40m 4s | rate 50.1/sec | ETA 16:56:41 (26m 4s remaining) | candidates 120,567 | suggestions-kept 533
+[2026-07-07 16:30:47] [PROGRESS] 121,120/199,000 BVH evaluations (60.86%) | elapsed 40m 14s | rate 50.2/sec | ETA 16:56:39 (25m 52s remaining) | candidates 121,120 | suggestions-kept 588
+[2026-07-07 16:30:57] [PROGRESS] 121,677/199,000 BVH evaluations (61.14%) | elapsed 40m 24s | rate 50.2/sec | ETA 16:56:37 (25m 40s remaining) | candidates 121,677 | suggestions-kept 644
+[2026-07-07 16:31:07] [PROGRESS] 122,239/199,000 BVH evaluations (61.43%) | elapsed 40m 34s | rate 50.2/sec | ETA 16:56:36 (25m 28s remaining) | candidates 122,239 | suggestions-kept 700
+[2026-07-07 16:31:17] [PROGRESS] 122,825/199,000 BVH evaluations (61.72%) | elapsed 40m 44s | rate 50.2/sec | ETA 16:56:33 (25m 15s remaining) | candidates 122,825 | suggestions-kept 759
+[2026-07-07 16:31:27] [PROGRESS] 123,432/199,000 BVH evaluations (62.03%) | elapsed 40m 54s | rate 50.3/sec | ETA 16:56:29 (25m 2s remaining) | candidates 123,432 | suggestions-kept 820
+[2026-07-07 16:31:37] [PROGRESS] 124,021/199,000 BVH evaluations (62.32%) | elapsed 41m 4s | rate 50.3/sec | ETA 16:56:27 (24m 49s remaining) | candidates 124,021 | suggestions-kept 879
+[2026-07-07 16:31:47] [PROGRESS] 124,608/199,000 BVH evaluations (62.62%) | elapsed 41m 14s | rate 50.4/sec | ETA 16:56:24 (24m 37s remaining) | candidates 124,608 | suggestions-kept 937
+[2026-07-07 16:31:53] [PROGRESS] 125,000/199,000 BVH evaluations (62.81%) | elapsed 41m 20s | rate 50.4/sec | ETA 16:56:22 (24m 28s remaining) | candidates 125,000 | suggestions-kept 976
+[2026-07-07 16:32:03] [PROGRESS] 125,596/199,000 BVH evaluations (63.11%) | elapsed 41m 30s | rate 50.4/sec | ETA 16:56:19 (24m 15s remaining) | candidates 125,596 | suggestions-kept 535
+[2026-07-07 16:32:13] [PROGRESS] 126,175/199,000 BVH evaluations (63.40%) | elapsed 41m 40s | rate 50.5/sec | ETA 16:56:17 (24m 3s remaining) | candidates 126,175 | suggestions-kept 593
+[2026-07-07 16:32:23] [PROGRESS] 126,757/199,000 BVH evaluations (63.70%) | elapsed 41m 50s | rate 50.5/sec | ETA 16:56:14 (23m 50s remaining) | candidates 126,757 | suggestions-kept 651
+[2026-07-07 16:32:33] [PROGRESS] 127,337/199,000 BVH evaluations (63.99%) | elapsed 42m 0s | rate 50.5/sec | ETA 16:56:12 (23m 38s remaining) | candidates 127,337 | suggestions-kept 709
+[2026-07-07 16:32:43] [PROGRESS] 127,931/199,000 BVH evaluations (64.29%) | elapsed 42m 10s | rate 50.5/sec | ETA 16:56:09 (23m 25s remaining) | candidates 127,931 | suggestions-kept 769
+[2026-07-07 16:32:53] [PROGRESS] 128,513/199,000 BVH evaluations (64.58%) | elapsed 42m 20s | rate 50.6/sec | ETA 16:56:07 (23m 13s remaining) | candidates 128,513 | suggestions-kept 827
+[2026-07-07 16:33:03] [PROGRESS] 129,097/199,000 BVH evaluations (64.87%) | elapsed 42m 30s | rate 50.6/sec | ETA 16:56:04 (23m 1s remaining) | candidates 129,097 | suggestions-kept 885
+[2026-07-07 16:33:13] [PROGRESS] 129,698/199,000 BVH evaluations (65.17%) | elapsed 42m 40s | rate 50.6/sec | ETA 16:56:02 (22m 48s remaining) | candidates 129,698 | suggestions-kept 945
+[2026-07-07 16:33:18] [PROGRESS] 130,000/199,000 BVH evaluations (65.33%) | elapsed 42m 45s | rate 50.7/sec | ETA 16:56:00 (22m 41s remaining) | candidates 130,000 | suggestions-kept 975
+[2026-07-07 16:33:28] [PROGRESS] 130,632/199,000 BVH evaluations (65.64%) | elapsed 42m 55s | rate 50.7/sec | ETA 16:55:56 (22m 28s remaining) | candidates 130,632 | suggestions-kept 538
+[2026-07-07 16:33:38] [PROGRESS] 131,255/199,000 BVH evaluations (65.96%) | elapsed 43m 5s | rate 50.8/sec | ETA 16:55:53 (22m 14s remaining) | candidates 131,255 | suggestions-kept 600
+[2026-07-07 16:33:48] [PROGRESS] 131,838/199,000 BVH evaluations (66.25%) | elapsed 43m 15s | rate 50.8/sec | ETA 16:55:50 (22m 2s remaining) | candidates 131,838 | suggestions-kept 658
+[2026-07-07 16:33:58] [PROGRESS] 132,422/199,000 BVH evaluations (66.54%) | elapsed 43m 25s | rate 50.8/sec | ETA 16:55:48 (21m 50s remaining) | candidates 132,422 | suggestions-kept 717
+[2026-07-07 16:34:08] [PROGRESS] 133,034/199,000 BVH evaluations (66.85%) | elapsed 43m 35s | rate 50.9/sec | ETA 16:55:45 (21m 37s remaining) | candidates 133,034 | suggestions-kept 778
+[2026-07-07 16:34:18] [PROGRESS] 133,616/199,000 BVH evaluations (67.14%) | elapsed 43m 45s | rate 50.9/sec | ETA 16:55:43 (21m 24s remaining) | candidates 133,616 | suggestions-kept 836
+[2026-07-07 16:34:28] [PROGRESS] 134,213/199,000 BVH evaluations (67.44%) | elapsed 43m 55s | rate 50.9/sec | ETA 16:55:41 (21m 12s remaining) | candidates 134,213 | suggestions-kept 896
+[2026-07-07 16:34:38] [PROGRESS] 134,806/199,000 BVH evaluations (67.74%) | elapsed 44m 5s | rate 51.0/sec | ETA 16:55:38 (20m 59s remaining) | candidates 134,806 | suggestions-kept 955
+[2026-07-07 16:34:41] [PROGRESS] 135,000/199,000 BVH evaluations (67.84%) | elapsed 44m 8s | rate 51.0/sec | ETA 16:55:37 (20m 55s remaining) | candidates 135,000 | suggestions-kept 974
+[2026-07-07 16:34:51] [PROGRESS] 135,583/199,000 BVH evaluations (68.13%) | elapsed 44m 18s | rate 51.0/sec | ETA 16:55:35 (20m 43s remaining) | candidates 135,583 | suggestions-kept 532
+[2026-07-07 16:35:01] [PROGRESS] 136,196/199,000 BVH evaluations (68.44%) | elapsed 44m 28s | rate 51.0/sec | ETA 16:55:32 (20m 30s remaining) | candidates 136,196 | suggestions-kept 593
+[2026-07-07 16:35:11] [PROGRESS] 136,789/199,000 BVH evaluations (68.74%) | elapsed 44m 38s | rate 51.1/sec | ETA 16:55:30 (20m 18s remaining) | candidates 136,789 | suggestions-kept 652
+[2026-07-07 16:35:21] [PROGRESS] 137,381/199,000 BVH evaluations (69.04%) | elapsed 44m 48s | rate 51.1/sec | ETA 16:55:27 (20m 6s remaining) | candidates 137,381 | suggestions-kept 712
+[2026-07-07 16:35:31] [PROGRESS] 137,998/199,000 BVH evaluations (69.35%) | elapsed 44m 58s | rate 51.1/sec | ETA 16:55:24 (19m 53s remaining) | candidates 137,998 | suggestions-kept 773
+[2026-07-07 16:35:41] [PROGRESS] 138,631/199,000 BVH evaluations (69.66%) | elapsed 45m 8s | rate 51.2/sec | ETA 16:55:21 (19m 39s remaining) | candidates 138,631 | suggestions-kept 837
+[2026-07-07 16:35:51] [PROGRESS] 139,212/199,000 BVH evaluations (69.96%) | elapsed 45m 18s | rate 51.2/sec | ETA 16:55:19 (19m 27s remaining) | candidates 139,212 | suggestions-kept 895
+[2026-07-07 16:36:01] [PROGRESS] 139,803/199,000 BVH evaluations (70.25%) | elapsed 45m 28s | rate 51.2/sec | ETA 16:55:17 (19m 15s remaining) | candidates 139,803 | suggestions-kept 954
+[2026-07-07 16:36:05] [PROGRESS] 140,000/199,000 BVH evaluations (70.35%) | elapsed 45m 32s | rate 51.2/sec | ETA 16:55:16 (19m 11s remaining) | candidates 140,000 | suggestions-kept 973
+[2026-07-07 16:36:15] [PROGRESS] 140,588/199,000 BVH evaluations (70.65%) | elapsed 45m 42s | rate 51.3/sec | ETA 16:55:14 (18m 59s remaining) | candidates 140,588 | suggestions-kept 531
+[2026-07-07 16:36:25] [PROGRESS] 141,201/199,000 BVH evaluations (70.96%) | elapsed 45m 52s | rate 51.3/sec | ETA 16:55:11 (18m 46s remaining) | candidates 141,201 | suggestions-kept 593
+[2026-07-07 16:36:35] [PROGRESS] 141,780/199,000 BVH evaluations (71.25%) | elapsed 46m 2s | rate 51.3/sec | ETA 16:55:09 (18m 34s remaining) | candidates 141,780 | suggestions-kept 650
+[2026-07-07 16:36:45] [PROGRESS] 142,367/199,000 BVH evaluations (71.54%) | elapsed 46m 12s | rate 51.4/sec | ETA 16:55:07 (18m 22s remaining) | candidates 142,367 | suggestions-kept 709
+[2026-07-07 16:36:55] [PROGRESS] 142,959/199,000 BVH evaluations (71.84%) | elapsed 46m 22s | rate 51.4/sec | ETA 16:55:05 (18m 10s remaining) | candidates 142,959 | suggestions-kept 768
+[2026-07-07 16:37:05] [PROGRESS] 143,572/199,000 BVH evaluations (72.15%) | elapsed 46m 32s | rate 51.4/sec | ETA 16:55:03 (17m 57s remaining) | candidates 143,572 | suggestions-kept 830
+[2026-07-07 16:37:15] [PROGRESS] 144,179/199,000 BVH evaluations (72.45%) | elapsed 46m 42s | rate 51.5/sec | ETA 16:55:00 (17m 45s remaining) | candidates 144,179 | suggestions-kept 890
+[2026-07-07 16:37:25] [PROGRESS] 144,806/199,000 BVH evaluations (72.77%) | elapsed 46m 52s | rate 51.5/sec | ETA 16:54:57 (17m 32s remaining) | candidates 144,806 | suggestions-kept 953
+[2026-07-07 16:37:28] [PROGRESS] 145,000/199,000 BVH evaluations (72.86%) | elapsed 46m 55s | rate 51.5/sec | ETA 16:54:56 (17m 28s remaining) | candidates 145,000 | suggestions-kept 972
+[2026-07-07 16:37:38] [PROGRESS] 145,606/199,000 BVH evaluations (73.17%) | elapsed 47m 5s | rate 51.5/sec | ETA 16:54:54 (17m 16s remaining) | candidates 145,606 | suggestions-kept 532
+[2026-07-07 16:37:48] [PROGRESS] 146,222/199,000 BVH evaluations (73.48%) | elapsed 47m 15s | rate 51.6/sec | ETA 16:54:51 (17m 3s remaining) | candidates 146,222 | suggestions-kept 594
+[2026-07-07 16:37:58] [PROGRESS] 146,804/199,000 BVH evaluations (73.77%) | elapsed 47m 25s | rate 51.6/sec | ETA 16:54:50 (16m 51s remaining) | candidates 146,804 | suggestions-kept 652
+[2026-07-07 16:38:08] [PROGRESS] 147,397/199,000 BVH evaluations (74.07%) | elapsed 47m 35s | rate 51.6/sec | ETA 16:54:48 (16m 39s remaining) | candidates 147,397 | suggestions-kept 711
+[2026-07-07 16:38:18] [PROGRESS] 147,986/199,000 BVH evaluations (74.36%) | elapsed 47m 45s | rate 51.6/sec | ETA 16:54:46 (16m 27s remaining) | candidates 147,986 | suggestions-kept 770
+[2026-07-07 16:38:28] [PROGRESS] 148,585/199,000 BVH evaluations (74.67%) | elapsed 47m 55s | rate 51.7/sec | ETA 16:54:44 (16m 15s remaining) | candidates 148,585 | suggestions-kept 830
+[2026-07-07 16:38:38] [PROGRESS] 149,185/199,000 BVH evaluations (74.97%) | elapsed 48m 5s | rate 51.7/sec | ETA 16:54:41 (16m 3s remaining) | candidates 149,185 | suggestions-kept 890
+[2026-07-07 16:38:48] [PROGRESS] 149,785/199,000 BVH evaluations (75.27%) | elapsed 48m 15s | rate 51.7/sec | ETA 16:54:39 (15m 51s remaining) | candidates 149,785 | suggestions-kept 950
+[2026-07-07 16:38:51] [PROGRESS] 150,000/199,000 BVH evaluations (75.38%) | elapsed 48m 18s | rate 51.7/sec | ETA 16:54:38 (15m 46s remaining) | candidates 150,000 | suggestions-kept 971
+[2026-07-07 16:39:01] [PROGRESS] 150,586/199,000 BVH evaluations (75.67%) | elapsed 48m 28s | rate 51.8/sec | ETA 16:54:37 (15m 35s remaining) | candidates 150,586 | suggestions-kept 529
+[2026-07-07 16:39:11] [PROGRESS] 151,182/199,000 BVH evaluations (75.97%) | elapsed 48m 38s | rate 51.8/sec | ETA 16:54:35 (15m 23s remaining) | candidates 151,182 | suggestions-kept 589
+[2026-07-07 16:39:21] [PROGRESS] 151,768/199,000 BVH evaluations (76.27%) | elapsed 48m 48s | rate 51.8/sec | ETA 16:54:33 (15m 11s remaining) | candidates 151,768 | suggestions-kept 647
+[2026-07-07 16:39:31] [PROGRESS] 152,342/199,000 BVH evaluations (76.55%) | elapsed 48m 58s | rate 51.8/sec | ETA 16:54:32 (15m 0s remaining) | candidates 152,342 | suggestions-kept 705
+[2026-07-07 16:39:41] [PROGRESS] 152,948/199,000 BVH evaluations (76.86%) | elapsed 49m 8s | rate 51.9/sec | ETA 16:54:29 (14m 47s remaining) | candidates 152,948 | suggestions-kept 765
+[2026-07-07 16:39:51] [PROGRESS] 153,596/199,000 BVH evaluations (77.18%) | elapsed 49m 18s | rate 51.9/sec | ETA 16:54:26 (14m 34s remaining) | candidates 153,596 | suggestions-kept 830
+[2026-07-07 16:40:01] [PROGRESS] 154,219/199,000 BVH evaluations (77.50%) | elapsed 49m 28s | rate 51.9/sec | ETA 16:54:24 (14m 22s remaining) | candidates 154,219 | suggestions-kept 892
+[2026-07-07 16:40:11] [PROGRESS] 154,870/199,000 BVH evaluations (77.82%) | elapsed 49m 39s | rate 52.0/sec | ETA 16:54:20 (14m 8s remaining) | candidates 154,870 | suggestions-kept 957
+[2026-07-07 16:40:13] [PROGRESS] 155,000/199,000 BVH evaluations (77.89%) | elapsed 49m 40s | rate 52.0/sec | ETA 16:54:20 (14m 6s remaining) | candidates 155,000 | suggestions-kept 970
+[2026-07-07 16:40:23] [PROGRESS] 155,630/199,000 BVH evaluations (78.21%) | elapsed 49m 50s | rate 52.0/sec | ETA 16:54:17 (13m 53s remaining) | candidates 155,630 | suggestions-kept 532
+[2026-07-07 16:40:33] [PROGRESS] 156,226/199,000 BVH evaluations (78.51%) | elapsed 50m 0s | rate 52.1/sec | ETA 16:54:15 (13m 41s remaining) | candidates 156,226 | suggestions-kept 592
+[2026-07-07 16:40:43] [PROGRESS] 156,818/199,000 BVH evaluations (78.80%) | elapsed 50m 11s | rate 52.1/sec | ETA 16:54:13 (13m 29s remaining) | candidates 156,818 | suggestions-kept 651
+[2026-07-07 16:40:53] [PROGRESS] 157,400/199,000 BVH evaluations (79.10%) | elapsed 50m 21s | rate 52.1/sec | ETA 16:54:12 (13m 18s remaining) | candidates 157,400 | suggestions-kept 709
+[2026-07-07 16:41:03] [PROGRESS] 157,980/199,000 BVH evaluations (79.39%) | elapsed 50m 31s | rate 52.1/sec | ETA 16:54:10 (13m 7s remaining) | candidates 157,980 | suggestions-kept 767
+[2026-07-07 16:41:13] [PROGRESS] 158,576/199,000 BVH evaluations (79.69%) | elapsed 50m 41s | rate 52.1/sec | ETA 16:54:09 (12m 55s remaining) | candidates 158,576 | suggestions-kept 827
+[2026-07-07 16:41:23] [PROGRESS] 159,164/199,000 BVH evaluations (79.98%) | elapsed 50m 51s | rate 52.2/sec | ETA 16:54:07 (12m 43s remaining) | candidates 159,164 | suggestions-kept 886
+[2026-07-07 16:41:33] [PROGRESS] 159,749/199,000 BVH evaluations (80.28%) | elapsed 51m 1s | rate 52.2/sec | ETA 16:54:06 (12m 32s remaining) | candidates 159,749 | suggestions-kept 944
+[2026-07-07 16:41:38] [PROGRESS] 160,000/199,000 BVH evaluations (80.40%) | elapsed 51m 5s | rate 52.2/sec | ETA 16:54:05 (12m 27s remaining) | candidates 160,000 | suggestions-kept 969
+[2026-07-07 16:41:48] [PROGRESS] 160,587/199,000 BVH evaluations (80.70%) | elapsed 51m 15s | rate 52.2/sec | ETA 16:54:03 (12m 15s remaining) | candidates 160,587 | suggestions-kept 527
+[2026-07-07 16:41:58] [PROGRESS] 161,180/199,000 BVH evaluations (80.99%) | elapsed 51m 25s | rate 52.2/sec | ETA 16:54:01 (12m 3s remaining) | candidates 161,180 | suggestions-kept 586
+[2026-07-07 16:42:08] [PROGRESS] 161,780/199,000 BVH evaluations (81.30%) | elapsed 51m 35s | rate 52.3/sec | ETA 16:54:00 (11m 52s remaining) | candidates 161,780 | suggestions-kept 646
+[2026-07-07 16:42:18] [PROGRESS] 162,391/199,000 BVH evaluations (81.60%) | elapsed 51m 45s | rate 52.3/sec | ETA 16:53:58 (11m 40s remaining) | candidates 162,391 | suggestions-kept 708
+[2026-07-07 16:42:28] [PROGRESS] 162,990/199,000 BVH evaluations (81.90%) | elapsed 51m 55s | rate 52.3/sec | ETA 16:53:56 (11m 28s remaining) | candidates 162,990 | suggestions-kept 767
+[2026-07-07 16:42:38] [PROGRESS] 163,591/199,000 BVH evaluations (82.21%) | elapsed 52m 5s | rate 52.3/sec | ETA 16:53:54 (11m 16s remaining) | candidates 163,591 | suggestions-kept 828
+[2026-07-07 16:42:48] [PROGRESS] 164,195/199,000 BVH evaluations (82.51%) | elapsed 52m 15s | rate 52.4/sec | ETA 16:53:52 (11m 4s remaining) | candidates 164,195 | suggestions-kept 888
+[2026-07-07 16:42:58] [PROGRESS] 164,767/199,000 BVH evaluations (82.80%) | elapsed 52m 25s | rate 52.4/sec | ETA 16:53:51 (10m 53s remaining) | candidates 164,767 | suggestions-kept 945
+[2026-07-07 16:43:02] [PROGRESS] 165,000/199,000 BVH evaluations (82.91%) | elapsed 52m 29s | rate 52.4/sec | ETA 16:53:50 (10m 48s remaining) | candidates 165,000 | suggestions-kept 968
+[2026-07-07 16:43:12] [PROGRESS] 165,586/199,000 BVH evaluations (83.21%) | elapsed 52m 39s | rate 52.4/sec | ETA 16:53:49 (10m 37s remaining) | candidates 165,586 | suggestions-kept 526
+[2026-07-07 16:43:22] [PROGRESS] 166,162/199,000 BVH evaluations (83.50%) | elapsed 52m 49s | rate 52.4/sec | ETA 16:53:48 (10m 26s remaining) | candidates 166,162 | suggestions-kept 584
+[2026-07-07 16:43:32] [PROGRESS] 166,722/199,000 BVH evaluations (83.78%) | elapsed 52m 59s | rate 52.4/sec | ETA 16:53:47 (10m 15s remaining) | candidates 166,722 | suggestions-kept 640
+[2026-07-07 16:43:42] [PROGRESS] 167,303/199,000 BVH evaluations (84.07%) | elapsed 53m 9s | rate 52.5/sec | ETA 16:53:46 (10m 4s remaining) | candidates 167,303 | suggestions-kept 698
+[2026-07-07 16:43:52] [PROGRESS] 167,887/199,000 BVH evaluations (84.37%) | elapsed 53m 19s | rate 52.5/sec | ETA 16:53:45 (9m 52s remaining) | candidates 167,887 | suggestions-kept 756
+[2026-07-07 16:44:02] [PROGRESS] 168,462/199,000 BVH evaluations (84.65%) | elapsed 53m 29s | rate 52.5/sec | ETA 16:53:43 (9m 41s remaining) | candidates 168,462 | suggestions-kept 814
+[2026-07-07 16:44:12] [PROGRESS] 169,045/199,000 BVH evaluations (84.95%) | elapsed 53m 39s | rate 52.5/sec | ETA 16:53:42 (9m 30s remaining) | candidates 169,045 | suggestions-kept 872
+[2026-07-07 16:44:22] [PROGRESS] 169,662/199,000 BVH evaluations (85.26%) | elapsed 53m 49s | rate 52.5/sec | ETA 16:53:40 (9m 18s remaining) | candidates 169,662 | suggestions-kept 934
+[2026-07-07 16:44:27] [PROGRESS] 170,000/199,000 BVH evaluations (85.43%) | elapsed 53m 54s | rate 52.6/sec | ETA 16:53:39 (9m 11s remaining) | candidates 170,000 | suggestions-kept 967
+[2026-07-07 16:44:37] [PROGRESS] 170,572/199,000 BVH evaluations (85.71%) | elapsed 54m 4s | rate 52.6/sec | ETA 16:53:38 (9m 0s remaining) | candidates 170,572 | suggestions-kept 524
+[2026-07-07 16:44:47] [PROGRESS] 171,157/199,000 BVH evaluations (86.01%) | elapsed 54m 14s | rate 52.6/sec | ETA 16:53:37 (8m 49s remaining) | candidates 171,157 | suggestions-kept 582
+[2026-07-07 16:44:57] [PROGRESS] 171,734/199,000 BVH evaluations (86.30%) | elapsed 54m 24s | rate 52.6/sec | ETA 16:53:36 (8m 38s remaining) | candidates 171,734 | suggestions-kept 640
+[2026-07-07 16:45:07] [PROGRESS] 172,305/199,000 BVH evaluations (86.59%) | elapsed 54m 34s | rate 52.6/sec | ETA 16:53:35 (8m 27s remaining) | candidates 172,305 | suggestions-kept 697
+[2026-07-07 16:45:17] [PROGRESS] 172,874/199,000 BVH evaluations (86.87%) | elapsed 54m 44s | rate 52.6/sec | ETA 16:53:34 (8m 16s remaining) | candidates 172,874 | suggestions-kept 754
+[2026-07-07 16:45:27] [PROGRESS] 173,450/199,000 BVH evaluations (87.16%) | elapsed 54m 54s | rate 52.6/sec | ETA 16:53:33 (8m 5s remaining) | candidates 173,450 | suggestions-kept 811
+[2026-07-07 16:45:37] [PROGRESS] 174,052/199,000 BVH evaluations (87.46%) | elapsed 55m 4s | rate 52.7/sec | ETA 16:53:31 (7m 53s remaining) | candidates 174,052 | suggestions-kept 872
+[2026-07-07 16:45:47] [PROGRESS] 174,645/199,000 BVH evaluations (87.76%) | elapsed 55m 14s | rate 52.7/sec | ETA 16:53:30 (7m 42s remaining) | candidates 174,645 | suggestions-kept 931
+[2026-07-07 16:45:53] [PROGRESS] 175,000/199,000 BVH evaluations (87.94%) | elapsed 55m 20s | rate 52.7/sec | ETA 16:53:29 (7m 35s remaining) | candidates 175,000 | suggestions-kept 966
+[2026-07-07 16:46:03] [PROGRESS] 175,557/199,000 BVH evaluations (88.22%) | elapsed 55m 30s | rate 52.7/sec | ETA 16:53:28 (7m 24s remaining) | candidates 175,557 | suggestions-kept 521
+[2026-07-07 16:46:13] [PROGRESS] 176,123/199,000 BVH evaluations (88.50%) | elapsed 55m 40s | rate 52.7/sec | ETA 16:53:27 (7m 13s remaining) | candidates 176,123 | suggestions-kept 578
+[2026-07-07 16:46:23] [PROGRESS] 176,688/199,000 BVH evaluations (88.79%) | elapsed 55m 50s | rate 52.7/sec | ETA 16:53:27 (7m 3s remaining) | candidates 176,688 | suggestions-kept 634
+[2026-07-07 16:46:33] [PROGRESS] 177,251/199,000 BVH evaluations (89.07%) | elapsed 56m 0s | rate 52.7/sec | ETA 16:53:26 (6m 52s remaining) | candidates 177,251 | suggestions-kept 691
+[2026-07-07 16:46:43] [PROGRESS] 177,839/199,000 BVH evaluations (89.37%) | elapsed 56m 11s | rate 52.8/sec | ETA 16:53:25 (6m 41s remaining) | candidates 177,839 | suggestions-kept 749
+[2026-07-07 16:46:53] [PROGRESS] 178,434/199,000 BVH evaluations (89.67%) | elapsed 56m 21s | rate 52.8/sec | ETA 16:53:23 (6m 29s remaining) | candidates 178,434 | suggestions-kept 809
+[2026-07-07 16:47:03] [PROGRESS] 179,015/199,000 BVH evaluations (89.96%) | elapsed 56m 31s | rate 52.8/sec | ETA 16:53:22 (6m 18s remaining) | candidates 179,015 | suggestions-kept 867
+[2026-07-07 16:47:13] [PROGRESS] 179,599/199,000 BVH evaluations (90.25%) | elapsed 56m 41s | rate 52.8/sec | ETA 16:53:21 (6m 7s remaining) | candidates 179,599 | suggestions-kept 925
+[2026-07-07 16:47:20] [PROGRESS] 180,000/199,000 BVH evaluations (90.45%) | elapsed 56m 47s | rate 52.8/sec | ETA 16:53:20 (5m 59s remaining) | candidates 180,000 | suggestions-kept 965
+[2026-07-07 16:47:30] [PROGRESS] 180,582/199,000 BVH evaluations (90.74%) | elapsed 56m 57s | rate 52.8/sec | ETA 16:53:19 (5m 48s remaining) | candidates 180,582 | suggestions-kept 523
+[2026-07-07 16:47:40] [PROGRESS] 181,160/199,000 BVH evaluations (91.04%) | elapsed 57m 7s | rate 52.8/sec | ETA 16:53:18 (5m 37s remaining) | candidates 181,160 | suggestions-kept 580
+[2026-07-07 16:47:50] [PROGRESS] 181,735/199,000 BVH evaluations (91.32%) | elapsed 57m 17s | rate 52.9/sec | ETA 16:53:17 (5m 26s remaining) | candidates 181,735 | suggestions-kept 638
+[2026-07-07 16:48:00] [PROGRESS] 182,308/199,000 BVH evaluations (91.61%) | elapsed 57m 27s | rate 52.9/sec | ETA 16:53:16 (5m 15s remaining) | candidates 182,308 | suggestions-kept 695
+[2026-07-07 16:48:10] [PROGRESS] 182,903/199,000 BVH evaluations (91.91%) | elapsed 57m 37s | rate 52.9/sec | ETA 16:53:15 (5m 4s remaining) | candidates 182,903 | suggestions-kept 755
+[2026-07-07 16:48:20] [PROGRESS] 183,478/199,000 BVH evaluations (92.20%) | elapsed 57m 47s | rate 52.9/sec | ETA 16:53:14 (4m 53s remaining) | candidates 183,478 | suggestions-kept 812
+[2026-07-07 16:48:30] [PROGRESS] 184,005/199,000 BVH evaluations (92.46%) | elapsed 57m 57s | rate 52.9/sec | ETA 16:53:14 (4m 43s remaining) | candidates 184,005 | suggestions-kept 865
+[2026-07-07 16:48:40] [PROGRESS] 184,588/199,000 BVH evaluations (92.76%) | elapsed 58m 7s | rate 52.9/sec | ETA 16:53:13 (4m 32s remaining) | candidates 184,588 | suggestions-kept 923
+[2026-07-07 16:48:47] [PROGRESS] 185,000/199,000 BVH evaluations (92.96%) | elapsed 58m 14s | rate 52.9/sec | ETA 16:53:12 (4m 24s remaining) | candidates 185,000 | suggestions-kept 964
+[2026-07-07 16:48:57] [PROGRESS] 185,574/199,000 BVH evaluations (93.25%) | elapsed 58m 24s | rate 52.9/sec | ETA 16:53:11 (4m 13s remaining) | candidates 185,574 | suggestions-kept 521
+[2026-07-07 16:49:07] [PROGRESS] 186,158/199,000 BVH evaluations (93.55%) | elapsed 58m 34s | rate 53.0/sec | ETA 16:53:10 (4m 2s remaining) | candidates 186,158 | suggestions-kept 579
+[2026-07-07 16:49:17] [PROGRESS] 186,738/199,000 BVH evaluations (93.84%) | elapsed 58m 44s | rate 53.0/sec | ETA 16:53:09 (3m 51s remaining) | candidates 186,738 | suggestions-kept 637
+[2026-07-07 16:49:27] [PROGRESS] 187,311/199,000 BVH evaluations (94.13%) | elapsed 58m 54s | rate 53.0/sec | ETA 16:53:08 (3m 40s remaining) | candidates 187,311 | suggestions-kept 695
+[2026-07-07 16:49:37] [PROGRESS] 187,870/199,000 BVH evaluations (94.41%) | elapsed 59m 4s | rate 53.0/sec | ETA 16:53:07 (3m 30s remaining) | candidates 187,870 | suggestions-kept 750
+[2026-07-07 16:49:47] [PROGRESS] 188,443/199,000 BVH evaluations (94.69%) | elapsed 59m 14s | rate 53.0/sec | ETA 16:53:06 (3m 19s remaining) | candidates 188,443 | suggestions-kept 808
+[2026-07-07 16:49:57] [PROGRESS] 189,019/199,000 BVH evaluations (94.98%) | elapsed 59m 24s | rate 53.0/sec | ETA 16:53:06 (3m 8s remaining) | candidates 189,019 | suggestions-kept 865
+[2026-07-07 16:50:07] [PROGRESS] 189,641/199,000 BVH evaluations (95.30%) | elapsed 59m 34s | rate 53.0/sec | ETA 16:53:04 (2m 56s remaining) | candidates 189,641 | suggestions-kept 928
+[2026-07-07 16:50:13] [PROGRESS] 190,000/199,000 BVH evaluations (95.48%) | elapsed 59m 40s | rate 53.1/sec | ETA 16:53:03 (2m 49s remaining) | candidates 190,000 | suggestions-kept 963
+[2026-07-07 16:50:23] [PROGRESS] 190,581/199,000 BVH evaluations (95.77%) | elapsed 59m 50s | rate 53.1/sec | ETA 16:53:02 (2m 38s remaining) | candidates 190,581 | suggestions-kept 521
+[2026-07-07 16:50:33] [PROGRESS] 191,178/199,000 BVH evaluations (96.07%) | elapsed 1h 0m 0s | rate 53.1/sec | ETA 16:53:01 (2m 27s remaining) | candidates 191,178 | suggestions-kept 580
+[2026-07-07 16:50:43] [PROGRESS] 191,737/199,000 BVH evaluations (96.35%) | elapsed 1h 0m 10s | rate 53.1/sec | ETA 16:53:00 (2m 16s remaining) | candidates 191,737 | suggestions-kept 636
+[2026-07-07 16:50:53] [PROGRESS] 192,318/199,000 BVH evaluations (96.64%) | elapsed 1h 0m 20s | rate 53.1/sec | ETA 16:52:59 (2m 5s remaining) | candidates 192,318 | suggestions-kept 694
+[2026-07-07 16:51:03] [PROGRESS] 192,892/199,000 BVH evaluations (96.93%) | elapsed 1h 0m 30s | rate 53.1/sec | ETA 16:52:58 (1m 54s remaining) | candidates 192,892 | suggestions-kept 752
+[2026-07-07 16:51:13] [PROGRESS] 193,510/199,000 BVH evaluations (97.24%) | elapsed 1h 0m 40s | rate 53.1/sec | ETA 16:52:57 (1m 43s remaining) | candidates 193,510 | suggestions-kept 813
+[2026-07-07 16:51:23] [PROGRESS] 194,138/199,000 BVH evaluations (97.56%) | elapsed 1h 0m 50s | rate 53.2/sec | ETA 16:52:55 (1m 31s remaining) | candidates 194,138 | suggestions-kept 876
+[2026-07-07 16:51:33] [PROGRESS] 194,746/199,000 BVH evaluations (97.86%) | elapsed 1h 1m 1s | rate 53.2/sec | ETA 16:52:53 (1m 19s remaining) | candidates 194,746 | suggestions-kept 937
+[2026-07-07 16:51:38] [PROGRESS] 195,000/199,000 BVH evaluations (97.99%) | elapsed 1h 1m 5s | rate 53.2/sec | ETA 16:52:53 (1m 15s remaining) | candidates 195,000 | suggestions-kept 962
+[2026-07-07 16:51:48] [PROGRESS] 195,598/199,000 BVH evaluations (98.29%) | elapsed 1h 1m 15s | rate 53.2/sec | ETA 16:52:52 (1m 3s remaining) | candidates 195,598 | suggestions-kept 521
+[2026-07-07 16:51:58] [PROGRESS] 196,179/199,000 BVH evaluations (98.58%) | elapsed 1h 1m 25s | rate 53.2/sec | ETA 16:52:51 (52s remaining) | candidates 196,179 | suggestions-kept 579
+[2026-07-07 16:52:08] [PROGRESS] 196,774/199,000 BVH evaluations (98.88%) | elapsed 1h 1m 35s | rate 53.3/sec | ETA 16:52:49 (41s remaining) | candidates 196,774 | suggestions-kept 639
+[2026-07-07 16:52:18] [PROGRESS] 197,342/199,000 BVH evaluations (99.17%) | elapsed 1h 1m 45s | rate 53.3/sec | ETA 16:52:49 (31s remaining) | candidates 197,342 | suggestions-kept 696
+[2026-07-07 16:52:28] [PROGRESS] 197,918/199,000 BVH evaluations (99.46%) | elapsed 1h 1m 55s | rate 53.3/sec | ETA 16:52:48 (20s remaining) | candidates 197,918 | suggestions-kept 753
+[2026-07-07 16:52:38] [PROGRESS] 198,501/199,000 BVH evaluations (99.75%) | elapsed 1h 2m 5s | rate 53.3/sec | ETA 16:52:47 (9s remaining) | candidates 198,501 | suggestions-kept 812
+[2026-07-07 16:52:47] [PROGRESS] 199,000/199,000 BVH evaluations (100.00%) | elapsed 1h 2m 14s | rate 53.3/sec | ETA 16:52:47 (0s remaining) | candidates 199,000 | suggestions-kept 861
+[2026-07-07 16:52:47] [AUTO-TOP-K] selected_k=86 target=50.0% met=True pair_precision=50.0 pair_recall=53.75
+[2026-07-07 16:52:47] [BVH-RECALL] Balancer summary: {'enabled': True, 'floors_by_type': {'PARTNERSHIP': 3, 'TRUSTPATH': 3, 'RECRUITMENT': 0, 'SUPPLIERMATCH': 2}, 'before_counts': {'TRUSTPATH': 20, 'CLIENTINTRODUCTION': 18, 'INSIGHTEXCHANGE': 21, 'ECOSYSTEMAMPLIFICATION': 10, 'PARTNERSHIP': 2, 'PRODUCTSALE': 4, 'CAPITALINTRODUCTION': 2, 'RECRUITMENT': 1, 'SUPPLIERMATCH': 8}, 'after_counts': {'TRUSTPATH': 20, 'CLIENTINTRODUCTION': 18, 'INSIGHTEXCHANGE': 21, 'ECOSYSTEMAMPLIFICATION': 10, 'PARTNERSHIP': 3, 'PRODUCTSALE': 4, 'CAPITALINTRODUCTION': 2, 'RECRUITMENT': 1, 'SUPPLIERMATCH': 8}, 'target_pair_precision_pct': 50.0, 'precision_floor_pct': 50.0, 'use_backtest_precision_guard': True, 'min_candidate_score': 0.0, 'min_bvh_canonical_score': 0.0, 'added_count': 1, 'added': [{'BVHTypeID': 'PARTNERSHIP', 'PersonAName': 'Daniel Patel 111', 'PersonBName': 'Meera Morris 112', 'FinalRAINScore': 86.95, 'BVHCanonicalScore': 73.28, 'PairPrecisionAfterAddPct': 50.5747}], 'rejected_count': 1, 'rejected': [{'BVHTypeID': 'PARTNERSHIP', 'reason': 'Precision guard rejected candidate.', 'candidate_pair': 'James Wilson 011 <> Aisha Price 025', 'candidate_score': 87.0, 'candidate_bvh_canonical_score': 88.7, 'trial_pair_precision_pct': 49.4253, 'precision_floor_pct': 50.0, 'current_count': 2, 'floor': 3}]}
+[2026-07-07 16:52:47] [DETAIL] Writing detail JSON files only for final top 87 suggestions.
+[2026-07-07 16:52:47] [DETAIL] Detail JSON complete: 174 files written.
+[2026-07-07 16:52:49] [LABEL-COVERAGE] rows=80 csv=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\LabelCoverageReport.csv
+[2026-07-07 16:52:49] [DONE] RAIN5.0 run complete in 1h 2m 16s
+[2026-07-07 16:52:49] [OUT] matchSuggestions.JSON=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\matchSuggestions.JSON
+[2026-07-07 16:52:49] [OUT] HVTIValues folder=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\HVTIValues
+[2026-07-07 16:52:49] [OUT] HVTIRoI folder=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\HVTIRoI
+[2026-07-07 16:52:49] [OUT] RAIN5_RunLog.txt=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\RAIN5_RunLog.txt
+[2026-07-07 16:52:49] [OUT] HVTIStructure_Tuned.JSON=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\HVTIStructure_Tuned.JSON
+[2026-07-07 16:52:49] [OUT] SupervisedWeightTuning.JSON=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\SupervisedWeightTuning.JSON
+[2026-07-07 16:52:49] [OUT] SupervisedRankerV2.JSON=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\SupervisedRankerV2.JSON
+[2026-07-07 16:52:49] [OUT] PairPrototypeModel.JSON=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\PairPrototypeModel.JSON
+[2026-07-07 16:52:49] [OUT] BVHPrecision1Model.JSON=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\BVHPrecision1Model.JSON
+[2026-07-07 16:52:49] [OUT] LabelCoverageReport.csv=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\LabelCoverageReport.csv
+[2026-07-07 16:52:49] [OUT] LabelCoverageReport.JSON=D:\Harshil\RAIN5\OUTPUT\OUTPUT_070726155032\LabelCoverageReport.JSON
+[2026-07-07 16:52:49] [METRIC] supervised_ranker_training_rows=199,000
+[2026-07-07 16:52:49] [METRIC] supervised_ranker_pair_positive_rows=800
+[2026-07-07 16:52:49] [METRIC] supervised_ranker_bvh_positive_rows=80
+[2026-07-07 16:52:49] [METRIC] auto_top_k_summary={'k': 86, 'unique_pair_count': 86, 'true_positive_pair_count': 43, 'pair_precision_pct': 50.0, 'pair_recall_pct': 53.75, 'enabled': True, 'target_pair_precision_pct': 50.0, 'met_target': True, 'selection_policy': 'largest/highest-recall K meeting target; otherwise best precision/recall K'}
+[2026-07-07 16:52:49] [METRIC] prototype_antigeneric_enabled=True
+[2026-07-07 16:52:49] [METRIC] pair_prototype_count=80
+[2026-07-07 16:52:49] [METRIC] person_saturation_summary={'enabled': True, 'high_score_threshold': 70.0, 'weak_specific_threshold': 35.0, 'penalty_per_extra': 4.0, 'max_penalty': 35.0, 'person_generic_exposure_counts': {}, 'penalised_suggestion_count': 0, 'total_penalty': 0.0}
+[2026-07-07 16:52:49] [METRIC] label_coverage_rows=80
+[2026-07-07 16:52:49] [METRIC] bvh_precision1_enabled=True
+[2026-07-07 16:52:49] [METRIC] bvh_precision1_enabled_classifier_count=10
+[2026-07-07 16:52:49] [METRIC] bvh_selection_mode=canonical_top1
+[2026-07-07 16:52:49] [METRIC] bvh_recall_balancer_enabled=True
+[2026-07-07 16:52:49] [METRIC] bvh_recall_balancer_summary={'enabled': True, 'floors_by_type': {'PARTNERSHIP': 3, 'TRUSTPATH': 3, 'RECRUITMENT': 0, 'SUPPLIERMATCH': 2}, 'before_counts': {'TRUSTPATH': 20, 'CLIENTINTRODUCTION': 18, 'INSIGHTEXCHANGE': 21, 'ECOSYSTEMAMPLIFICATION': 10, 'PARTNERSHIP': 2, 'PRODUCTSALE': 4, 'CAPITALINTRODUCTION': 2, 'RECRUITMENT': 1, 'SUPPLIERMATCH': 8}, 'after_counts': {'TRUSTPATH': 20, 'CLIENTINTRODUCTION': 18, 'INSIGHTEXCHANGE': 21, 'ECOSYSTEMAMPLIFICATION': 10, 'PARTNERSHIP': 3, 'PRODUCTSALE': 4, 'CAPITALINTRODUCTION': 2, 'RECRUITMENT': 1, 'SUPPLIERMATCH': 8}, 'target_pair_precision_pct': 50.0, 'precision_floor_pct': 50.0, 'use_backtest_precision_guard': True, 'min_candidate_score': 0.0, 'min_bvh_canonical_score': 0.0, 'added_count': 1, 'added': [{'BVHTypeID': 'PARTNERSHIP', 'PersonAName': 'Daniel Patel 111', 'PersonBName': 'Meera Morris 112', 'FinalRAINScore': 86.95, 'BVHCanonicalScore': 73.28, 'PairPrecisionAfterAddPct': 50.5747}], 'rejected_count': 1, 'rejected': [{'BVHTypeID': 'PARTNERSHIP', 'reason': 'Precision guard rejected candidate.', 'candidate_pair': 'James Wilson 011 <> Aisha Price 025', 'candidate_score': 87.0, 'candidate_bvh_canonical_score': 88.7, 'trial_pair_precision_pct': 49.4253, 'precision_floor_pct': 50.0, 'current_count': 2, 'floor': 3}]}
+[2026-07-07 16:52:49] [METRIC] bvh_type_counts_after_selection={'TRUSTPATH': 20, 'CLIENTINTRODUCTION': 18, 'INSIGHTEXCHANGE': 21, 'ECOSYSTEMAMPLIFICATION': 10, 'PARTNERSHIP': 3, 'PRODUCTSALE': 4, 'CAPITALINTRODUCTION': 2, 'RECRUITMENT': 1, 'SUPPLIERMATCH': 8}
+[2026-07-07 16:52:49] [METRIC] candidates_after_filters_before_pair_cap=199,000
+[2026-07-07 16:52:49] [METRIC] suggestions=87
+[2026-07-07 16:52:49] [METRIC] detail_files_written=174

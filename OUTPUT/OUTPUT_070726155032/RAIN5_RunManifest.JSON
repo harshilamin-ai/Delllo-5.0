@@ -1,0 +1,157 @@
+{
+  "run_stamp": "070726155032",
+  "output_run_dir": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032",
+  "matchSuggestions": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\matchSuggestions.JSON",
+  "HVTIValues_folder": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\HVTIValues",
+  "HVTIRoI_folder": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\HVTIRoI",
+  "RAIN5_RunLog": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\RAIN5_RunLog.txt",
+  "HVTIStructure_Tuned": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\HVTIStructure_Tuned.JSON",
+  "SupervisedWeightTuning": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\SupervisedWeightTuning.JSON",
+  "SupervisedRankerV2": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\SupervisedRankerV2.JSON",
+  "PairPrototypeModel": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\PairPrototypeModel.JSON",
+  "BVHPrecision1Model": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\BVHPrecision1Model.JSON",
+  "BVHRecallBalancerPool": "",
+  "LabelCoverageReportCSV": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\LabelCoverageReport.csv",
+  "LabelCoverageReportJSON": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\LabelCoverageReport.JSON",
+  "original_profile_count": 200,
+  "active_profile_count": 200,
+  "profile_sample_pct": 100.0,
+  "bvh_type_count": 10,
+  "suggestion_count": 87,
+  "candidate_count_after_filters_before_pair_cap": 199000,
+  "filtered_candidate_count": 0,
+  "detail_file_count": 174,
+  "max_bvh_per_pair": 1,
+  "supervised_weight_tuning": true,
+  "supervised_ranker_v2": true,
+  "supervised_ranker_training_row_count": 199000,
+  "supervised_ranker_pair_positive_count": 800,
+  "supervised_ranker_bvh_positive_count": 80,
+  "supervised_ranker_positive_count": 80,
+  "auto_top_k": true,
+  "target_pair_precision": 50.0,
+  "auto_top_k_summary": {
+    "k": 86,
+    "unique_pair_count": 86,
+    "true_positive_pair_count": 43,
+    "pair_precision_pct": 50.0,
+    "pair_recall_pct": 53.75,
+    "enabled": true,
+    "target_pair_precision_pct": 50.0,
+    "met_target": true,
+    "selection_policy": "largest/highest-recall K meeting target; otherwise best precision/recall K"
+  },
+  "prototype_antigeneric": true,
+  "prototype_model_enabled": true,
+  "pair_prototype_count": 80,
+  "person_saturation_penalty": true,
+  "person_saturation_summary": {
+    "enabled": true,
+    "high_score_threshold": 70.0,
+    "weak_specific_threshold": 35.0,
+    "penalty_per_extra": 4.0,
+    "max_penalty": 35.0,
+    "person_generic_exposure_counts": {},
+    "penalised_suggestion_count": 0,
+    "total_penalty": 0.0
+  },
+  "bvh_precision1": true,
+  "bvh_precision1_model_enabled": true,
+  "bvh_precision1_enabled_classifier_count": 10,
+  "bvh_selection_mode": "canonical_top1",
+  "bvh_top2_margin_threshold": 8.0,
+  "bvh_top2_min_canonical_score": 65.0,
+  "bvh_recall_balancer": true,
+  "bvh_recall_floors": {
+    "PARTNERSHIP": 3,
+    "TRUSTPATH": 3,
+    "RECRUITMENT": 0,
+    "SUPPLIERMATCH": 2
+  },
+  "bvh_recall_boosts": {
+    "PARTNERSHIP": 0.0,
+    "TRUSTPATH": 4.0,
+    "RECRUITMENT": 0.0,
+    "SUPPLIERMATCH": 2.0
+  },
+  "bvh_recall_balancer_summary": {
+    "enabled": true,
+    "floors_by_type": {
+      "PARTNERSHIP": 3,
+      "TRUSTPATH": 3,
+      "RECRUITMENT": 0,
+      "SUPPLIERMATCH": 2
+    },
+    "before_counts": {
+      "TRUSTPATH": 20,
+      "CLIENTINTRODUCTION": 18,
+      "INSIGHTEXCHANGE": 21,
+      "ECOSYSTEMAMPLIFICATION": 10,
+      "PARTNERSHIP": 2,
+      "PRODUCTSALE": 4,
+      "CAPITALINTRODUCTION": 2,
+      "RECRUITMENT": 1,
+      "SUPPLIERMATCH": 8
+    },
+    "after_counts": {
+      "TRUSTPATH": 20,
+      "CLIENTINTRODUCTION": 18,
+      "INSIGHTEXCHANGE": 21,
+      "ECOSYSTEMAMPLIFICATION": 10,
+      "PARTNERSHIP": 3,
+      "PRODUCTSALE": 4,
+      "CAPITALINTRODUCTION": 2,
+      "RECRUITMENT": 1,
+      "SUPPLIERMATCH": 8
+    },
+    "target_pair_precision_pct": 50.0,
+    "precision_floor_pct": 50.0,
+    "use_backtest_precision_guard": true,
+    "min_candidate_score": 0.0,
+    "min_bvh_canonical_score": 0.0,
+    "added_count": 1,
+    "added": [
+      {
+        "BVHTypeID": "PARTNERSHIP",
+        "PersonAName": "Daniel Patel 111",
+        "PersonBName": "Meera Morris 112",
+        "FinalRAINScore": 86.95,
+        "BVHCanonicalScore": 73.28,
+        "PairPrecisionAfterAddPct": 50.5747
+      }
+    ],
+    "rejected_count": 1,
+    "rejected": [
+      {
+        "BVHTypeID": "PARTNERSHIP",
+        "reason": "Precision guard rejected candidate.",
+        "candidate_pair": "James Wilson 011 <> Aisha Price 025",
+        "candidate_score": 87.0,
+        "candidate_bvh_canonical_score": 88.7,
+        "trial_pair_precision_pct": 49.4253,
+        "precision_floor_pct": 50.0,
+        "current_count": 2,
+        "floor": 3
+      }
+    ]
+  },
+  "bvh_type_counts_after_selection": {
+    "TRUSTPATH": 20,
+    "CLIENTINTRODUCTION": 18,
+    "INSIGHTEXCHANGE": 21,
+    "ECOSYSTEMAMPLIFICATION": 10,
+    "PARTNERSHIP": 3,
+    "PRODUCTSALE": 4,
+    "CAPITALINTRODUCTION": 2,
+    "RECRUITMENT": 1,
+    "SUPPLIERMATCH": 8
+  },
+  "write_bvh_recall_pool": false,
+  "label_coverage_row_count": 80,
+  "elapsed_seconds": 3736.57,
+  "copied_inputs": {
+    "CILProfiles_0207261343.csv": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\INPUTS\\CILProfiles_0207261343.csv",
+    "matchesCreated_0207261343.csv": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\INPUTS\\matchesCreated_0207261343.csv",
+    "README_INPUTS.txt": "D:\\Harshil\\RAIN5\\OUTPUT\\OUTPUT_070726155032\\INPUTS\\README_INPUTS.txt"
+  }
+}
