@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIValues_P_BA2F182E_P_63637200_SUPPLIERMATCH_070726155032.JSON",
+  "WindowsSafeFileName": "V_M_725134D2CC5A.JSON",
+  "OriginalRequestedFileName": "HVTIValues_P_BA2F182E_P_63637200_SUPPLIERMATCH_070726155032.JSON",
+  "PersonAID": "P_BA2F182E",
+  "PersonBID": "P_63637200",
+  "PersonAName": "Ajay Price 155",
+  "PersonBName": "Sarah Wilson 156",
+  "BVHID": "BVH_DC09BAB579",
+  "BVHTypeID": "SUPPLIERMATCH",
+  "BVHTypeName": "SUPPLIERMATCH",
+  "Direction": "A_TO_B",
+  "EstimatedHVTIParameters": {
+    "problem_solution_fit": 100,
+    "commercial_opportunity_size": 90,
+    "urgency": 53,
+    "decision_authority": 89.5,
+    "capability_complementarity": 89.65,
+    "trust_potential": 45,
+    "strategic_alignment": 73.31,
+    "network_amplification": 70,
+    "timing_context": 45,
+    "execution_probability": 87
+  },
+  "EstimatedHVTIScore": 73.65,
+  "PairMatchScore": 79.64,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 93.16,
+  "RankingScore": 85.75,
+  "PairSupervisedScore": 87.71,
+  "BVHTypeSupervisedScore": 84.7,
+  "FinalRAINScoreRaw": 87.16,
+  "FinalRAINScore": 89.73,
+  "HardBVHGatePass": true,
+  "HardBVHGateMultiplier": 1.0,
+  "HardBVHGateReason": "PASS",
+  "EstimatedProbabilityOfTransaction": 0.4919,
+  "SignalEvidence": {
+    "semantic_overlap": 0.7326,
+    "same_primary_driver": true,
+    "same_market_regime": false,
+    "same_location": false,
+    "same_organisation": false,
+    "source_has_product_or_solution": true,
+    "target_has_need_or_pain": true,
+    "source_has_insight": true,
+    "source_has_network_access": true,
+    "explicit_value_signal_gbp": 2613000.0
+  },
+  "BothDirections": {
+    "A_TO_B": {
+      "PersonAID": "",
+      "PersonBID": "",
+      "ScorePreview": {
+        "EstimatedHVTIParameters": {
+          "problem_solution_fit": 100,
+          "commercial_opportunity_size": 90,
+          "urgency": 53,
+          "decision_authority": 89.5,
+          "capability_complementarity": 89.65,
+          "trust_potential": 45,
+          "strategic_alignment": 73.31,
+          "network_amplification": 70,
+          "timing_context": 45,
+          "execution_probability": 87
+        },
+        "EstimatedHVTIScore": 73.65,
+        "EstimatedProbabilityOfTransaction": 0.4919,
+        "Calibration": {
+          "label_count": 80,
+          "bvh_type_prior": 0.1,
+          "historical_avg_score_used": true
+        }
+      },
+      "Evidence": {
+        "semantic_overlap": 0.7326,
+        "same_primary_driver": true,
+        "same_market_regime": false,
+        "same_location": false,
+        "same_organisation": false,
+        "source_has_product_or_solution": true,
+        "target_has_need_or_pain": true,
+        "source_has_insight": true,
+        "source_has_network_access": true,
+        "explicit_value_signal_gbp": 2613000.0
+      }
+    },
+    "B_TO_A": {
+      "ScorePreview": {
+        "EstimatedHVTIParameters": {
+          "problem_solution_fit": 100,
+          "commercial_opportunity_size": 90,
+          "urgency": 53,
+          "decision_authority": 89.5,
+          "capability_complementarity": 89.65,
+          "trust_potential": 45,
+          "strategic_alignment": 73.31,
+          "network_amplification": 70,
+          "timing_context": 45,
+          "execution_probability": 87
+        },
+        "EstimatedHVTIScore": 73.65,
+        "EstimatedProbabilityOfTransaction": 0.4919,
+        "Calibration": {
+          "label_count": 80,
+          "bvh_type_prior": 0.1,
+          "historical_avg_score_used": true
+        }
+      },
+      "Evidence": {
+        "semantic_overlap": 0.7326,
+        "same_primary_driver": true,
+        "same_market_regime": false,
+        "same_location": false,
+        "same_organisation": false,
+        "source_has_product_or_solution": true,
+        "target_has_need_or_pain": true,
+        "source_has_insight": true,
+        "source_has_network_access": true,
+        "explicit_value_signal_gbp": 1375626.0
+      }
+    }
+  },
+  "Calibration": {
+    "label_count": 80,
+    "bvh_type_prior": 0.1,
+    "historical_avg_score_used": true
+  },
+  "KnowledgeUsed": {
+    "BVHTypes": "Knowledge/BVHTypes.JSON",
+    "HVTIStructure": "Knowledge/HVTIStructure.JSON",
+    "RAIN5SignalKG": "Knowledge/RAIN5SignalKG.JSON"
+  }
+}

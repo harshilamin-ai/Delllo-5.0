@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIValues_P_69ACDEB3_P_C4C9EEFB_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "V_M_4436F7F6E323.JSON",
+  "OriginalRequestedFileName": "HVTIValues_P_69ACDEB3_P_C4C9EEFB_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_69ACDEB3",
+  "PersonBID": "P_C4C9EEFB",
+  "PersonAName": "James Spencer 101",
+  "PersonBName": "Hinesh Brown 128",
+  "BVHID": "BVH_93BAEA1AF5",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "Direction": "A_TO_B",
+  "EstimatedHVTIParameters": {
+    "problem_solution_fit": 100,
+    "commercial_opportunity_size": 82,
+    "urgency": 53,
+    "decision_authority": 84.0,
+    "capability_complementarity": 89.65,
+    "trust_potential": 60,
+    "strategic_alignment": 73.31,
+    "network_amplification": 70,
+    "timing_context": 55,
+    "execution_probability": 75
+  },
+  "EstimatedHVTIScore": 74.66,
+  "PairMatchScore": 80.71,
+  "BVHTypeFitScore": 90.33,
+  "ValueScore": 85.42,
+  "RankingScore": 81.56,
+  "PairSupervisedScore": 94.72,
+  "BVHTypeSupervisedScore": 87.28,
+  "FinalRAINScoreRaw": 90.24,
+  "FinalRAINScore": 89.14,
+  "HardBVHGatePass": true,
+  "HardBVHGateMultiplier": 1.0,
+  "HardBVHGateReason": "PASS",
+  "EstimatedProbabilityOfTransaction": 0.498,
+  "SignalEvidence": {
+    "semantic_overlap": 0.7326,
+    "same_primary_driver": true,
+    "same_market_regime": false,
+    "same_location": true,
+    "same_organisation": false,
+    "source_has_product_or_solution": true,
+    "target_has_need_or_pain": true,
+    "source_has_insight": true,
+    "source_has_network_access": true,
+    "explicit_value_signal_gbp": 2546811.0
+  },
+  "BothDirections": {
+    "A_TO_B": {
+      "PersonAID": "",
+      "PersonBID": "",
+      "ScorePreview": {
+        "EstimatedHVTIParameters": {
+          "problem_solution_fit": 100,
+          "commercial_opportunity_size": 82,
+          "urgency": 53,
+          "decision_authority": 84.0,
+          "capability_complementarity": 89.65,
+          "trust_potential": 60,
+          "strategic_alignment": 73.31,
+          "network_amplification": 70,
+          "timing_context": 55,
+          "execution_probability": 75
+        },
+        "EstimatedHVTIScore": 74.66,
+        "EstimatedProbabilityOfTransaction": 0.498,
+        "Calibration": {
+          "label_count": 80,
+          "bvh_type_prior": 0.1,
+          "historical_avg_score_used": true
+        }
+      },
+      "Evidence": {
+        "semantic_overlap": 0.7326,
+        "same_primary_driver": true,
+        "same_market_regime": false,
+        "same_location": true,
+        "same_organisation": false,
+        "source_has_product_or_solution": true,
+        "target_has_need_or_pain": true,
+        "source_has_insight": true,
+        "source_has_network_access": true,
+        "explicit_value_signal_gbp": 2546811.0
+      }
+    },
+    "B_TO_A": {
+      "ScorePreview": {
+        "EstimatedHVTIParameters": {
+          "problem_solution_fit": 100,
+          "commercial_opportunity_size": 82,
+          "urgency": 53,
+          "decision_authority": 84.0,
+          "capability_complementarity": 89.65,
+          "trust_potential": 60,
+          "strategic_alignment": 73.31,
+          "network_amplification": 70,
+          "timing_context": 55,
+          "execution_probability": 75
+        },
+        "EstimatedHVTIScore": 74.66,
+        "EstimatedProbabilityOfTransaction": 0.498,
+        "Calibration": {
+          "label_count": 80,
+          "bvh_type_prior": 0.1,
+          "historical_avg_score_used": true
+        }
+      },
+      "Evidence": {
+        "semantic_overlap": 0.7326,
+        "same_primary_driver": true,
+        "same_market_regime": false,
+        "same_location": true,
+        "same_organisation": false,
+        "source_has_product_or_solution": true,
+        "target_has_need_or_pain": true,
+        "source_has_insight": true,
+        "source_has_network_access": true,
+        "explicit_value_signal_gbp": 3755000.0
+      }
+    }
+  },
+  "Calibration": {
+    "label_count": 80,
+    "bvh_type_prior": 0.1,
+    "historical_avg_score_used": true
+  },
+  "KnowledgeUsed": {
+    "BVHTypes": "Knowledge/BVHTypes.JSON",
+    "HVTIStructure": "Knowledge/HVTIStructure.JSON",
+    "RAIN5SignalKG": "Knowledge/RAIN5SignalKG.JSON"
+  }
+}
