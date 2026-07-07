@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "object_name": "RAIN5SignalKG.JSON",
+  "description": "Knowledge graph mapping profile fields to HVTI signals and value-estimation signals.",
+  "profile_fields": {
+    "identity": [
+      "full_name",
+      "current_role",
+      "organisation_name",
+      "seniority",
+      "role_family",
+      "persona_cluster"
+    ],
+    "strategic_context": [
+      "primary_driver_id",
+      "primary_driver_description",
+      "secondary_driver_id",
+      "secondary_driver_description",
+      "market_regime"
+    ],
+    "commercial_evidence": [
+      "commercial_pricing_json",
+      "product_value_cases_json",
+      "use_cases_json",
+      "credibility_statements_json",
+      "buyer_pain_points_json",
+      "regulatory_drivers_json",
+      "offers_json",
+      "needs_json",
+      "solutions_json",
+      "insights_json"
+    ],
+    "relationship_evidence": [
+      "previous_employment_and_education_history_json",
+      "relationship_edges_json"
+    ]
+  },
+  "hvti_signal_rules": {
+    "problem_solution_fit": [
+      "seller offer/solution overlaps buyer need/pain point/use case",
+      "same or adjacent primary driver",
+      "named product maps to buyer problem"
+    ],
+    "commercial_opportunity_size": [
+      "profile pricing exists",
+      "product value cases exist",
+      "estimated cost of inaction exists",
+      "capital amount or contract size exists"
+    ],
+    "urgency": [
+      "regulatory driver exists",
+      "buyer pain point cost exists",
+      "time-sensitive market regime"
+    ],
+    "decision_authority": [
+      "seniority",
+      "role title contains head, director, partner, c-suite, founder, managing director"
+    ],
+    "capability_complementarity": [
+      "one profile has solution/product/expertise; the other has buyer pain/need/access"
+    ],
+    "trust_potential": [
+      "shared organisation, education, industry, role family, market regime, relationship edges"
+    ],
+    "strategic_alignment": [
+      "shared driver, compatible secondary driver, same market regime"
+    ],
+    "network_amplification": [
+      "capital connector, network access offer, client introduction use case, ecosystem persona"
+    ],
+    "timing_context": [
+      "same market regime, same location, active regulation/market trigger"
+    ],
+    "execution_probability": [
+      "high seller/buyer bias pairing, credibility evidence, explicit pricing, clear meeting goal"
+    ]
+  },
+  "bvh_type_signal_rules": {
+    "PRODUCTSALE": {
+      "seller_side": [
+        "products",
+        "services",
+        "solutions"
+      ],
+      "buyer_side": [
+        "needs",
+        "buyer_pain_points",
+        "use_cases"
+      ]
+    },
+    "CLIENTINTRODUCTION": {
+      "source_side": [
+        "network_access",
+        "relationship_edges"
+      ],
+      "target_side": [
+        "commercial_need",
+        "products",
+        "services"
+      ]
+    },
+    "PROBLEMSOLUTION": {
+      "source_side": [
+        "solutions",
+        "offers"
+      ],
+      "target_side": [
+        "needs",
+        "buyer_pain_points"
+      ]
+    },
+    "INSIGHTEXCHANGE": {
+      "source_side": [
+        "insights",
+        "credibility_statements"
+      ],
+      "target_side": [
+        "needs",
+        "strategy context"
+      ]
+    },
+    "CAPITALINTRODUCTION": {
+      "source_side": [
+        "capital_connector",
+        "network_access"
+      ],
+      "target_side": [
+        "capital_need",
+        "growth use case"
+      ]
+    },
+    "PARTNERSHIP": {
+      "both_sides": [
+        "complementary products, services, expertise, networks"
+      ]
+    },
+    "RECRUITMENT": {
+      "candidate_side": [
+        "role, seniority, skills"
+      ],
+      "employer_side": [
+        "hiring need, salary, recruiter fee"
+      ]
+    },
+    "SUPPLIERMATCH": {
+      "supplier_side": [
+        "services, products"
+      ],
+      "buyer_side": [
+        "needs, procurement pain"
+      ]
+    },
+    "TRUSTPATH": {
+      "both_sides": [
+        "shared employer, education, industry, relationship edges"
+      ]
+    },
+    "ECOSYSTEMAMPLIFICATION": {
+      "source_side": [
+        "network access, ecosystem role"
+      ],
+      "target_side": [
+        "product, proposition, capital or client need"
+      ]
+    }
+  }
+}

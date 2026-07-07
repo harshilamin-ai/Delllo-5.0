@@ -1,0 +1,141 @@
+{
+  "kg_name": "BVHValueModel.KG",
+  "version": "1.0",
+  "description": "Lightweight value-model knowledge graph for computing potential lifetime transaction value from BVHCT, profile pricing, services, solutions, organisation type and seniority.",
+  "value_threshold_semantics": {
+    "minimum_match_value_threshold_gbp": "A filter. It is not used as the base value. Delllo only keeps/generated matches whose computed potential_lifetime_transaction_value_gbp is >= this threshold."
+  },
+  "profile_pricing_paths": [
+    "profile.commercial_pricing_json",
+    "profile.full_cil_profile_json.commercial_pricing",
+    "profile.commercial_context_json.commercial_pricing"
+  ],
+  "seniority_multipliers": {
+    "Analyst": 0.65,
+    "Associate": 0.75,
+    "Vice President": 0.95,
+    "Director": 1.15,
+    "Managing Director": 1.35,
+    "Partner": 1.45,
+    "Founder": 1.35,
+    "C-suite": 1.6
+  },
+  "organisation_archetype_multipliers": {
+    "global_investment_bank": 1.5,
+    "asset_manager": 1.35,
+    "law_firm": 1.2,
+    "management_consultancy": 1.2,
+    "fintech_regtech_vendor": 1.1,
+    "corporate": 1.15,
+    "university": 0.8,
+    "public_sector": 0.75
+  },
+  "bvhct_value_models": {
+    "PRODUCTSALE": {
+      "formula": "explicit_product_price_or_service_value * buyer_organisation_multiplier * decision_seniority_multiplier * pricing_confidence",
+      "pricing_priority": [
+        "products.enterprise_price_gbp",
+        "products.target_price_gbp",
+        "products.min_price_gbp",
+        "services.project_value_gbp"
+      ],
+      "fallback_base_value_gbp": 75000,
+      "pricing_confidence": 0.9,
+      "notes": "Used where one profile has a product/platform/service that could be sold to the other profile or their organisation."
+    },
+    "CLIENTINTRODUCTION": {
+      "formula": "expected_contract_value_gbp * referral_value_pct * network_multiplier * pricing_confidence",
+      "pricing_priority": [
+        "client_introduction.expected_contract_value_gbp"
+      ],
+      "fallback_contract_value_gbp": 100000,
+      "fallback_referral_value_pct": 0.15,
+      "network_multiplier": 1.4,
+      "pricing_confidence": 0.75,
+      "notes": "Values the commercial route-to-market benefit of one person introducing another to a client/sponsor/buyer."
+    },
+    "PROBLEMSOLUTION": {
+      "formula": "max(solution_project_value, estimated_cost_saving_gbp) * problem_owner_multiplier * pricing_confidence",
+      "pricing_priority": [
+        "services.project_value_gbp",
+        "products.target_price_gbp",
+        "problem_solution.estimated_cost_saving_gbp"
+      ],
+      "fallback_base_value_gbp": 60000,
+      "pricing_confidence": 0.8,
+      "notes": "Values the opportunity where one profile owns a problem and the other has a solution."
+    },
+    "INSIGHTEXCHANGE": {
+      "formula": "advisory_day_rate_gbp * typical_project_days * seniority_multiplier * pricing_confidence",
+      "pricing_priority": [
+        "services.day_rate_gbp",
+        "services.typical_project_days"
+      ],
+      "fallback_day_rate_gbp": 1200,
+      "fallback_project_days": 10,
+      "pricing_confidence": 0.65,
+      "notes": "Values expert insight, advisory support, academic/commercial knowledge transfer or market intelligence."
+    },
+    "CAPITALINTRODUCTION": {
+      "formula": "capital_amount_gbp * success_fee_pct * network_multiplier * pricing_confidence",
+      "pricing_priority": [
+        "capital.typical_capital_raise_gbp",
+        "capital.success_fee_pct"
+      ],
+      "fallback_capital_amount_gbp": 1000000,
+      "fallback_success_fee_pct": 0.02,
+      "network_multiplier": 1.25,
+      "pricing_confidence": 0.7,
+      "notes": "Values capital access, investment introduction, private equity/credit/grant route-to-capital benefits."
+    },
+    "PARTNERSHIP": {
+      "formula": "joint_revenue_opportunity_gbp * delivery_confidence * strategic_alignment_multiplier",
+      "pricing_priority": [
+        "partnership.joint_revenue_opportunity_gbp",
+        "partnership.delivery_confidence"
+      ],
+      "fallback_joint_revenue_opportunity_gbp": 150000,
+      "fallback_delivery_confidence": 0.5,
+      "strategic_alignment_multiplier": 1.2,
+      "pricing_confidence": 0.7,
+      "notes": "Values a joint proposition, co-delivery partnership or complementary capability match."
+    },
+    "RECRUITMENT": {
+      "formula": "candidate_salary_gbp * recruiter_fee_pct * hiring_probability_proxy",
+      "pricing_priority": [
+        "recruitment.typical_salary_gbp",
+        "recruitment.recruiter_fee_pct"
+      ],
+      "fallback_salary_gbp": 90000,
+      "fallback_recruiter_fee_pct": 0.2,
+      "hiring_probability_proxy": 1.0,
+      "pricing_confidence": 0.85,
+      "notes": "Example: if a candidate meets an employer, the potential value is the recruiter fee avoided/created."
+    },
+    "SUPPLIERMATCH": {
+      "formula": "supplier_project_value_gbp * buyer_organisation_multiplier * pricing_confidence",
+      "pricing_priority": [
+        "services.project_value_gbp",
+        "products.target_price_gbp",
+        "products.min_price_gbp"
+      ],
+      "fallback_base_value_gbp": 50000,
+      "pricing_confidence": 0.8,
+      "notes": "Values supplier/vendor/implementation partner fit."
+    },
+    "TRUSTPATH": {
+      "formula": "base_relationship_acceleration_value_gbp * shared_context_multiplier * seniority_multiplier",
+      "fallback_base_value_gbp": 25000,
+      "shared_context_multiplier": 1.5,
+      "pricing_confidence": 0.55,
+      "notes": "Values trust acceleration where shared employer/institution/industry reduces conversion friction."
+    },
+    "ECOSYSTEMAMPLIFICATION": {
+      "formula": "ecosystem_reach_value_gbp * network_multiplier * pricing_confidence",
+      "fallback_ecosystem_reach_value_gbp": 120000,
+      "network_multiplier": 1.6,
+      "pricing_confidence": 0.65,
+      "notes": "Values second-order ecosystem, portfolio, community or programme amplification."
+    }
+  }
+}

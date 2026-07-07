@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "object_name": "BVHTypes.JSON",
+  "description": "Business Value Hypothesis Types used by RAIN5.0. Derived from CILGeneration BVHCT classes and normalised for predictive matching.",
+  "source": "CILGeneration/Knowledge/BVHCT.json where available",
+  "bvh_types": [
+    {
+      "BVHTypeID": "PRODUCTSALE",
+      "BVHTypeName": "PRODUCTSALE",
+      "Description": "One professional has a product or platform that can be sold to, sponsored by, or validated through the other professional.",
+      "ValueMechanism": "direct_revenue",
+      "SourceRole": "seller",
+      "TargetRole": "buyer_or_sponsor",
+      "Active": true
+    },
+    {
+      "BVHTypeID": "CLIENTINTRODUCTION",
+      "BVHTypeName": "CLIENTINTRODUCTION",
+      "Description": "One professional can introduce the other to a potential client, sponsor, investor, buyer or strategic account.",
+      "ValueMechanism": "route_to_market",
+      "SourceRole": "introducer",
+      "TargetRole": "beneficiary",
+      "Active": true
+    },
+    {
+      "BVHTypeID": "PROBLEMSOLUTION",
+      "BVHTypeName": "PROBLEMSOLUTION",
+      "Description": "One professional has an operational, commercial, regulatory or strategic problem that the other can solve.",
+      "ValueMechanism": "problem_solution_fit",
+      "SourceRole": "problem_owner",
+      "TargetRole": "solution_provider",
+      "Active": true
+    },
+    {
+      "BVHTypeID": "INSIGHTEXCHANGE",
+      "BVHTypeName": "INSIGHTEXCHANGE",
+      "Description": "One professional has high-value market, academic, policy, technical or operating insight relevant to the other's objectives.",
+      "ValueMechanism": "knowledge_transfer",
+      "SourceRole": "insight_provider",
+      "TargetRole": "insight_receiver",
+      "Active": true
+    },
+    {
+      "BVHTypeID": "CAPITALINTRODUCTION",
+      "BVHTypeName": "CAPITALINTRODUCTION",
+      "Description": "One professional can connect the other to capital, grants, venture funding, private equity, credit or strategic finance.",
+      "ValueMechanism": "capital_access",
+      "SourceRole": "capital_connector",
+      "TargetRole": "capital_seeker",
+      "Active": true
+    },
+    {
+      "BVHTypeID": "PARTNERSHIP",
+      "BVHTypeName": "PARTNERSHIP",
+      "Description": "The two professionals have complementary capabilities that could form a joint proposition or co-delivery partnership.",
+      "ValueMechanism": "joint_value_creation",
+      "SourceRole": "partner_a",
+      "TargetRole": "partner_b",
+      "Active": true
+    },
+    {
+      "BVHTypeID": "RECRUITMENT",
+      "BVHTypeName": "RECRUITMENT",
+      "Description": "One professional needs talent, capability or specialist delivery capacity that the other can provide or access.",
+      "ValueMechanism": "capability_access",
+      "SourceRole": "talent_seeker",
+      "TargetRole": "talent_provider",
+      "Active": true
+    },
+    {
+      "BVHTypeID": "SUPPLIERMATCH",
+      "BVHTypeName": "SUPPLIERMATCH",
+      "Description": "One professional or organisation requires a supplier, technology vendor, implementation partner or delivery specialist.",
+      "ValueMechanism": "supplier_solution_fit",
+      "SourceRole": "buyer",
+      "TargetRole": "supplier",
+      "Active": true
+    },
+    {
+      "BVHTypeID": "TRUSTPATH",
+      "BVHTypeName": "TRUSTPATH",
+      "Description": "The pair share employers, institutions, sectors or contacts that reduce trust friction and increase conversion probability.",
+      "ValueMechanism": "trust_acceleration",
+      "SourceRole": "relationship_anchor",
+      "TargetRole": "relationship_anchor",
+      "Active": true
+    },
+    {
+      "BVHTypeID": "ECOSYSTEMAMPLIFICATION",
+      "BVHTypeName": "ECOSYSTEMAMPLIFICATION",
+      "Description": "The introduction creates second-order value by unlocking a wider network, community, portfolio, programme or sector ecosystem.",
+      "ValueMechanism": "network_multiplier",
+      "SourceRole": "ecosystem_node",
+      "TargetRole": "ecosystem_node",
+      "Active": true
+    }
+  ]
+}

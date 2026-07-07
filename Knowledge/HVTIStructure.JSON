@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "object_name": "HVTIStructure.JSON",
+  "description": "Default HVTI parameter structure used by RAIN5.0 to estimate match quality from CILProfiles.",
+  "score_model": {
+    "score_min": 0,
+    "score_max": 100,
+    "score_formula": "weighted_average(HVTI parameter scores)",
+    "probability_formula": "min_probability + (HVTIScore / 100) * (max_probability - min_probability)"
+  },
+  "probability_model": {
+    "description": "Convert weighted HVTI factor score into transaction probability using configured min/max probability bounds.",
+    "min_probability": 0.05,
+    "max_probability": 0.65
+  },
+  "value_model": {
+    "currency": "USD",
+    "default_gbp_to_usd": 1.27,
+    "default_value_discount_factor": 1.0,
+    "roi_formula": "estimated_potential_value_usd * estimated_probability_of_transaction",
+    "explanation": "EstimatedHVITUSDValue is potential value of the meeting in USD before conversion probability. Expected value can be derived by multiplying by the estimated transaction probability."
+  },
+  "parameters": [
+    {
+      "ParameterID": "problem_solution_fit",
+      "ParameterName": "problem_solution_fit",
+      "Description": "",
+      "DefaultWeight": 0.22,
+      "DefaultMin": 0,
+      "DefaultMax": 100,
+      "DefaultValue": 50,
+      "EstimationMethod": "profile_signal_extraction"
+    },
+    {
+      "ParameterID": "commercial_opportunity_size",
+      "ParameterName": "commercial_opportunity_size",
+      "Description": "",
+      "DefaultWeight": 0.14,
+      "DefaultMin": 0,
+      "DefaultMax": 100,
+      "DefaultValue": 50,
+      "EstimationMethod": "profile_signal_extraction"
+    },
+    {
+      "ParameterID": "urgency",
+      "ParameterName": "urgency",
+      "Description": "",
+      "DefaultWeight": 0.1,
+      "DefaultMin": 0,
+      "DefaultMax": 100,
+      "DefaultValue": 50,
+      "EstimationMethod": "profile_signal_extraction"
+    },
+    {
+      "ParameterID": "decision_authority",
+      "ParameterName": "decision_authority",
+      "Description": "",
+      "DefaultWeight": 0.11,
+      "DefaultMin": 0,
+      "DefaultMax": 100,
+      "DefaultValue": 50,
+      "EstimationMethod": "profile_signal_extraction"
+    },
+    {
+      "ParameterID": "capability_complementarity",
+      "ParameterName": "capability_complementarity",
+      "Description": "",
+      "DefaultWeight": 0.09,
+      "DefaultMin": 0,
+      "DefaultMax": 100,
+      "DefaultValue": 50,
+      "EstimationMethod": "profile_signal_extraction"
+    },
+    {
+      "ParameterID": "trust_potential",
+      "ParameterName": "trust_potential",
+      "Description": "",
+      "DefaultWeight": 0.08,
+      "DefaultMin": 0,
+      "DefaultMax": 100,
+      "DefaultValue": 50,
+      "EstimationMethod": "profile_signal_extraction"
+    },
+    {
+      "ParameterID": "strategic_alignment",
+      "ParameterName": "strategic_alignment",
+      "Description": "",
+      "DefaultWeight": 0.08,
+      "DefaultMin": 0,
+      "DefaultMax": 100,
+      "DefaultValue": 50,
+      "EstimationMethod": "profile_signal_extraction"
+    },
+    {
+      "ParameterID": "network_amplification",
+      "ParameterName": "network_amplification",
+      "Description": "",
+      "DefaultWeight": 0.06,
+      "DefaultMin": 0,
+      "DefaultMax": 100,
+      "DefaultValue": 50,
+      "EstimationMethod": "profile_signal_extraction"
+    },
+    {
+      "ParameterID": "timing_context",
+      "ParameterName": "timing_context",
+      "Description": "",
+      "DefaultWeight": 0.06,
+      "DefaultMin": 0,
+      "DefaultMax": 100,
+      "DefaultValue": 50,
+      "EstimationMethod": "profile_signal_extraction"
+    },
+    {
+      "ParameterID": "execution_probability",
+      "ParameterName": "execution_probability",
+      "Description": "",
+      "DefaultWeight": 0.06,
+      "DefaultMin": 0,
+      "DefaultMax": 100,
+      "DefaultValue": 50,
+      "EstimationMethod": "profile_signal_extraction"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+Good. Let me check exactly what Python packages this needs, then package everything for your local machine.Great news — it's pure Python standard library, no pandas/numpy/sklearn needed. That makes local testing simple: just Python 3.10+ and nothing else to install.I'll keep your real sample INPUTS in the zip too, since you already have that data and it's small enough to include.Let me rename the folder inside the zip to `RAIN5` (not `RAIN5_real`) so it matches the deployment plan's expected folder name.That nested incorrectly — my earlier stand-in engine folder was still at `/home/claude/RAIN5`. Let me clean this up properly.Clean now. Let's zip it correctly.That's the correct, clean structure — just `main.py` + `RAIN_5_Code/` + `Knowledge/` + your real `INPUTS/` sample data.**How to test this on your local machine:**
+
+**1. Unzip and check Python version**
+```powershell
+Expand-Archive .\RAIN5.zip -DestinationPath .
+cd .\RAIN5
+python --version
+```
+Needs Python 3.10+. No pip installs required — I checked every import across all the engine files, it's 100% standard library (no pandas/numpy/sklearn).
+
+**2. Run it against the real sample data already in the zip**
+```powershell
+python main.py --input-dir INPUTS --auto-top-k --target-pair-precision 50 --auto-top-k-min-suggestions 5 --bvh-selection-mode canonical_top1 --bvh-recall-floor-spec "PARTNERSHIP:3,TRUSTPATH:3,RECRUITMENT:0,SUPPLIERMATCH:2" --bvh-recall-boost-spec "PARTNERSHIP:0,TRUSTPATH:4,RECRUITMENT:0,SUPPLIERMATCH:2"
+```
+
+**3. What to expect**
+With 200 profiles this does ~199,000 BVH evaluations in two passes (train weights, then score) — took about 6 minutes per pass in my test, so **roughly 10-12 minutes total** on your machine. You'll see live progress lines like:
+```
+[PROGRESS] 100,000/199,000 BVH evaluations (50.25%) | elapsed 2m 49s | rate 589.7/sec | ETA ...
+```
+That's normal, not a hang — let it run.
+
+**4. Check the result**
+```powershell
+dir .\OUTPUT
+```
+You'll get a timestamped folder `OUTPUT_<stamp>/` containing `matchSuggestions.JSON` plus several diagnostic files (`HVTIStructure_Tuned.JSON`, `SupervisedWeightTuning.JSON`, `PairPrototypeModel.JSON`, etc.) and a full run log.
+
+I already ran this exact command against this exact data in my sandbox and confirmed it completes and trains real models (positive/negative score separation was clean: 0.89 vs 0.15 average). If you want to sanity-check faster while iterating, add `--max-pairs 2000` to cut it down to a quick subset before running the full thing.
+
+Want me to also wire this into the app service wrapper for a full local test (profiles in → API → real match cards out), or just confirm the engine runs standalone first?

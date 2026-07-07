@@ -1,0 +1,233 @@
+{
+  "kg_name": "ProfileGenerator.KG",
+  "version": "1.0",
+  "domains": [
+    {
+      "id": "driver_ai_data",
+      "description": "AI adoption, data quality, lineage, model governance and operating model redesign.",
+      "roles": [
+        "Platform Engineering Director",
+        "Chief Architect",
+        "AI Transformation Lead",
+        "Head of Data"
+      ],
+      "solutions": [
+        "AI assistants",
+        "RAG platforms",
+        "data lineage",
+        "workflow orchestration",
+        "knowledge graph tooling"
+      ]
+    },
+    {
+      "id": "driver_loan_trading",
+      "description": "Loan trading workflow automation, agency, post-trade controls and desk administration.",
+      "roles": [
+        "Loan Operations Specialist",
+        "Head of Loan Trading Operations",
+        "Credit Trading Support Lead"
+      ],
+      "solutions": [
+        "LTOS",
+        "loan workflow automation",
+        "exception management",
+        "trade lifecycle automation"
+      ]
+    },
+    {
+      "id": "driver_sustainability",
+      "description": "Sustainability accounting, ESG operating systems, decarbonisation execution and circular economy scaling.",
+      "roles": [
+        "Sustainability Director",
+        "ESG Programme Lead",
+        "Climate Tech Investor"
+      ],
+      "solutions": [
+        "ESGOS",
+        "SustainabilityOS",
+        "circular economy opportunity engine"
+      ]
+    },
+    {
+      "id": "driver_cyber_resilience",
+      "description": "Cyber resilience, ISMS automation, control evidence and operational security metrics.",
+      "roles": [
+        "CISO",
+        "Cyber Resilience Lead",
+        "Controls Assurance Director"
+      ],
+      "solutions": [
+        "iSOOS",
+        "ISMS automation",
+        "control evidence automation",
+        "cyber metrics"
+      ]
+    },
+    {
+      "id": "driver_structured_finance",
+      "description": "Structured finance, corporate trust, issuer services, CLOs and securitisation operations.",
+      "roles": [
+        "Corporate Trust Director",
+        "Structured Finance Partner",
+        "Transaction Manager"
+      ],
+      "solutions": [
+        "structured finance workflow automation",
+        "issuer services analytics",
+        "document intelligence"
+      ]
+    },
+    {
+      "id": "driver_private_capital",
+      "description": "Private equity, private credit, SRT, NAV financing, capital introduction and deal origination.",
+      "roles": [
+        "Private Equity Partner",
+        "Credit Investor",
+        "Venture Capital Partner"
+      ],
+      "solutions": [
+        "capital introduction",
+        "deal intelligence",
+        "investor matching"
+      ]
+    }
+  ],
+  "organisation_archetypes": [
+    "global_investment_bank",
+    "asset_manager",
+    "law_firm",
+    "management_consultancy",
+    "fintech_regtech_vendor",
+    "corporate",
+    "university",
+    "public_sector"
+  ],
+  "locations": [
+    "London",
+    "Amsterdam",
+    "New York",
+    "Singapore",
+    "Paris",
+    "Frankfurt",
+    "Manchester",
+    "Birmingham",
+    "Edinburgh",
+    "Dublin"
+  ],
+  "seniorities": [
+    "Analyst",
+    "Associate",
+    "Vice President",
+    "Director",
+    "Managing Director",
+    "Partner",
+    "Founder",
+    "C-suite"
+  ],
+  "sales_enablement_catalogue": {
+    "schema_version": "1.0",
+    "description": "Named product/use-case/value-case catalogue used to generate profiles that RAINNegiotiator can sell from.",
+    "products_by_domain": {
+      "trading_markets": [
+        {
+          "product_name": "LTOS",
+          "product_description": "Loan Trading Operating System for secondary loan trading desks.",
+          "typical_annual_price_gbp": 250000,
+          "enterprise_annual_price_gbp": 750000,
+          "value_case": "Can save over \u00a31m per year by reducing manual trade lifecycle workflows, spreadsheet breaks, settlement delay and control failures.",
+          "buyer_use_case": "Head of Credit Trading, Loan Trading Operations or COO needs to reduce costly manual workflows and improve execution/control visibility.",
+          "regulatory_drivers": [
+            "T+1 settlement pressure",
+            "MiFID II controls",
+            "audit trail obligations",
+            "operational resilience"
+          ],
+          "credibility": "Designed around real bank loan trading workflow automation and front-to-middle-office control problems."
+        },
+        {
+          "product_name": "OSCEAN",
+          "product_description": "OTC Structured Products workflow and lifecycle automation platform.",
+          "typical_annual_price_gbp": 300000,
+          "enterprise_annual_price_gbp": 900000,
+          "value_case": "Can remove hundreds of spreadsheets and reduce audit/control points across OTC structured product operations.",
+          "buyer_use_case": "Structured products desk or middle office needs a golden source for trade lifecycle events and regulatory reporting.",
+          "regulatory_drivers": [
+            "MiFID II",
+            "PRIIPs",
+            "operational risk controls",
+            "audit remediation"
+          ],
+          "credibility": "Based on experience delivering platforms carrying more than $40bn through OTC structured product workflows."
+        },
+        {
+          "product_name": "ATRS",
+          "product_description": "Agency Lending TRS and securities lending lifecycle platform.",
+          "typical_annual_price_gbp": 500000,
+          "enterprise_annual_price_gbp": 1000000,
+          "value_case": "Can increase notional opportunity, automate TRS lifecycle events and reduce reconciliation/manual reset overhead.",
+          "buyer_use_case": "Agency lending or TRS desk needs basket creation, swaps lifecycle control, recall/corporate-action handling and client reporting.",
+          "regulatory_drivers": [
+            "SFTR",
+            "collateral reporting",
+            "operational resilience",
+            "client reporting controls"
+          ],
+          "credibility": "Built around real securities lending, TRS and agency desk transformation needs."
+        }
+      ],
+      "sustainability": [
+        {
+          "product_name": "ESGOS",
+          "product_description": "SustainabilityOS / Autonomous Sustainability Accounting platform.",
+          "typical_annual_price_gbp": 150000,
+          "enterprise_annual_price_gbp": 500000,
+          "value_case": "Can identify material asset misvaluation, constructive obligations and transition/adaptation risk before they become board or market surprises.",
+          "buyer_use_case": "CFO, CSO, PE operating partner or credit investor needs decision-grade sustainability accounting and value-at-risk analysis.",
+          "regulatory_drivers": [
+            "ISSB",
+            "CSRD",
+            "TCFD",
+            "UK SDR",
+            "IAS 37 constructive obligations"
+          ],
+          "credibility": "Combines sustainability accounting expertise, ontology, methodologies and judgement-library reasoning."
+        }
+      ],
+      "cyber_resilience": [
+        {
+          "product_name": "Cyber Robotics",
+          "product_description": "Cyber governance, controls, evidence and operational resilience automation.",
+          "typical_annual_price_gbp": 750000,
+          "enterprise_annual_price_gbp": 1500000,
+          "value_case": "Can save more than $10m by automating cyber control evidence, compliance workflows, drift detection and risk reporting.",
+          "buyer_use_case": "CISO, CFO or risk leader needs measurable cyber resilience, audit evidence and continuous controls assurance.",
+          "regulatory_drivers": [
+            "DORA",
+            "NIST CSF",
+            "ISO27001",
+            "Cyber Essentials",
+            "operational resilience"
+          ],
+          "credibility": "Built around ISO27001, cyber metrics, workflow automation and technical-state-management requirements."
+        }
+      ],
+      "ai_transformation": [
+        {
+          "product_name": "Delllo HVTI Engine",
+          "product_description": "High-value transaction introduction engine that identifies economically valuable people-to-people opportunities.",
+          "typical_annual_price_gbp": 100000,
+          "enterprise_annual_price_gbp": 350000,
+          "value_case": "Can create new revenue by surfacing hidden high-value introductions across firms, universities, events, communities and professional networks.",
+          "buyer_use_case": "Law firm, university, PE platform, ecosystem manager or innovation leader wants measurable ROI from relationship intelligence.",
+          "regulatory_drivers": [
+            "data governance",
+            "privacy-by-design",
+            "auditability",
+            "explainable AI"
+          ],
+          "credibility": "Uses BVH, HVTI scoring and explainable RAIN negotiation objects to justify every introduction."
+        }
+      ]
+    }
+  }
+}
