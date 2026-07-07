@@ -1,5 +1,3 @@
-Good. Let me check exactly what Python packages this needs, then package everything for your local machine.Great news — it's pure Python standard library, no pandas/numpy/sklearn needed. That makes local testing simple: just Python 3.10+ and nothing else to install.I'll keep your real sample INPUTS in the zip too, since you already have that data and it's small enough to include.Let me rename the folder inside the zip to `RAIN5` (not `RAIN5_real`) so it matches the deployment plan's expected folder name.That nested incorrectly — my earlier stand-in engine folder was still at `/home/claude/RAIN5`. Let me clean this up properly.Clean now. Let's zip it correctly.That's the correct, clean structure — just `main.py` + `RAIN_5_Code/` + `Knowledge/` + your real `INPUTS/` sample data.**How to test this on your local machine:**
-
 **1. Unzip and check Python version**
 ```powershell
 Expand-Archive .\RAIN5.zip -DestinationPath .
