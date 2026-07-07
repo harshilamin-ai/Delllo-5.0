@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_0F5BD95C_P_518EE770_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_9A2ED1423706.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_0F5BD95C_P_518EE770_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_0F5BD95C",
+  "PersonBID": "P_518EE770",
+  "PersonAName": "Michael Solanki 007",
+  "PersonBName": "Meera Price 008",
+  "BVHID": "BVH_F281D35BE0",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 78.19,
+  "BVHTypeFitScore": 88.38,
+  "ValueScore": 83.1,
+  "RankingScore": 79.73,
+  "EstimatedHVITUSDValue": 656590,
+  "EstimatedExpectedUSDValue": 321466,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $2,626,360, PersonB product/value case $2,717,800, buyer pain/cost signals $2,275,787. Selected potential value is $656,590; expected value is $321,466 after applying 49.0% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2626360,
+    "PersonBProductOrValueCaseUSD": 2717800,
+    "PersonABuyerPainUSD": 2275787,
+    "PersonBBuyerPainUSD": 1883106
+  }
+}

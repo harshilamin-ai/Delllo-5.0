@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_E9A74F09_P_7178D4F2_CLIENTINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_08BCC95776C8.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_E9A74F09_P_7178D4F2_CLIENTINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_E9A74F09",
+  "PersonBID": "P_7178D4F2",
+  "PersonAName": "Sarah Brown 043",
+  "PersonBName": "Richard Khan 044",
+  "BVHID": "BVH_DFFFDBDF9E",
+  "BVHTypeID": "CLIENTINTRODUCTION",
+  "BVHTypeName": "CLIENTINTRODUCTION",
+  "PairMatchScore": 84.55,
+  "BVHTypeFitScore": 98.5,
+  "ValueScore": 80.33,
+  "RankingScore": 82.82,
+  "EstimatedHVITUSDValue": 420052,
+  "EstimatedExpectedUSDValue": 217041,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses estimated_referral_or_route_to_market_value. Profile signals considered: PersonA product/value case $2,800,350, PersonB product/value case $1,912,620, buyer pain/cost signals $1,586,983. Selected potential value is $420,052; expected value is $217,041 after applying 51.7% estimated transaction probability.",
+  "RoIModelMethod": "estimated_referral_or_route_to_market_value",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2800350,
+    "PersonBProductOrValueCaseUSD": 1912620,
+    "PersonABuyerPainUSD": 965586,
+    "PersonBBuyerPainUSD": 1586983
+  }
+}

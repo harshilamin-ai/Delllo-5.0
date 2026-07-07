@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_87EE1C46_P_8B7D195B_PARTNERSHIP_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_3CA99DD9142F.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_87EE1C46_P_8B7D195B_PARTNERSHIP_070726155032.JSON",
+  "PersonAID": "P_87EE1C46",
+  "PersonBID": "P_8B7D195B",
+  "PersonAName": "Sarah Morris 031",
+  "PersonBName": "Hinesh Kapoor 032",
+  "BVHID": "BVH_2755D7064B",
+  "BVHTypeID": "PARTNERSHIP",
+  "BVHTypeName": "PARTNERSHIP",
+  "PairMatchScore": 83.28,
+  "BVHTypeFitScore": 90.48,
+  "ValueScore": 98.22,
+  "RankingScore": 87.73,
+  "EstimatedHVITUSDValue": 7503160,
+  "EstimatedExpectedUSDValue": 3902394,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses combined_joint_revenue_or_value_case. Profile signals considered: PersonA product/value case $4,531,360, PersonB product/value case $2,971,800, buyer pain/cost signals $2,849,354. Selected potential value is $7,503,160; expected value is $3,902,394 after applying 52.0% estimated transaction probability.",
+  "RoIModelMethod": "combined_joint_revenue_or_value_case",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 4531360,
+    "PersonBProductOrValueCaseUSD": 2971800,
+    "PersonABuyerPainUSD": 2849354,
+    "PersonBBuyerPainUSD": 2040809
+  }
+}

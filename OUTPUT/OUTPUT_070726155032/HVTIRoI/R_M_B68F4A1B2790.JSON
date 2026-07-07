@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_D526A68E_P_DCCD5E89_PARTNERSHIP_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_B68F4A1B2790.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_D526A68E_P_DCCD5E89_PARTNERSHIP_070726155032.JSON",
+  "PersonAID": "P_D526A68E",
+  "PersonBID": "P_DCCD5E89",
+  "PersonAName": "Daniel Patel 111",
+  "PersonBName": "Meera Morris 112",
+  "BVHID": "BVH_8AE49BAE75",
+  "BVHTypeID": "PARTNERSHIP",
+  "BVHTypeName": "PARTNERSHIP",
+  "PairMatchScore": 78.52,
+  "BVHTypeFitScore": 87.72,
+  "ValueScore": 98.66,
+  "RankingScore": 85.76,
+  "EstimatedHVITUSDValue": 8060690,
+  "EstimatedExpectedUSDValue": 4023896,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses combined_joint_revenue_or_value_case. Profile signals considered: PersonA product/value case $5,048,250, PersonB product/value case $3,012,440, buyer pain/cost signals $3,555,976. Selected potential value is $8,060,690; expected value is $4,023,896 after applying 49.9% estimated transaction probability.",
+  "RoIModelMethod": "combined_joint_revenue_or_value_case",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 5048250,
+    "PersonBProductOrValueCaseUSD": 3012440,
+    "PersonABuyerPainUSD": 3555976,
+    "PersonBBuyerPainUSD": 2714788
+  }
+}

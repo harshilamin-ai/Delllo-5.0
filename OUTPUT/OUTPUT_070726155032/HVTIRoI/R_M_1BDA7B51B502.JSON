@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_945A4C20_P_8FA1FDE5_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_1BDA7B51B502.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_945A4C20_P_8FA1FDE5_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_945A4C20",
+  "PersonBID": "P_8FA1FDE5",
+  "PersonAName": "Richard Turner 006",
+  "PersonBName": "James Patel 127",
+  "BVHID": "BVH_EF6BDA7C73",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 79.9,
+  "BVHTypeFitScore": 88.87,
+  "ValueScore": 79.77,
+  "RankingScore": 79.12,
+  "EstimatedHVITUSDValue": 383540,
+  "EstimatedExpectedUSDValue": 190159,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $1,917,700, PersonB product/value case $1,259,840, buyer pain/cost signals $1,186,205. Selected potential value is $383,540; expected value is $190,159 after applying 49.6% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 1917700,
+    "PersonBProductOrValueCaseUSD": 1259840,
+    "PersonABuyerPainUSD": 1186205,
+    "PersonBBuyerPainUSD": 1080298
+  }
+}

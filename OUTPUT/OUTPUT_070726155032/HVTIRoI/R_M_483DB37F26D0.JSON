@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_DA4C9558_P_746880EB_CLIENTINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_483DB37F26D0.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_DA4C9558_P_746880EB_CLIENTINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_DA4C9558",
+  "PersonBID": "P_746880EB",
+  "PersonAName": "Zara Evans 063",
+  "PersonBName": "Zara Clarke 086",
+  "BVHID": "BVH_AC7D3A75C1",
+  "BVHTypeID": "CLIENTINTRODUCTION",
+  "BVHTypeName": "CLIENTINTRODUCTION",
+  "PairMatchScore": 77.74,
+  "BVHTypeFitScore": 93.62,
+  "ValueScore": 77.35,
+  "RankingScore": 78.52,
+  "EstimatedHVITUSDValue": 259842,
+  "EstimatedExpectedUSDValue": 126361,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses estimated_referral_or_route_to_market_value. Profile signals considered: PersonA product/value case $1,732,280, PersonB product/value case $1,248,410, buyer pain/cost signals $1,339,423. Selected potential value is $259,842; expected value is $126,361 after applying 48.6% estimated transaction probability.",
+  "RoIModelMethod": "estimated_referral_or_route_to_market_value",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 1732280,
+    "PersonBProductOrValueCaseUSD": 1248410,
+    "PersonABuyerPainUSD": 1052016,
+    "PersonBBuyerPainUSD": 1339423
+  }
+}

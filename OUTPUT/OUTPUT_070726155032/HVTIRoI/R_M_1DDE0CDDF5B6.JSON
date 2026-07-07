@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_2397B694_P_2E4F5355_RECRUITMENT_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_1DDE0CDDF5B6.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_2397B694_P_2E4F5355_RECRUITMENT_070726155032.JSON",
+  "PersonAID": "P_2397B694",
+  "PersonBID": "P_2E4F5355",
+  "PersonAName": "Aisha Khan 073",
+  "PersonBName": "Ian Khan 074",
+  "BVHID": "BVH_CB1ABEB6E5",
+  "BVHTypeID": "RECRUITMENT",
+  "BVHTypeName": "RECRUITMENT",
+  "PairMatchScore": 79.13,
+  "BVHTypeFitScore": 87.36,
+  "ValueScore": 67.49,
+  "RankingScore": 73.85,
+  "EstimatedHVITUSDValue": 52987,
+  "EstimatedExpectedUSDValue": 25789,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses candidate_salary_recruiter_fee. Profile signals considered: PersonA product/value case $1,927,860, PersonB product/value case $949,960, buyer pain/cost signals $2,042,399. Selected potential value is $52,987; expected value is $25,789 after applying 48.7% estimated transaction probability.",
+  "RoIModelMethod": "candidate_salary_recruiter_fee",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 1927860,
+    "PersonBProductOrValueCaseUSD": 949960,
+    "PersonABuyerPainUSD": 2042399,
+    "PersonBBuyerPainUSD": 1528475
+  }
+}

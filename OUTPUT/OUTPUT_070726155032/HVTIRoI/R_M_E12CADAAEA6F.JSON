@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_A5CA8592_P_F1E0022E_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_E12CADAAEA6F.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_A5CA8592_P_F1E0022E_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_A5CA8592",
+  "PersonBID": "P_F1E0022E",
+  "PersonAName": "Hinesh Williams 147",
+  "PersonBName": "Ian Field 148",
+  "BVHID": "BVH_30DD5FB84A",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 81.08,
+  "BVHTypeFitScore": 90.97,
+  "ValueScore": 84.6,
+  "RankingScore": 81.49,
+  "EstimatedHVITUSDValue": 835660,
+  "EstimatedExpectedUSDValue": 417078,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $2,506,980, PersonB product/value case $1,666,240, buyer pain/cost signals $2,214,926. Selected potential value is $835,660; expected value is $417,078 after applying 49.9% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2506980,
+    "PersonBProductOrValueCaseUSD": 1666240,
+    "PersonABuyerPainUSD": 2214926,
+    "PersonBBuyerPainUSD": 671322
+  }
+}

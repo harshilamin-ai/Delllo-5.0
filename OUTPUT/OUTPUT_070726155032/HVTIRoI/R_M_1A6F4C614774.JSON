@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_69FE6BFE_P_D14916B1_CLIENTINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_1A6F4C614774.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_69FE6BFE_P_D14916B1_CLIENTINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_69FE6BFE",
+  "PersonBID": "P_D14916B1",
+  "PersonAName": "Sarah Brown 003",
+  "PersonBName": "Zara Field 009",
+  "BVHID": "BVH_21FF9B345F",
+  "BVHTypeID": "CLIENTINTRODUCTION",
+  "BVHTypeName": "CLIENTINTRODUCTION",
+  "PairMatchScore": 83.61,
+  "BVHTypeFitScore": 96.62,
+  "ValueScore": 80.23,
+  "RankingScore": 82.25,
+  "EstimatedHVITUSDValue": 413004,
+  "EstimatedExpectedUSDValue": 212532,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses estimated_referral_or_route_to_market_value. Profile signals considered: PersonA product/value case $2,311,400, PersonB product/value case $2,753,360, buyer pain/cost signals $1,292,066. Selected potential value is $413,004; expected value is $212,532 after applying 51.5% estimated transaction probability.",
+  "RoIModelMethod": "estimated_referral_or_route_to_market_value",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2311400,
+    "PersonBProductOrValueCaseUSD": 2753360,
+    "PersonABuyerPainUSD": 1041580,
+    "PersonBBuyerPainUSD": 1292066
+  }
+}

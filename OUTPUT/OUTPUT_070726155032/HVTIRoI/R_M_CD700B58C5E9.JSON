@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_7411DD2C_P_746880EB_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_CD700B58C5E9.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_7411DD2C_P_746880EB_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_7411DD2C",
+  "PersonBID": "P_746880EB",
+  "PersonAName": "Lee Thomson 047",
+  "PersonBName": "Zara Clarke 086",
+  "BVHID": "BVH_CED0CC2219",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 81.43,
+  "BVHTypeFitScore": 87.78,
+  "ValueScore": 86.0,
+  "RankingScore": 82.15,
+  "EstimatedHVITUSDValue": 1047750,
+  "EstimatedExpectedUSDValue": 534352,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $5,238,750, PersonB product/value case $1,248,410, buyer pain/cost signals $2,009,724. Selected potential value is $1,047,750; expected value is $534,352 after applying 51.0% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 5238750,
+    "PersonBProductOrValueCaseUSD": 1248410,
+    "PersonABuyerPainUSD": 2009724,
+    "PersonBBuyerPainUSD": 1339423
+  }
+}

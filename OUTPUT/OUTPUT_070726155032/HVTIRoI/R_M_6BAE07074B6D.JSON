@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_F02B64F6_P_DF763C56_PRODUCTSALE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_6BAE07074B6D.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_F02B64F6_P_DF763C56_PRODUCTSALE_070726155032.JSON",
+  "PersonAID": "P_F02B64F6",
+  "PersonBID": "P_DF763C56",
+  "PersonAName": "Aisha Turner 041",
+  "PersonBName": "Sarah Clarke 042",
+  "BVHID": "BVH_DFB0D292F2",
+  "BVHTypeID": "PRODUCTSALE",
+  "BVHTypeName": "PRODUCTSALE",
+  "PairMatchScore": 82.82,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 95.51,
+  "RankingScore": 88.43,
+  "EstimatedHVITUSDValue": 4851400,
+  "EstimatedExpectedUSDValue": 2506718,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses source_product_price_or_target_pain. Profile signals considered: PersonA product/value case $4,851,400, PersonB product/value case $2,959,100, buyer pain/cost signals $2,039,938. Selected potential value is $4,851,400; expected value is $2,506,718 after applying 51.7% estimated transaction probability.",
+  "RoIModelMethod": "source_product_price_or_target_pain",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 4851400,
+    "PersonBProductOrValueCaseUSD": 2959100,
+    "PersonABuyerPainUSD": 2039938,
+    "PersonBBuyerPainUSD": 1302555
+  }
+}

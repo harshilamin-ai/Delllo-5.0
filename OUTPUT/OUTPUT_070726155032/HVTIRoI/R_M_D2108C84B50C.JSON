@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_770A0074_P_60A316B1_CAPITALINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_D2108C84B50C.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_770A0074_P_60A316B1_CAPITALINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_770A0074",
+  "PersonBID": "P_60A316B1",
+  "PersonAName": "Jane Rathor 049",
+  "PersonBName": "Meera Patel 050",
+  "BVHID": "BVH_37F5C6A473",
+  "BVHTypeID": "CAPITALINTRODUCTION",
+  "BVHTypeName": "CAPITALINTRODUCTION",
+  "PairMatchScore": 79.71,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 73.65,
+  "RankingScore": 79.33,
+  "EstimatedHVITUSDValue": 142965,
+  "EstimatedExpectedUSDValue": 71111,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses capital_amount_success_fee. Profile signals considered: PersonA product/value case $2,621,280, PersonB product/value case $1,798,320, buyer pain/cost signals $1,520,881. Selected potential value is $142,965; expected value is $71,111 after applying 49.7% estimated transaction probability.",
+  "RoIModelMethod": "capital_amount_success_fee",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2621280,
+    "PersonBProductOrValueCaseUSD": 1798320,
+    "PersonABuyerPainUSD": 1514531,
+    "PersonBBuyerPainUSD": 1520881
+  }
+}

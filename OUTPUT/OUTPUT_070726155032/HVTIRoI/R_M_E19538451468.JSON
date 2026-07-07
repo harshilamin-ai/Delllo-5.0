@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_8FA1FDE5_P_C4C9EEFB_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_E19538451468.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_8FA1FDE5_P_C4C9EEFB_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_8FA1FDE5",
+  "PersonBID": "P_C4C9EEFB",
+  "PersonAName": "James Patel 127",
+  "PersonBName": "Hinesh Brown 128",
+  "BVHID": "BVH_BEB8F028F9",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 77.29,
+  "BVHTypeFitScore": 86.95,
+  "ValueScore": 85.42,
+  "RankingScore": 80.01,
+  "EstimatedHVITUSDValue": 953770,
+  "EstimatedExpectedUSDValue": 463818,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $1,259,840, PersonB product/value case $4,768,850, buyer pain/cost signals $3,234,450. Selected potential value is $953,770; expected value is $463,818 after applying 48.6% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 1259840,
+    "PersonBProductOrValueCaseUSD": 4768850,
+    "PersonABuyerPainUSD": 1080298,
+    "PersonBBuyerPainUSD": 3234450
+  }
+}

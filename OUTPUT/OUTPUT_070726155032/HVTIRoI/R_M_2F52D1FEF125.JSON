@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_CC962EF9_P_2D6ED1DC_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_2F52D1FEF125.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_CC962EF9_P_2D6ED1DC_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "PersonAID": "P_CC962EF9",
+  "PersonBID": "P_2D6ED1DC",
+  "PersonAName": "Simon Brown 099",
+  "PersonBName": "Hinesh Spencer 100",
+  "BVHID": "BVH_6EAD99CA99",
+  "BVHTypeID": "ECOSYSTEMAMPLIFICATION",
+  "BVHTypeName": "ECOSYSTEMAMPLIFICATION",
+  "PairMatchScore": 81.73,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 87.37,
+  "RankingScore": 85.81,
+  "EstimatedHVITUSDValue": 1306830,
+  "EstimatedExpectedUSDValue": 679160,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses ecosystem_reach_multiplier_proxy. Profile signals considered: PersonA product/value case $3,733,800, PersonB product/value case $1,414,780, buyer pain/cost signals $2,013,735. Selected potential value is $1,306,830; expected value is $679,160 after applying 52.0% estimated transaction probability.",
+  "RoIModelMethod": "ecosystem_reach_multiplier_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 3733800,
+    "PersonBProductOrValueCaseUSD": 1414780,
+    "PersonABuyerPainUSD": 2013735,
+    "PersonBBuyerPainUSD": 1254558
+  }
+}

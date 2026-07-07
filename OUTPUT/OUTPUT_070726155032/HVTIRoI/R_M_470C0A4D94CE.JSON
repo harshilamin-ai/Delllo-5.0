@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_518EE770_P_F45F02E9_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_470C0A4D94CE.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_518EE770_P_F45F02E9_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_518EE770",
+  "PersonBID": "P_F45F02E9",
+  "PersonAName": "Meera Price 008",
+  "PersonBName": "Simon Spencer 375",
+  "BVHID": "BVH_699897B037",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 81.07,
+  "BVHTypeFitScore": 91.02,
+  "ValueScore": 85.46,
+  "RankingScore": 81.78,
+  "EstimatedHVITUSDValue": 960120,
+  "EstimatedExpectedUSDValue": 478908,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $2,717,800, PersonB product/value case $3,840,480, buyer pain/cost signals $2,132,444. Selected potential value is $960,120; expected value is $478,908 after applying 49.9% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2717800,
+    "PersonBProductOrValueCaseUSD": 3840480,
+    "PersonABuyerPainUSD": 1883106,
+    "PersonBBuyerPainUSD": 2132444
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_C0CAF9E3_P_A3954FC4_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_E53FF4BB32CB.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_C0CAF9E3_P_A3954FC4_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_C0CAF9E3",
+  "PersonBID": "P_A3954FC4",
+  "PersonAName": "Lee Wilson 048",
+  "PersonBName": "Leah Williams 085",
+  "BVHID": "BVH_DECB5C07E3",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 80.43,
+  "BVHTypeFitScore": 89.72,
+  "ValueScore": 86.2,
+  "RankingScore": 81.69,
+  "EstimatedHVITUSDValue": 1082040,
+  "EstimatedExpectedUSDValue": 538531,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $5,410,200, PersonB product/value case $2,358,390, buyer pain/cost signals $2,182,859. Selected potential value is $1,082,040; expected value is $538,531 after applying 49.8% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 5410200,
+    "PersonBProductOrValueCaseUSD": 2358390,
+    "PersonABuyerPainUSD": 2182859,
+    "PersonBBuyerPainUSD": 1508112
+  }
+}

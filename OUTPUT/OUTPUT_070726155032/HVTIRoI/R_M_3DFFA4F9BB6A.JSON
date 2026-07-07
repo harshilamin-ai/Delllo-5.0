@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_D38E28A8_P_6E26DD05_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_3DFFA4F9BB6A.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_D38E28A8_P_6E26DD05_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_D38E28A8",
+  "PersonBID": "P_6E26DD05",
+  "PersonAName": "Daniel Khan 088",
+  "PersonBName": "Simon Rathor 379",
+  "BVHID": "BVH_58804D57EA",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 81.42,
+  "BVHTypeFitScore": 91.75,
+  "ValueScore": 82.5,
+  "RankingScore": 80.93,
+  "EstimatedHVITUSDValue": 595630,
+  "EstimatedExpectedUSDValue": 297458,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $2,382,520, PersonB product/value case $1,273,810, buyer pain/cost signals $1,974,980. Selected potential value is $595,630; expected value is $297,458 after applying 49.9% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2382520,
+    "PersonBProductOrValueCaseUSD": 1273810,
+    "PersonABuyerPainUSD": 1974980,
+    "PersonBBuyerPainUSD": 1703097
+  }
+}

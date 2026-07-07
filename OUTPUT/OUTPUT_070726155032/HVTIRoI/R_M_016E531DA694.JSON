@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_EFAFE7E2_P_509B3B4B_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_016E531DA694.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_EFAFE7E2_P_509B3B4B_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "PersonAID": "P_EFAFE7E2",
+  "PersonBID": "P_509B3B4B",
+  "PersonAName": "Oliver Spencer 079",
+  "PersonBName": "George Moody 120",
+  "BVHID": "BVH_DFA45B7338",
+  "BVHTypeID": "ECOSYSTEMAMPLIFICATION",
+  "BVHTypeName": "ECOSYSTEMAMPLIFICATION",
+  "PairMatchScore": 78.94,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 86.36,
+  "RankingScore": 84.3,
+  "EstimatedHVITUSDValue": 1109028,
+  "EstimatedExpectedUSDValue": 559283,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses ecosystem_reach_multiplier_proxy. Profile signals considered: PersonA product/value case $3,168,650, PersonB product/value case $2,320,290, buyer pain/cost signals $2,920,450. Selected potential value is $1,109,028; expected value is $559,283 after applying 50.4% estimated transaction probability.",
+  "RoIModelMethod": "ecosystem_reach_multiplier_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 3168650,
+    "PersonBProductOrValueCaseUSD": 2320290,
+    "PersonABuyerPainUSD": 1359065,
+    "PersonBBuyerPainUSD": 2920450
+  }
+}

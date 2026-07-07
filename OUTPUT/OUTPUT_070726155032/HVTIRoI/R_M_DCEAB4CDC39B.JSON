@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_544F392D_P_FBD317FB_CLIENTINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_DCEAB4CDC39B.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_544F392D_P_FBD317FB_CLIENTINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_544F392D",
+  "PersonBID": "P_FBD317FB",
+  "PersonAName": "James Rathor 123",
+  "PersonBName": "Leah Rathor 124",
+  "BVHID": "BVH_7A1DC0D611",
+  "BVHTypeID": "CLIENTINTRODUCTION",
+  "BVHTypeName": "CLIENTINTRODUCTION",
+  "PairMatchScore": 78.03,
+  "BVHTypeFitScore": 96.5,
+  "ValueScore": 80.5,
+  "RankingScore": 80.19,
+  "EstimatedHVITUSDValue": 431292,
+  "EstimatedExpectedUSDValue": 209737,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses estimated_referral_or_route_to_market_value. Profile signals considered: PersonA product/value case $2,875,280, PersonB product/value case $1,299,210, buyer pain/cost signals $1,776,331. Selected potential value is $431,292; expected value is $209,737 after applying 48.6% estimated transaction probability.",
+  "RoIModelMethod": "estimated_referral_or_route_to_market_value",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2875280,
+    "PersonBProductOrValueCaseUSD": 1299210,
+    "PersonABuyerPainUSD": 1776331,
+    "PersonBBuyerPainUSD": 883233
+  }
+}

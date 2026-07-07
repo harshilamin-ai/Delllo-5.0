@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_86006874_P_C33B1A68_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_89E873004306.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_86006874_P_C33B1A68_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "PersonAID": "P_86006874",
+  "PersonBID": "P_C33B1A68",
+  "PersonAName": "George Patel 019",
+  "PersonBName": "Ajay Clarke 020",
+  "BVHID": "BVH_ED37846A43",
+  "BVHTypeID": "ECOSYSTEMAMPLIFICATION",
+  "BVHTypeName": "ECOSYSTEMAMPLIFICATION",
+  "PairMatchScore": 76.75,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 85.42,
+  "RankingScore": 83.15,
+  "EstimatedHVITUSDValue": 953008,
+  "EstimatedExpectedUSDValue": 470214,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses ecosystem_reach_multiplier_proxy. Profile signals considered: PersonA product/value case $2,722,880, PersonB product/value case $2,021,840, buyer pain/cost signals $1,638,299. Selected potential value is $953,008; expected value is $470,214 after applying 49.3% estimated transaction probability.",
+  "RoIModelMethod": "ecosystem_reach_multiplier_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2722880,
+    "PersonBProductOrValueCaseUSD": 2021840,
+    "PersonABuyerPainUSD": 1638299,
+    "PersonBBuyerPainUSD": 776968
+  }
+}

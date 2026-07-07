@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_75200434_P_4453EEE9_TRUSTPATH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_3997D849278C.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_75200434_P_4453EEE9_TRUSTPATH_070726155032.JSON",
+  "PersonAID": "P_75200434",
+  "PersonBID": "P_4453EEE9",
+  "PersonAName": "George Spencer 038",
+  "PersonBName": "Michael Moody 051",
+  "BVHID": "BVH_DB5E6A777F",
+  "BVHTypeID": "TRUSTPATH",
+  "BVHTypeName": "TRUSTPATH",
+  "PairMatchScore": 82.31,
+  "BVHTypeFitScore": 82.81,
+  "ValueScore": 86.14,
+  "RankingScore": 80.68,
+  "EstimatedHVITUSDValue": 1071562,
+  "EstimatedExpectedUSDValue": 538996,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses relationship_acceleration_value_proxy. Profile signals considered: PersonA product/value case $965,200, PersonB product/value case $4,286,250, buyer pain/cost signals $1,465,034. Selected potential value is $1,071,562; expected value is $538,996 after applying 50.3% estimated transaction probability.",
+  "RoIModelMethod": "relationship_acceleration_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 965200,
+    "PersonBProductOrValueCaseUSD": 4286250,
+    "PersonABuyerPainUSD": 1235610,
+    "PersonBBuyerPainUSD": 1465034
+  }
+}

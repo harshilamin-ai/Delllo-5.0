@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_60F4E3C6_P_A5CA8592_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_BF407990525F.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_60F4E3C6_P_A5CA8592_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_60F4E3C6",
+  "PersonBID": "P_A5CA8592",
+  "PersonAName": "Meera Morris 016",
+  "PersonBName": "Hinesh Williams 147",
+  "BVHID": "BVH_A2755D3F23",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 81.76,
+  "BVHTypeFitScore": 92.18,
+  "ValueScore": 85.93,
+  "RankingScore": 82.33,
+  "EstimatedHVITUSDValue": 1035050,
+  "EstimatedExpectedUSDValue": 518560,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $5,175,250, PersonB product/value case $2,506,980, buyer pain/cost signals $2,214,926. Selected potential value is $1,035,050; expected value is $518,560 after applying 50.1% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 5175250,
+    "PersonBProductOrValueCaseUSD": 2506980,
+    "PersonABuyerPainUSD": 2170514,
+    "PersonBBuyerPainUSD": 2214926
+  }
+}

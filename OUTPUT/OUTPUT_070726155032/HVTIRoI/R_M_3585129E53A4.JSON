@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_65CFEA11_P_C1D78E1F_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_3585129E53A4.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_65CFEA11_P_C1D78E1F_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "PersonAID": "P_65CFEA11",
+  "PersonBID": "P_C1D78E1F",
+  "PersonAName": "Zara Brown 080",
+  "PersonBName": "Simon Moody 119",
+  "BVHID": "BVH_C147C452CC",
+  "BVHTypeID": "ECOSYSTEMAMPLIFICATION",
+  "BVHTypeName": "ECOSYSTEMAMPLIFICATION",
+  "PairMatchScore": 76.01,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 85.26,
+  "RankingScore": 83.27,
+  "EstimatedHVITUSDValue": 929005,
+  "EstimatedExpectedUSDValue": 460601,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses ecosystem_reach_multiplier_proxy. Profile signals considered: PersonA product/value case $1,985,010, PersonB product/value case $2,654,300, buyer pain/cost signals $2,281,005. Selected potential value is $929,005; expected value is $460,601 after applying 49.6% estimated transaction probability.",
+  "RoIModelMethod": "ecosystem_reach_multiplier_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 1985010,
+    "PersonBProductOrValueCaseUSD": 2654300,
+    "PersonABuyerPainUSD": 2281005,
+    "PersonBBuyerPainUSD": 941456
+  }
+}

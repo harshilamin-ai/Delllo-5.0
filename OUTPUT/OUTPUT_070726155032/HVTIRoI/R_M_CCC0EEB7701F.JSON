@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_E6F6F014_P_D38E28A8_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_CCC0EEB7701F.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_E6F6F014_P_D38E28A8_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_E6F6F014",
+  "PersonBID": "P_D38E28A8",
+  "PersonAName": "James Brown 087",
+  "PersonBName": "Daniel Khan 088",
+  "BVHID": "BVH_23BF8BF4DD",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 83.72,
+  "BVHTypeFitScore": 94.0,
+  "ValueScore": 83.61,
+  "RankingScore": 83.06,
+  "EstimatedHVITUSDValue": 712470,
+  "EstimatedExpectedUSDValue": 368062,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $2,137,410, PersonB product/value case $2,382,520, buyer pain/cost signals $1,974,980. Selected potential value is $712,470; expected value is $368,062 after applying 51.7% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2137410,
+    "PersonBProductOrValueCaseUSD": 2382520,
+    "PersonABuyerPainUSD": 1755046,
+    "PersonBBuyerPainUSD": 1974980
+  }
+}

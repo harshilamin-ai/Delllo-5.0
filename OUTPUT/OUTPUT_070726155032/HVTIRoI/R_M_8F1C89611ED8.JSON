@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_82FDF971_P_87E862F0_CLIENTINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_8F1C89611ED8.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_82FDF971_P_87E862F0_CLIENTINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_82FDF971",
+  "PersonBID": "P_87E862F0",
+  "PersonAName": "Leah Wilson 104",
+  "PersonBName": "Oliver Morris 103",
+  "BVHID": "BVH_1275591F3A",
+  "BVHTypeID": "CLIENTINTRODUCTION",
+  "BVHTypeName": "CLIENTINTRODUCTION",
+  "PairMatchScore": 76.9,
+  "BVHTypeFitScore": 95.25,
+  "ValueScore": 80.81,
+  "RankingScore": 79.65,
+  "EstimatedHVITUSDValue": 453390,
+  "EstimatedExpectedUSDValue": 218035,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses estimated_referral_or_route_to_market_value. Profile signals considered: PersonA product/value case $3,022,600, PersonB product/value case $1,402,080, buyer pain/cost signals $1,808,977. Selected potential value is $453,390; expected value is $218,035 after applying 48.1% estimated transaction probability.",
+  "RoIModelMethod": "estimated_referral_or_route_to_market_value",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 3022600,
+    "PersonBProductOrValueCaseUSD": 1402080,
+    "PersonABuyerPainUSD": 1156071,
+    "PersonBBuyerPainUSD": 1808977
+  }
+}

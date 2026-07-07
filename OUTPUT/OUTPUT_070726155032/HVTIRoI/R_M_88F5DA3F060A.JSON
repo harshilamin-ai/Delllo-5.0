@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_6B80FBDE_P_C8683134_CLIENTINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_88F5DA3F060A.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_6B80FBDE_P_C8683134_CLIENTINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_6B80FBDE",
+  "PersonBID": "P_C8683134",
+  "PersonAName": "James Rathor 004",
+  "PersonBName": "Aisha Field 094",
+  "BVHID": "BVH_0ECDA154BE",
+  "BVHTypeID": "CLIENTINTRODUCTION",
+  "BVHTypeName": "CLIENTINTRODUCTION",
+  "PairMatchScore": 75.46,
+  "BVHTypeFitScore": 90.38,
+  "ValueScore": 81.95,
+  "RankingScore": 78.83,
+  "EstimatedHVITUSDValue": 544830,
+  "EstimatedExpectedUSDValue": 260156,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses estimated_referral_or_route_to_market_value. Profile signals considered: PersonA product/value case $774,700, PersonB product/value case $3,632,200, buyer pain/cost signals $1,621,243. Selected potential value is $544,830; expected value is $260,156 after applying 47.8% estimated transaction probability.",
+  "RoIModelMethod": "estimated_referral_or_route_to_market_value",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 774700,
+    "PersonBProductOrValueCaseUSD": 3632200,
+    "PersonABuyerPainUSD": 686838,
+    "PersonBBuyerPainUSD": 1621243
+  }
+}

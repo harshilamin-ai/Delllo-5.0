@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_2049EEF8_P_7DAF26E7_PARTNERSHIP_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_14772FFE9D6F.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_2049EEF8_P_7DAF26E7_PARTNERSHIP_070726155032.JSON",
+  "PersonAID": "P_2049EEF8",
+  "PersonBID": "P_7DAF26E7",
+  "PersonAName": "Brett Thomson 151",
+  "PersonBName": "Ian Morris 152",
+  "BVHID": "BVH_14EC270F55",
+  "BVHTypeID": "PARTNERSHIP",
+  "BVHTypeName": "PARTNERSHIP",
+  "PairMatchScore": 86.09,
+  "BVHTypeFitScore": 93.39,
+  "ValueScore": 98.41,
+  "RankingScore": 89.43,
+  "EstimatedHVITUSDValue": 7743190,
+  "EstimatedExpectedUSDValue": 4135638,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses combined_joint_revenue_or_value_case. Profile signals considered: PersonA product/value case $4,883,150, PersonB product/value case $2,860,040, buyer pain/cost signals $2,500,213. Selected potential value is $7,743,190; expected value is $4,135,638 after applying 53.4% estimated transaction probability.",
+  "RoIModelMethod": "combined_joint_revenue_or_value_case",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 4883150,
+    "PersonBProductOrValueCaseUSD": 2860040,
+    "PersonABuyerPainUSD": 2500213,
+    "PersonBBuyerPainUSD": 1316791
+  }
+}

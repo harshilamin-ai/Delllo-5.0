@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_52D0A557_P_C269976E_TRUSTPATH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_06D70DB4EA9D.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_52D0A557_P_C269976E_TRUSTPATH_070726155032.JSON",
+  "PersonAID": "P_52D0A557",
+  "PersonBID": "P_C269976E",
+  "PersonAName": "Daniel Patel 076",
+  "PersonBName": "George Thomson 157",
+  "BVHID": "BVH_6C2A927187",
+  "BVHTypeID": "TRUSTPATH",
+  "BVHTypeName": "TRUSTPATH",
+  "PairMatchScore": 81.62,
+  "BVHTypeFitScore": 82.69,
+  "ValueScore": 86.66,
+  "RankingScore": 80.59,
+  "EstimatedHVITUSDValue": 1165225,
+  "EstimatedExpectedUSDValue": 582146,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses relationship_acceleration_value_proxy. Profile signals considered: PersonA product/value case $1,102,360, PersonB product/value case $4,660,900, buyer pain/cost signals $3,021,140. Selected potential value is $1,165,225; expected value is $582,146 after applying 50.0% estimated transaction probability.",
+  "RoIModelMethod": "relationship_acceleration_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 1102360,
+    "PersonBProductOrValueCaseUSD": 4660900,
+    "PersonABuyerPainUSD": 1476353,
+    "PersonBBuyerPainUSD": 3021140
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_2FF17195_P_BC716ECA_CAPITALINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_58081DCC88F0.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_2FF17195_P_BC716ECA_CAPITALINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_2FF17195",
+  "PersonBID": "P_BC716ECA",
+  "PersonAName": "Ian Evans 069",
+  "PersonBName": "Leah Williams 070",
+  "BVHID": "BVH_7E0447DFFB",
+  "BVHTypeID": "CAPITALINTRODUCTION",
+  "BVHTypeName": "CAPITALINTRODUCTION",
+  "PairMatchScore": 79.46,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 73.59,
+  "RankingScore": 79.16,
+  "EstimatedHVITUSDValue": 141790,
+  "EstimatedExpectedUSDValue": 70243,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses capital_amount_success_fee. Profile signals considered: PersonA product/value case $2,357,120, PersonB product/value case $1,963,420, buyer pain/cost signals $3,154,107. Selected potential value is $141,790; expected value is $70,243 after applying 49.5% estimated transaction probability.",
+  "RoIModelMethod": "capital_amount_success_fee",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2357120,
+    "PersonBProductOrValueCaseUSD": 1963420,
+    "PersonABuyerPainUSD": 1358852,
+    "PersonBBuyerPainUSD": 3154107
+  }
+}

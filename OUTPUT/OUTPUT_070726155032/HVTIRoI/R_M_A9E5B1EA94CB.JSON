@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_24F4D6EA_P_AFCB4EB3_CLIENTINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_A9E5B1EA94CB.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_24F4D6EA_P_AFCB4EB3_CLIENTINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_24F4D6EA",
+  "PersonBID": "P_AFCB4EB3",
+  "PersonAName": "Aisha Kapoor 083",
+  "PersonBName": "Meera Wilson 105",
+  "BVHID": "BVH_B30B439395",
+  "BVHTypeID": "CLIENTINTRODUCTION",
+  "BVHTypeName": "CLIENTINTRODUCTION",
+  "PairMatchScore": 79.81,
+  "BVHTypeFitScore": 98.0,
+  "ValueScore": 84.48,
+  "RankingScore": 82.18,
+  "EstimatedHVITUSDValue": 820102,
+  "EstimatedExpectedUSDValue": 402014,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses estimated_referral_or_route_to_market_value. Profile signals considered: PersonA product/value case $5,467,350, PersonB product/value case $1,541,780, buyer pain/cost signals $3,115,481. Selected potential value is $820,102; expected value is $402,014 after applying 49.0% estimated transaction probability.",
+  "RoIModelMethod": "estimated_referral_or_route_to_market_value",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 5467350,
+    "PersonBProductOrValueCaseUSD": 1541780,
+    "PersonABuyerPainUSD": 3115481,
+    "PersonBBuyerPainUSD": 2474592
+  }
+}

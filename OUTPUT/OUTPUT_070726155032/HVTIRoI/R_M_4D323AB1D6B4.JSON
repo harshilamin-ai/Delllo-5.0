@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_7A0D0A33_P_1EF050D2_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_4D323AB1D6B4.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_7A0D0A33_P_1EF050D2_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "PersonAID": "P_7A0D0A33",
+  "PersonBID": "P_1EF050D2",
+  "PersonAName": "Jane Wilson 059",
+  "PersonBName": "Lee Evans 060",
+  "BVHID": "BVH_FEBE36C702",
+  "BVHTypeID": "ECOSYSTEMAMPLIFICATION",
+  "BVHTypeName": "ECOSYSTEMAMPLIFICATION",
+  "PairMatchScore": 77.59,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 85.51,
+  "RankingScore": 83.46,
+  "EstimatedHVITUSDValue": 968121,
+  "EstimatedExpectedUSDValue": 481253,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses ecosystem_reach_multiplier_proxy. Profile signals considered: PersonA product/value case $2,766,060, PersonB product/value case $2,647,950, buyer pain/cost signals $3,105,479. Selected potential value is $968,121; expected value is $481,253 after applying 49.7% estimated transaction probability.",
+  "RoIModelMethod": "ecosystem_reach_multiplier_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2766060,
+    "PersonBProductOrValueCaseUSD": 2647950,
+    "PersonABuyerPainUSD": 2921578,
+    "PersonBBuyerPainUSD": 3105479
+  }
+}

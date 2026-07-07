@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_87EE1C46_P_4F4F6C0F_TRUSTPATH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_F10665F04DFB.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_87EE1C46_P_4F4F6C0F_TRUSTPATH_070726155032.JSON",
+  "PersonAID": "P_87EE1C46",
+  "PersonBID": "P_4F4F6C0F",
+  "PersonAName": "Sarah Morris 031",
+  "PersonBName": "Ajay Morris 117",
+  "BVHID": "BVH_008AFDD840",
+  "BVHTypeID": "TRUSTPATH",
+  "BVHTypeName": "TRUSTPATH",
+  "PairMatchScore": 82.41,
+  "BVHTypeFitScore": 82.73,
+  "ValueScore": 86.49,
+  "RankingScore": 80.74,
+  "EstimatedHVITUSDValue": 1132840,
+  "EstimatedExpectedUSDValue": 569139,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses relationship_acceleration_value_proxy. Profile signals considered: PersonA product/value case $4,531,360, PersonB product/value case $2,606,040, buyer pain/cost signals $2,849,354. Selected potential value is $1,132,840; expected value is $569,139 after applying 50.2% estimated transaction probability.",
+  "RoIModelMethod": "relationship_acceleration_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 4531360,
+    "PersonBProductOrValueCaseUSD": 2606040,
+    "PersonABuyerPainUSD": 2849354,
+    "PersonBBuyerPainUSD": 2314818
+  }
+}

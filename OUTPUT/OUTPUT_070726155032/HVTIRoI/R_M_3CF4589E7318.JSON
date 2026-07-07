@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_F42BBC60_P_52D0A557_SUPPLIERMATCH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_3CF4589E7318.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_F42BBC60_P_52D0A557_SUPPLIERMATCH_070726155032.JSON",
+  "PersonAID": "P_F42BBC60",
+  "PersonBID": "P_52D0A557",
+  "PersonAName": "Swetha Clarke 075",
+  "PersonBName": "Daniel Patel 076",
+  "BVHID": "BVH_3DEE76F30A",
+  "BVHTypeID": "SUPPLIERMATCH",
+  "BVHTypeName": "SUPPLIERMATCH",
+  "PairMatchScore": 78.67,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 91.22,
+  "RankingScore": 84.88,
+  "EstimatedHVITUSDValue": 2428240,
+  "EstimatedExpectedUSDValue": 1188623,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses source_product_price_or_target_pain. Profile signals considered: PersonA product/value case $2,428,240, PersonB product/value case $1,102,360, buyer pain/cost signals $1,476,353. Selected potential value is $2,428,240; expected value is $1,188,623 after applying 48.9% estimated transaction probability.",
+  "RoIModelMethod": "source_product_price_or_target_pain",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2428240,
+    "PersonBProductOrValueCaseUSD": 1102360,
+    "PersonABuyerPainUSD": 920603,
+    "PersonBBuyerPainUSD": 1476353
+  }
+}

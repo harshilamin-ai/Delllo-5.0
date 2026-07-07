@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_EF3D7E25_P_5C827219_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_2F73CE25D10F.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_EF3D7E25_P_5C827219_ECOSYSTEMAMPLIFICATION_070726155032.JSON",
+  "PersonAID": "P_EF3D7E25",
+  "PersonBID": "P_5C827219",
+  "PersonAName": "Hinesh Morris 039",
+  "PersonBName": "Simon Williams 040",
+  "BVHID": "BVH_1733F6F7C7",
+  "BVHTypeID": "ECOSYSTEMAMPLIFICATION",
+  "BVHTypeName": "ECOSYSTEMAMPLIFICATION",
+  "PairMatchScore": 78.71,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 87.28,
+  "RankingScore": 85.18,
+  "EstimatedHVITUSDValue": 1286828,
+  "EstimatedExpectedUSDValue": 658598,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses ecosystem_reach_multiplier_proxy. Profile signals considered: PersonA product/value case $2,575,560, PersonB product/value case $3,676,650, buyer pain/cost signals $1,764,138. Selected potential value is $1,286,828; expected value is $658,598 after applying 51.2% estimated transaction probability.",
+  "RoIModelMethod": "ecosystem_reach_multiplier_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2575560,
+    "PersonBProductOrValueCaseUSD": 3676650,
+    "PersonABuyerPainUSD": 1457489,
+    "PersonBBuyerPainUSD": 1764138
+  }
+}

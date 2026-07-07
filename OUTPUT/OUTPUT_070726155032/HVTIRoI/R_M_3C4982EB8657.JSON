@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_2F88A6B3_P_C1D0F82F_TRUSTPATH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_3C4982EB8657.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_2F88A6B3_P_C1D0F82F_TRUSTPATH_070726155032.JSON",
+  "PersonAID": "P_2F88A6B3",
+  "PersonBID": "P_C1D0F82F",
+  "PersonAName": "Aisha Khan 057",
+  "PersonBName": "Jane Turner 371",
+  "BVHID": "BVH_325D78C1B9",
+  "BVHTypeID": "TRUSTPATH",
+  "BVHTypeName": "TRUSTPATH",
+  "PairMatchScore": 81.08,
+  "BVHTypeFitScore": 82.7,
+  "ValueScore": 84.94,
+  "RankingScore": 79.89,
+  "EstimatedHVITUSDValue": 882650,
+  "EstimatedExpectedUSDValue": 439736,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses relationship_acceleration_value_proxy. Profile signals considered: PersonA product/value case $3,166,110, PersonB product/value case $3,530,600, buyer pain/cost signals $2,177,531. Selected potential value is $882,650; expected value is $439,736 after applying 49.8% estimated transaction probability.",
+  "RoIModelMethod": "relationship_acceleration_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 3166110,
+    "PersonBProductOrValueCaseUSD": 3530600,
+    "PersonABuyerPainUSD": 2165869,
+    "PersonBBuyerPainUSD": 2177531
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_58530B7F_P_E1837854_TRUSTPATH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_BDB87A0EBC1F.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_58530B7F_P_E1837854_TRUSTPATH_070726155032.JSON",
+  "PersonAID": "P_58530B7F",
+  "PersonBID": "P_E1837854",
+  "PersonAName": "Zara Field 058",
+  "PersonBName": "Jane Spencer 116",
+  "BVHID": "BVH_661C7CFE47",
+  "BVHTypeID": "TRUSTPATH",
+  "BVHTypeName": "TRUSTPATH",
+  "PairMatchScore": 81.45,
+  "BVHTypeFitScore": 82.61,
+  "ValueScore": 85.5,
+  "RankingScore": 80.07,
+  "EstimatedHVITUSDValue": 966788,
+  "EstimatedExpectedUSDValue": 481750,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses relationship_acceleration_value_proxy. Profile signals considered: PersonA product/value case $3,867,150, PersonB product/value case $3,764,280, buyer pain/cost signals $2,817,678. Selected potential value is $966,788; expected value is $481,750 after applying 49.8% estimated transaction probability.",
+  "RoIModelMethod": "relationship_acceleration_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 3867150,
+    "PersonBProductOrValueCaseUSD": 3764280,
+    "PersonABuyerPainUSD": 2626265,
+    "PersonBBuyerPainUSD": 2817678
+  }
+}

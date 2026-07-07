@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_47FC1904_P_D23F3538_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_86053B5915FA.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_47FC1904_P_D23F3538_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_47FC1904",
+  "PersonBID": "P_D23F3538",
+  "PersonAName": "Swetha Clarke 067",
+  "PersonBName": "Ian Wilson 089",
+  "BVHID": "BVH_EACB137BEC",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 80.48,
+  "BVHTypeFitScore": 89.88,
+  "ValueScore": 84.91,
+  "RankingScore": 81.26,
+  "EstimatedHVITUSDValue": 878840,
+  "EstimatedExpectedUSDValue": 437223,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $2,603,500, PersonB product/value case $4,394,200, buyer pain/cost signals $2,955,792. Selected potential value is $878,840; expected value is $437,223 after applying 49.8% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2603500,
+    "PersonBProductOrValueCaseUSD": 4394200,
+    "PersonABuyerPainUSD": 1211792,
+    "PersonBBuyerPainUSD": 2955792
+  }
+}

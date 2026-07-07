@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_C63743B8_P_E1837854_SUPPLIERMATCH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_FEE9D15AED1F.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_C63743B8_P_E1837854_SUPPLIERMATCH_070726155032.JSON",
+  "PersonAID": "P_C63743B8",
+  "PersonBID": "P_E1837854",
+  "PersonAName": "Richard Turner 115",
+  "PersonBName": "Jane Spencer 116",
+  "BVHID": "BVH_868C4E1208",
+  "BVHTypeID": "SUPPLIERMATCH",
+  "BVHTypeName": "SUPPLIERMATCH",
+  "PairMatchScore": 84.64,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 92.14,
+  "RankingScore": 86.45,
+  "EstimatedHVITUSDValue": 2817678,
+  "EstimatedExpectedUSDValue": 1425745,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses source_product_price_or_target_pain. Profile signals considered: PersonA product/value case $2,011,680, PersonB product/value case $3,764,280, buyer pain/cost signals $2,817,678. Selected potential value is $2,817,678; expected value is $1,425,745 after applying 50.6% estimated transaction probability.",
+  "RoIModelMethod": "source_product_price_or_target_pain",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2011680,
+    "PersonBProductOrValueCaseUSD": 3764280,
+    "PersonABuyerPainUSD": 1746411,
+    "PersonBBuyerPainUSD": 2817678
+  }
+}

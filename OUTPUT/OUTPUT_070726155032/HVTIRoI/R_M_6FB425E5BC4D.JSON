@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_1B7A896A_P_D4B9E863_TRUSTPATH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_6FB425E5BC4D.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_1B7A896A_P_D4B9E863_TRUSTPATH_070726155032.JSON",
+  "PersonAID": "P_1B7A896A",
+  "PersonBID": "P_D4B9E863",
+  "PersonAName": "Lee Solanki 018",
+  "PersonBName": "Richard Patel 036",
+  "BVHID": "BVH_7354B0B42F",
+  "BVHTypeID": "TRUSTPATH",
+  "BVHTypeName": "TRUSTPATH",
+  "PairMatchScore": 81.45,
+  "BVHTypeFitScore": 82.61,
+  "ValueScore": 87.75,
+  "RankingScore": 80.85,
+  "EstimatedHVITUSDValue": 1389062,
+  "EstimatedExpectedUSDValue": 692170,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses relationship_acceleration_value_proxy. Profile signals considered: PersonA product/value case $1,023,620, PersonB product/value case $5,556,250, buyer pain/cost signals $2,180,219. Selected potential value is $1,389,062; expected value is $692,170 after applying 49.8% estimated transaction probability.",
+  "RoIModelMethod": "relationship_acceleration_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 1023620,
+    "PersonBProductOrValueCaseUSD": 5556250,
+    "PersonABuyerPainUSD": 905670,
+    "PersonBBuyerPainUSD": 2180219
+  }
+}

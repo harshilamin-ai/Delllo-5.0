@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_69FE6BFE_P_6B80FBDE_CLIENTINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_63DF6B0A113D.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_69FE6BFE_P_6B80FBDE_CLIENTINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_69FE6BFE",
+  "PersonBID": "P_6B80FBDE",
+  "PersonAName": "Sarah Brown 003",
+  "PersonBName": "James Rathor 004",
+  "BVHID": "BVH_DAB4D4F475",
+  "BVHTypeID": "CLIENTINTRODUCTION",
+  "BVHTypeName": "CLIENTINTRODUCTION",
+  "PairMatchScore": 83.43,
+  "BVHTypeFitScore": 97.25,
+  "ValueScore": 79.14,
+  "RankingScore": 81.3,
+  "EstimatedHVITUSDValue": 346710,
+  "EstimatedExpectedUSDValue": 175193,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses estimated_referral_or_route_to_market_value. Profile signals considered: PersonA product/value case $2,311,400, PersonB product/value case $774,700, buyer pain/cost signals $1,041,580. Selected potential value is $346,710; expected value is $175,193 after applying 50.5% estimated transaction probability.",
+  "RoIModelMethod": "estimated_referral_or_route_to_market_value",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2311400,
+    "PersonBProductOrValueCaseUSD": 774700,
+    "PersonABuyerPainUSD": 1041580,
+    "PersonBBuyerPainUSD": 686838
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_C0CAF9E3_P_74881AB9_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_E6C5B7D06A9A.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_C0CAF9E3_P_74881AB9_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_C0CAF9E3",
+  "PersonBID": "P_74881AB9",
+  "PersonAName": "Lee Wilson 048",
+  "PersonBName": "Meera Clarke 096",
+  "BVHID": "BVH_13B6156333",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 80.34,
+  "BVHTypeFitScore": 89.74,
+  "ValueScore": 86.2,
+  "RankingScore": 81.61,
+  "EstimatedHVITUSDValue": 1082040,
+  "EstimatedExpectedUSDValue": 537341,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $5,410,200, PersonB product/value case $2,204,720, buyer pain/cost signals $2,182,859. Selected potential value is $1,082,040; expected value is $537,341 after applying 49.7% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 5410200,
+    "PersonBProductOrValueCaseUSD": 2204720,
+    "PersonABuyerPainUSD": 2182859,
+    "PersonBBuyerPainUSD": 1924627
+  }
+}

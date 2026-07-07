@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_593585D8_P_85B92314_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_660A01B09A67.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_593585D8_P_85B92314_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_593585D8",
+  "PersonBID": "P_85B92314",
+  "PersonAName": "Hinesh Moody 107",
+  "PersonBName": "Brett Khan 108",
+  "BVHID": "BVH_731E48BCF1",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 77.87,
+  "BVHTypeFitScore": 87.74,
+  "ValueScore": 86.48,
+  "RankingScore": 80.74,
+  "EstimatedHVITUSDValue": 1131570,
+  "EstimatedExpectedUSDValue": 553338,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $2,451,100, PersonB product/value case $3,394,710, buyer pain/cost signals $3,635,858. Selected potential value is $1,131,570; expected value is $553,338 after applying 48.9% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2451100,
+    "PersonBProductOrValueCaseUSD": 3394710,
+    "PersonABuyerPainUSD": 744183,
+    "PersonBBuyerPainUSD": 3635858
+  }
+}

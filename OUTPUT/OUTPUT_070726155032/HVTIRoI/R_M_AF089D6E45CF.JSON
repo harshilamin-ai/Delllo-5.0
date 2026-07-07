@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_7411DD2C_P_C0CAF9E3_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_AF089D6E45CF.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_7411DD2C_P_C0CAF9E3_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_7411DD2C",
+  "PersonBID": "P_C0CAF9E3",
+  "PersonAName": "Lee Thomson 047",
+  "PersonBName": "Lee Wilson 048",
+  "BVHID": "BVH_1455BF8512",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 77.17,
+  "BVHTypeFitScore": 86.5,
+  "ValueScore": 86.2,
+  "RankingScore": 80.24,
+  "EstimatedHVITUSDValue": 1082040,
+  "EstimatedExpectedUSDValue": 526953,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $5,238,750, PersonB product/value case $5,410,200, buyer pain/cost signals $2,182,859. Selected potential value is $1,082,040; expected value is $526,953 after applying 48.7% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 5238750,
+    "PersonBProductOrValueCaseUSD": 5410200,
+    "PersonABuyerPainUSD": 2009724,
+    "PersonBBuyerPainUSD": 2182859
+  }
+}

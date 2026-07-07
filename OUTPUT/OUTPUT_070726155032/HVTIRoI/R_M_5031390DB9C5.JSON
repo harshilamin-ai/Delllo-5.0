@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_CFE0D214_P_CD8DEED5_TRUSTPATH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_5031390DB9C5.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_CFE0D214_P_CD8DEED5_TRUSTPATH_070726155032.JSON",
+  "PersonAID": "P_CFE0D214",
+  "PersonBID": "P_CD8DEED5",
+  "PersonAName": "Simon Morris 037",
+  "PersonBName": "Michael Turner 323",
+  "BVHID": "BVH_12228E42CA",
+  "BVHTypeID": "TRUSTPATH",
+  "BVHTypeName": "TRUSTPATH",
+  "PairMatchScore": 84.25,
+  "BVHTypeFitScore": 83.38,
+  "ValueScore": 86.1,
+  "RankingScore": 81.65,
+  "EstimatedHVITUSDValue": 1063625,
+  "EstimatedExpectedUSDValue": 547235,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses relationship_acceleration_value_proxy. Profile signals considered: PersonA product/value case $1,714,500, PersonB product/value case $4,254,500, buyer pain/cost signals $2,277,643. Selected potential value is $1,063,625; expected value is $547,235 after applying 51.4% estimated transaction probability.",
+  "RoIModelMethod": "relationship_acceleration_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 1714500,
+    "PersonBProductOrValueCaseUSD": 4254500,
+    "PersonABuyerPainUSD": 1332531,
+    "PersonBBuyerPainUSD": 2277643
+  }
+}

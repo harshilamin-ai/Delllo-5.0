@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_D38E28A8_P_509B3B4B_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_D305981706EA.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_D38E28A8_P_509B3B4B_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_D38E28A8",
+  "PersonBID": "P_509B3B4B",
+  "PersonAName": "Daniel Khan 088",
+  "PersonBName": "George Moody 120",
+  "BVHID": "BVH_FFE069F953",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 81.75,
+  "BVHTypeFitScore": 92.17,
+  "ValueScore": 84.12,
+  "RankingScore": 81.69,
+  "EstimatedHVITUSDValue": 773430,
+  "EstimatedExpectedUSDValue": 387411,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $2,382,520, PersonB product/value case $2,320,290, buyer pain/cost signals $2,920,450. Selected potential value is $773,430; expected value is $387,411 after applying 50.1% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2382520,
+    "PersonBProductOrValueCaseUSD": 2320290,
+    "PersonABuyerPainUSD": 1974980,
+    "PersonBBuyerPainUSD": 2920450
+  }
+}

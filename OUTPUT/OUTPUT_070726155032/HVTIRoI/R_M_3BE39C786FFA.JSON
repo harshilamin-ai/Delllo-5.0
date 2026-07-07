@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_75200434_P_CD8DEED5_TRUSTPATH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_3BE39C786FFA.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_75200434_P_CD8DEED5_TRUSTPATH_070726155032.JSON",
+  "PersonAID": "P_75200434",
+  "PersonBID": "P_CD8DEED5",
+  "PersonAName": "George Spencer 038",
+  "PersonBName": "Michael Turner 323",
+  "BVHID": "BVH_21BAA7A505",
+  "BVHTypeID": "TRUSTPATH",
+  "BVHTypeName": "TRUSTPATH",
+  "PairMatchScore": 82.84,
+  "BVHTypeFitScore": 83.08,
+  "ValueScore": 86.1,
+  "RankingScore": 81.04,
+  "EstimatedHVITUSDValue": 1063625,
+  "EstimatedExpectedUSDValue": 539471,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses relationship_acceleration_value_proxy. Profile signals considered: PersonA product/value case $965,200, PersonB product/value case $4,254,500, buyer pain/cost signals $2,277,643. Selected potential value is $1,063,625; expected value is $539,471 after applying 50.7% estimated transaction probability.",
+  "RoIModelMethod": "relationship_acceleration_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 965200,
+    "PersonBProductOrValueCaseUSD": 4254500,
+    "PersonABuyerPainUSD": 1235610,
+    "PersonBBuyerPainUSD": 2277643
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_518EE770_P_82FDF971_CLIENTINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_E87D5A87E57B.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_518EE770_P_82FDF971_CLIENTINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_518EE770",
+  "PersonBID": "P_82FDF971",
+  "PersonAName": "Meera Price 008",
+  "PersonBName": "Leah Wilson 104",
+  "BVHID": "BVH_522FC0DEAC",
+  "BVHTypeID": "CLIENTINTRODUCTION",
+  "BVHTypeName": "CLIENTINTRODUCTION",
+  "PairMatchScore": 80.8,
+  "BVHTypeFitScore": 99.0,
+  "ValueScore": 80.81,
+  "RankingScore": 81.47,
+  "EstimatedHVITUSDValue": 453390,
+  "EstimatedExpectedUSDValue": 224519,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses estimated_referral_or_route_to_market_value. Profile signals considered: PersonA product/value case $2,717,800, PersonB product/value case $3,022,600, buyer pain/cost signals $1,883,106. Selected potential value is $453,390; expected value is $224,519 after applying 49.5% estimated transaction probability.",
+  "RoIModelMethod": "estimated_referral_or_route_to_market_value",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2717800,
+    "PersonBProductOrValueCaseUSD": 3022600,
+    "PersonABuyerPainUSD": 1883106,
+    "PersonBBuyerPainUSD": 1156071
+  }
+}

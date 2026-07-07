@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_CFE0D214_P_0A273D3B_TRUSTPATH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_475B0EAABED0.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_CFE0D214_P_0A273D3B_TRUSTPATH_070726155032.JSON",
+  "PersonAID": "P_CFE0D214",
+  "PersonBID": "P_0A273D3B",
+  "PersonAName": "Simon Morris 037",
+  "PersonBName": "Michael Evans 071",
+  "BVHID": "BVH_2A219AF76B",
+  "BVHTypeID": "TRUSTPATH",
+  "BVHTypeName": "TRUSTPATH",
+  "PairMatchScore": 83.61,
+  "BVHTypeFitScore": 82.79,
+  "ValueScore": 84.61,
+  "RankingScore": 80.41,
+  "EstimatedHVITUSDValue": 836295,
+  "EstimatedExpectedUSDValue": 423583,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses relationship_acceleration_value_proxy. Profile signals considered: PersonA product/value case $1,714,500, PersonB product/value case $3,345,180, buyer pain/cost signals $1,988,636. Selected potential value is $836,295; expected value is $423,583 after applying 50.6% estimated transaction probability.",
+  "RoIModelMethod": "relationship_acceleration_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 1714500,
+    "PersonBProductOrValueCaseUSD": 3345180,
+    "PersonABuyerPainUSD": 1332531,
+    "PersonBBuyerPainUSD": 1988636
+  }
+}

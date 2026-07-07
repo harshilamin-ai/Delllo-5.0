@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_C6378206_P_592AAB3A_CLIENTINTRODUCTION_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_9EF382B1742E.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_C6378206_P_592AAB3A_CLIENTINTRODUCTION_070726155032.JSON",
+  "PersonAID": "P_C6378206",
+  "PersonBID": "P_592AAB3A",
+  "PersonAName": "Ian Turner 023",
+  "PersonBName": "James Wilson 024",
+  "BVHID": "BVH_F86FF60DDE",
+  "BVHTypeID": "CLIENTINTRODUCTION",
+  "BVHTypeName": "CLIENTINTRODUCTION",
+  "PairMatchScore": 77.53,
+  "BVHTypeFitScore": 95.0,
+  "ValueScore": 82.08,
+  "RankingScore": 80.47,
+  "EstimatedHVITUSDValue": 556260,
+  "EstimatedExpectedUSDValue": 270676,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses estimated_referral_or_route_to_market_value. Profile signals considered: PersonA product/value case $2,655,570, PersonB product/value case $3,708,400, buyer pain/cost signals $3,254,233. Selected potential value is $556,260; expected value is $270,676 after applying 48.7% estimated transaction probability.",
+  "RoIModelMethod": "estimated_referral_or_route_to_market_value",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2655570,
+    "PersonBProductOrValueCaseUSD": 3708400,
+    "PersonABuyerPainUSD": 3254233,
+    "PersonBBuyerPainUSD": 2110097
+  }
+}

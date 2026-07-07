@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_BA2F182E_P_63637200_SUPPLIERMATCH_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_725134D2CC5A.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_BA2F182E_P_63637200_SUPPLIERMATCH_070726155032.JSON",
+  "PersonAID": "P_BA2F182E",
+  "PersonBID": "P_63637200",
+  "PersonAName": "Ajay Price 155",
+  "PersonBName": "Sarah Wilson 156",
+  "BVHID": "BVH_DC09BAB579",
+  "BVHTypeID": "SUPPLIERMATCH",
+  "BVHTypeName": "SUPPLIERMATCH",
+  "PairMatchScore": 79.64,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 93.16,
+  "RankingScore": 85.75,
+  "EstimatedHVITUSDValue": 3318510,
+  "EstimatedExpectedUSDValue": 1632375,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses source_product_price_or_target_pain. Profile signals considered: PersonA product/value case $3,318,510, PersonB product/value case $1,216,660, buyer pain/cost signals $2,015,136. Selected potential value is $3,318,510; expected value is $1,632,375 after applying 49.2% estimated transaction probability.",
+  "RoIModelMethod": "source_product_price_or_target_pain",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 3318510,
+    "PersonBProductOrValueCaseUSD": 1216660,
+    "PersonABuyerPainUSD": 1747045,
+    "PersonBBuyerPainUSD": 2015136
+  }
+}

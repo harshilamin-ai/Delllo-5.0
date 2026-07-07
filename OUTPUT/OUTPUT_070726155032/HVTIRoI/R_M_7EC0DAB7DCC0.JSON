@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_F39D65BC_P_EF212FEA_PRODUCTSALE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_7EC0DAB7DCC0.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_F39D65BC_P_EF212FEA_PRODUCTSALE_070726155032.JSON",
+  "PersonAID": "P_F39D65BC",
+  "PersonBID": "P_EF212FEA",
+  "PersonAName": "Oliver Patel 081",
+  "PersonBName": "Daniel Field 082",
+  "BVHID": "BVH_D4C42F7857",
+  "BVHTypeID": "PRODUCTSALE",
+  "BVHTypeName": "PRODUCTSALE",
+  "PairMatchScore": 85.54,
+  "BVHTypeFitScore": 100,
+  "ValueScore": 91.24,
+  "RankingScore": 87.53,
+  "EstimatedHVITUSDValue": 2438400,
+  "EstimatedExpectedUSDValue": 1279428,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses source_product_price_or_target_pain. Profile signals considered: PersonA product/value case $2,438,400, PersonB product/value case $3,695,700, buyer pain/cost signals $2,276,019. Selected potential value is $2,438,400; expected value is $1,279,428 after applying 52.5% estimated transaction probability.",
+  "RoIModelMethod": "source_product_price_or_target_pain",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 2438400,
+    "PersonBProductOrValueCaseUSD": 3695700,
+    "PersonABuyerPainUSD": 2234382,
+    "PersonBBuyerPainUSD": 2276019
+  }
+}

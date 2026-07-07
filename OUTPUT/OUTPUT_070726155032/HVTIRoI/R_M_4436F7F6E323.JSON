@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "object_name": "HVTIRoI_P_69ACDEB3_P_C4C9EEFB_INSIGHTEXCHANGE_070726155032.JSON",
+  "WindowsSafeFileName": "R_M_4436F7F6E323.JSON",
+  "OriginalRequestedFileName": "HVTIRoI_P_69ACDEB3_P_C4C9EEFB_INSIGHTEXCHANGE_070726155032.JSON",
+  "PersonAID": "P_69ACDEB3",
+  "PersonBID": "P_C4C9EEFB",
+  "PersonAName": "James Spencer 101",
+  "PersonBName": "Hinesh Brown 128",
+  "BVHID": "BVH_93BAEA1AF5",
+  "BVHTypeID": "INSIGHTEXCHANGE",
+  "BVHTypeName": "INSIGHTEXCHANGE",
+  "PairMatchScore": 80.71,
+  "BVHTypeFitScore": 90.33,
+  "ValueScore": 85.42,
+  "RankingScore": 81.56,
+  "EstimatedHVITUSDValue": 953770,
+  "EstimatedExpectedUSDValue": 474977,
+  "EstimatedHVITUSDValue Explainer": "Estimated potential value uses advisory_or_insight_value_proxy. Profile signals considered: PersonA product/value case $960,120, PersonB product/value case $4,768,850, buyer pain/cost signals $3,234,450. Selected potential value is $953,770; expected value is $474,977 after applying 49.8% estimated transaction probability.",
+  "RoIModelMethod": "advisory_or_insight_value_proxy",
+  "Currency": "USD",
+  "GBPToUSD": 1.27,
+  "ValueSignals": {
+    "PersonAProductOrValueCaseUSD": 960120,
+    "PersonBProductOrValueCaseUSD": 4768850,
+    "PersonABuyerPainUSD": 1509700,
+    "PersonBBuyerPainUSD": 3234450
+  }
+}
